@@ -50,24 +50,62 @@ define(function (require){
         /** @private */
         _initializeMap : function() {
             var center = new google.maps.LatLng(10, 13);
+
+            var MY_MAPTYPE_ID = 'custom_style';
+
             var styles = [
                 {
                     elementType: 'geometry',
                     stylers: [
-                        { lightness: 33 },
-                        { saturation: -90 }
+                        { hue: '#890000' },
+                        { visibility: 'simplified' },
+                        { gamma: 0.5 },
+                        { weight: 0.5 }
+                    ]
+                }
+            ];
+
+            var featureOpts = [
+                {
+                    stylers: [
+                        { hue: '#DBFFFF' },
+                        { visibility: 'simplified' },
+                        { gamma: 0.5 },
+                        { weight: 0.5 }
+                    ]
+                },
+                {
+                    elementType: 'labels',
+                    stylers: [
+                        { visibility: 'off' }
+                    ]
+                },
+                {
+                    featureType: 'water',
+                    stylers: [
+                        { color: '#DBFFFF' }
                     ]
                 }
             ];
 
             var mapOptions = {
                 zoom: 3,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
                 center: center,
-                styles: styles
+                mapTypeControlOptions: {
+                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+                },
+                mapTypeId: MY_MAPTYPE_ID
             };
 
             var map = new google.maps.Map(this.ui.map_canvas.get(0), mapOptions);
+
+            var styledMapOptions = {
+                name: 'Custom Style'
+            };
+
+            var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+
+            map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 
             return map;
         },
