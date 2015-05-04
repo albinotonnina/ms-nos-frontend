@@ -1,0 +1,799 @@
+[
+  {
+    "agent": {
+      "ring": {
+        "uuid": "007e5800-5b00-0000-0000-000000000020",
+        "location": {
+          "continent": {
+            "type": "CONTINENT",
+            "name": "Asia",
+            "code": "AS"
+          },
+          "country": {
+            "type": "COUNTRY",
+            "name": "Singapore",
+            "code": "SG"
+          },
+          "city": {
+            "type": "CITY",
+            "name": "Singapore",
+            "code": "1880252"
+          },
+          "precision": 11,
+          "gps": {
+            "latitude": 1.2931,
+            "longitude": 103.8558
+          }
+        }
+      },
+      "endpoints": [
+        {
+          "type": "UDP",
+          "network": {
+            "address": [
+              52,
+              74,
+              88,
+              91
+            ],
+            "prefix": 32
+          },
+          "port": 0
+        },
+        {
+          "url": "http://52.74.88.91:9991/msnos",
+          "type": "HTTP",
+          "network": {
+            "address": [
+              52,
+              74,
+              88,
+              91
+            ],
+            "prefix": 32
+          },
+          "port": 9991
+        }
+      ],
+      "iden": {
+        "type": "AGT",
+        "uuid": "a01dd47e-a58d-408f-ae87-fdd7db82fc4f"
+      },
+      "sequencer": {
+        "value": 0
+      },
+      "accessTime": {
+        "value": 1430758449849
+      }
+    },
+    "name": "Pore",
+    "apis": [
+      {
+        "path": "/wassup",
+        "host": "52.74.88.91",
+        "port": 9991,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/msnos",
+        "host": "52.74.88.91",
+        "port": 9991,
+        "sticky": false,
+        "type": "MHT",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/hello",
+        "host": "52.74.88.91",
+        "port": 9991,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/health",
+        "host": "52.74.88.91",
+        "port": 9991,
+        "sticky": false,
+        "type": "HCK",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      }
+    ],
+    "faulty": {
+      "value": 0
+    },
+    "lastUpdated": {
+      "value": 1430758304849
+    },
+    "lastChecked": {
+      "value": 1430758449849
+    },
+    "location": {
+      "continent": {
+        "type": "CONTINENT",
+        "name": "Asia",
+        "code": "AS"
+      },
+      "country": {
+        "type": "COUNTRY",
+        "name": "Singapore",
+        "code": "SG"
+      },
+      "city": {
+        "type": "CITY",
+        "name": "Singapore",
+        "code": "1880252"
+      },
+      "precision": 11,
+      "gps": {
+        "latitude": 1.2931,
+        "longitude": 103.8558
+      }
+    }
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "00741400-3100-0000-0000-000000000020",
+        "location": {
+          "continent": {
+            "type": "CONTINENT",
+            "name": "Oceania",
+            "code": "OC"
+          },
+          "country": {
+            "type": "COUNTRY",
+            "name": "Australia",
+            "code": "AU"
+          },
+          "region": {
+            "type": "REGION",
+            "name": "NewSouthWales",
+            "code": "NSW"
+          },
+          "city": {
+            "type": "CITY",
+            "name": "Sydney",
+            "code": "2147714"
+          },
+          "precision": 15,
+          "gps": {
+            "latitude": -33.8666,
+            "longitude": 151.2082
+          }
+        }
+      },
+      "endpoints": [
+        {
+          "type": "UDP",
+          "network": {
+            "address": [
+              52,
+              64,
+              20,
+              49
+            ],
+            "prefix": 32
+          },
+          "port": 0
+        },
+        {
+          "url": "http://52.64.20.49:9992/msnos",
+          "type": "HTTP",
+          "network": {
+            "address": [
+              52,
+              64,
+              20,
+              49
+            ],
+            "prefix": 32
+          },
+          "port": 9992
+        }
+      ],
+      "iden": {
+        "type": "AGT",
+        "uuid": "2c177618-4cac-419f-86a9-32d883d63f19"
+      },
+      "sequencer": {
+        "value": 0
+      },
+      "accessTime": {
+        "value": 1430758449848
+      }
+    },
+    "name": "Syd-two",
+    "apis": [
+      {
+        "path": "/msnos",
+        "host": "52.64.20.49",
+        "port": 9992,
+        "sticky": false,
+        "type": "MHT",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/wassup",
+        "host": "52.64.20.49",
+        "port": 9992,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/hello",
+        "host": "52.64.20.49",
+        "port": 9992,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/health",
+        "host": "52.64.20.49",
+        "port": 9992,
+        "sticky": false,
+        "type": "HCK",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      }
+    ],
+    "faulty": {
+      "value": 0
+    },
+    "lastUpdated": {
+      "value": 1430758439839
+    },
+    "lastChecked": {
+      "value": 1430758449848
+    },
+    "location": {
+      "continent": {
+        "type": "CONTINENT",
+        "name": "Oceania",
+        "code": "OC"
+      },
+      "country": {
+        "type": "COUNTRY",
+        "name": "Australia",
+        "code": "AU"
+      },
+      "region": {
+        "type": "REGION",
+        "name": "NewSouthWales",
+        "code": "NSW"
+      },
+      "city": {
+        "type": "CITY",
+        "name": "Sydney",
+        "code": "2147714"
+      },
+      "precision": 15,
+      "gps": {
+        "latitude": -33.8666,
+        "longitude": 151.2082
+      }
+    }
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "00f9c400-6200-0000-0000-000000000020",
+        "location": {
+          "continent": {
+            "type": "CONTINENT",
+            "name": "Europe",
+            "code": "EU"
+          },
+          "country": {
+            "type": "COUNTRY",
+            "name": "Ireland",
+            "code": "IE"
+          },
+          "region": {
+            "type": "REGION",
+            "name": "DublinCity",
+            "code": "7778677"
+          },
+          "city": {
+            "type": "CITY",
+            "name": "Dublin",
+            "code": "2964574"
+          },
+          "precision": 15,
+          "gps": {
+            "latitude": 53.3331,
+            "longitude": -6.2489
+          }
+        }
+      },
+      "endpoints": [
+        {
+          "url": "http://54.195.196.98:9991/msnos",
+          "type": "HTTP",
+          "network": {
+            "address": [
+              54,
+              -61,
+              -60,
+              98
+            ],
+            "prefix": 32
+          },
+          "port": 9991
+        },
+        {
+          "type": "UDP",
+          "network": {
+            "address": [
+              54,
+              -61,
+              -60,
+              98
+            ],
+            "prefix": 32
+          },
+          "port": 0
+        }
+      ],
+      "iden": {
+        "type": "AGT",
+        "uuid": "3765a8c0-1ed0-463d-85bd-ead1d629b287"
+      },
+      "sequencer": {
+        "value": 0
+      },
+      "accessTime": {
+        "value": 1430758449852
+      }
+    },
+    "name": "Lon",
+    "apis": [
+      {
+        "path": "/msnos",
+        "host": "54.195.196.98",
+        "port": 9991,
+        "sticky": false,
+        "type": "MHT",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/health",
+        "host": "54.195.196.98",
+        "port": 9991,
+        "sticky": false,
+        "type": "HCK",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/wassup",
+        "host": "54.195.196.98",
+        "port": 9991,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/hello",
+        "host": "54.195.196.98",
+        "port": 9991,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      }
+    ],
+    "faulty": {
+      "value": 0
+    },
+    "lastUpdated": {
+      "value": 1430758449852
+    },
+    "lastChecked": {
+      "value": 1430758419860
+    },
+    "location": {
+      "continent": {
+        "type": "CONTINENT",
+        "name": "Europe",
+        "code": "EU"
+      },
+      "country": {
+        "type": "COUNTRY",
+        "name": "Ireland",
+        "code": "IE"
+      },
+      "region": {
+        "type": "REGION",
+        "name": "DublinCity",
+        "code": "7778677"
+      },
+      "city": {
+        "type": "CITY",
+        "name": "Dublin",
+        "code": "2964574"
+      },
+      "precision": 15,
+      "gps": {
+        "latitude": 53.3331,
+        "longitude": -6.2489
+      }
+    }
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "01680100-0700-0000-0000-000000000018",
+        "location": {
+          "precision": 0
+        }
+      },
+      "endpoints": [
+        {
+          "type": "UDP",
+          "network": {
+            "address": [
+              -64,
+              -88,
+              1,
+              7
+            ],
+            "prefix": 24
+          },
+          "port": 0
+        },
+        {
+          "url": "http://192.168.1.7:9991/msnos",
+          "type": "HTTP",
+          "network": {
+            "address": [
+              -64,
+              -88,
+              1,
+              7
+            ],
+            "prefix": 24
+          },
+          "port": 9991
+        }
+      ],
+      "iden": {
+        "type": "AGT",
+        "uuid": "8596b56b-a49e-4afc-b3a7-24d382aa552e"
+      },
+      "sequencer": {
+        "value": 0
+      },
+      "accessTime": {
+        "value": 1430758464841
+      }
+    },
+    "name": "Proxy",
+    "apis": [
+      {
+        "path": "/msnos",
+        "host": "192.168.1.7",
+        "port": 9991,
+        "sticky": false,
+        "type": "MHT",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      }
+    ],
+    "faulty": {
+      "value": 0
+    },
+    "lastUpdated": {
+      "value": 1430758289835
+    },
+    "lastChecked": {
+      "value": 1430758034842
+    },
+    "location": {
+      "precision": 0
+    }
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "01680100-0700-0000-0000-000000000018",
+        "location": {
+          "precision": 0
+        }
+      },
+      "endpoints": [
+        {
+          "url": "http://192.168.1.7:8889/msnos",
+          "type": "HTTP",
+          "network": {
+            "address": [
+              -64,
+              -88,
+              1,
+              7
+            ],
+            "prefix": 24
+          },
+          "port": 8889
+        },
+        {
+          "type": "UDP",
+          "network": {
+            "address": [
+              -64,
+              -88,
+              1,
+              7
+            ],
+            "prefix": 24
+          },
+          "port": 0
+        }
+      ],
+      "iden": {
+        "type": "AGT",
+        "uuid": "75cf8f53-3729-4443-8d63-b2288893c62f"
+      },
+      "sequencer": {
+        "value": 0
+      },
+      "accessTime": {
+        "value": 1430758359836
+      }
+    },
+    "name": "john",
+    "apis": [
+      {
+        "path": "/msnos",
+        "host": "192.168.1.7",
+        "port": 8889,
+        "sticky": false,
+        "type": "MHT",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/wassup",
+        "host": "192.168.1.7",
+        "port": 8889,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/health",
+        "host": "192.168.1.7",
+        "port": 8889,
+        "sticky": false,
+        "type": "HCK",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/hello",
+        "host": "192.168.1.7",
+        "port": 8889,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      }
+    ],
+    "faulty": {
+      "value": 1
+    },
+    "lastUpdated": {
+      "value": 1430758244836
+    },
+    "lastChecked": {
+      "value": 1430758384842
+    },
+    "location": {
+      "precision": 0
+    }
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "00741400-3100-0000-0000-000000000020",
+        "location": {
+          "continent": {
+            "type": "CONTINENT",
+            "name": "Oceania",
+            "code": "OC"
+          },
+          "country": {
+            "type": "COUNTRY",
+            "name": "Australia",
+            "code": "AU"
+          },
+          "region": {
+            "type": "REGION",
+            "name": "NewSouthWales",
+            "code": "NSW"
+          },
+          "city": {
+            "type": "CITY",
+            "name": "Sydney",
+            "code": "2147714"
+          },
+          "precision": 15,
+          "gps": {
+            "latitude": -33.8666,
+            "longitude": 151.2082
+          }
+        }
+      },
+      "endpoints": [
+        {
+          "type": "UDP",
+          "network": {
+            "address": [
+              52,
+              64,
+              20,
+              49
+            ],
+            "prefix": 32
+          },
+          "port": 0
+        },
+        {
+          "url": "http://52.64.20.49:9991/msnos",
+          "type": "HTTP",
+          "network": {
+            "address": [
+              52,
+              64,
+              20,
+              49
+            ],
+            "prefix": 32
+          },
+          "port": 9991
+        }
+      ],
+      "iden": {
+        "type": "AGT",
+        "uuid": "4b06807f-6fd0-4268-b8c0-495930a65da3"
+      },
+      "sequencer": {
+        "value": 0
+      },
+      "accessTime": {
+        "value": 1430758449840
+      }
+    },
+    "name": "Syd",
+    "apis": [
+      {
+        "path": "/health",
+        "host": "52.64.20.49",
+        "port": 9991,
+        "sticky": false,
+        "type": "HCK",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/msnos",
+        "host": "52.64.20.49",
+        "port": 9991,
+        "sticky": false,
+        "type": "MHT",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/wassup",
+        "host": "52.64.20.49",
+        "port": 9991,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      },
+      {
+        "path": "/hello",
+        "host": "52.64.20.49",
+        "port": 9991,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        }
+      }
+    ],
+    "faulty": {
+      "value": 0
+    },
+    "lastUpdated": {
+      "value": 1430758464838
+    },
+    "lastChecked": {
+      "value": 1430758449840
+    },
+    "location": {
+      "continent": {
+        "type": "CONTINENT",
+        "name": "Oceania",
+        "code": "OC"
+      },
+      "country": {
+        "type": "COUNTRY",
+        "name": "Australia",
+        "code": "AU"
+      },
+      "region": {
+        "type": "REGION",
+        "name": "NewSouthWales",
+        "code": "NSW"
+      },
+      "city": {
+        "type": "CITY",
+        "name": "Sydney",
+        "code": "2147714"
+      },
+      "precision": 15,
+      "gps": {
+        "latitude": -33.8666,
+        "longitude": 151.2082
+      }
+    }
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "uuid": "007e5800-5b00-0000-0000-000000000020",
+    "location": "Asia, Singapore, Singapore",
+    "gps": {
+      "latitude": 1.2931,
+      "longitude": 103.8558
+    },
+    "agents": [
+      {
+        "agent": "a01dd47e-a58d-408f-ae87-fdd7db82fc4f",
+        "uservice": "Pore",
+        "location": "Asia, Singapore, Singapore"
+      }
+    ]
+  },
+  {
+    "uuid": "00f9c400-6200-0000-0000-000000000020",
+    "location": "Europe, Ireland, Dublin City, Dublin",
+    "gps": {
+      "latitude": 53.3331,
+      "longitude": -6.2489
+    },
+    "agents": [
+      {
+        "agent": "3765a8c0-1ed0-463d-85bd-ead1d629b287",
+        "uservice": "Lon",
+        "location": "Europe, Ireland, Dublin City, Dublin"
+      }
+    ]
+  },
+  {
+    "uuid": "00741400-3100-0000-0000-000000000020",
+    "location": "Oceania, Australia, New South Wales, Sydney",
+    "gps": {
+      "latitude": -33.8666,
+      "longitude": 151.2082
+    },
+    "agents": [
+      {
+        "agent": "2c177618-4cac-419f-86a9-32d883d63f19",
+        "uservice": "Syd-two",
+        "location": "Oceania, Australia, New South Wales, Sydney"
+      },
+      {
+        "agent": "4b06807f-6fd0-4268-b8c0-495930a65da3",
+        "uservice": "Syd",
+        "location": "Oceania, Australia, New South Wales, Sydney"
+      }
+    ]
+  },
+  {
+    "uuid": "011af400-4800-0000-0000-000000000020",
+    "location": "Europe, Ireland, Dublin City, Dublin",
+    "gps": {
+      "latitude": 53.3331,
+      "longitude": -6.2489
+    },
+    "agents": [
+      {
+        "agent": "cdb52b2d-88f3-45c0-9f63-794cd0d45f11",
+        "uservice": "Proxy",
+        "location": "Europe, Ireland, Dublin City, Dublin"
+      }
+    ]
+  },
+  {
+    "uuid": "01680100-0700-0000-0000-000000000018",
+    "location": "unknown",
+    "agents": [
+      {
+        "agent": "75cf8f53-3729-4443-8d63-b2288893c62f",
+        "uservice": "john",
+        "location": "unknown"
+      },
+      {
+        "agent": "8596b56b-a49e-4afc-b3a7-24d382aa552e",
+        "uservice": "Proxy",
+        "location": "unknown"
+      }
+    ]
+  }
+]

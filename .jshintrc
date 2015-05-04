@@ -21,7 +21,7 @@
     "smarttabs": true,
     "curly": true,
     "newcap": true,
-    "plusplus": true,
+    "plusplus": false,
     "quotmark": "single",
     "unused": true,
     "strict": true,

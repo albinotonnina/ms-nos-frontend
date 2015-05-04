@@ -1,0 +1,119 @@
+{
+  "/msnos": [
+    {
+      "service": "Syd-two",
+      "url": "http://52.64.20.49:9992/msnos",
+      "type": "MSNOS_HTTP",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Oceania, Australia, New South Wales, Sydney"
+    },
+    {
+      "service": "Syd",
+      "url": "http://52.64.20.49:9991/msnos",
+      "type": "MSNOS_HTTP",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Oceania, Australia, New South Wales, Sydney"
+    },
+    {
+      "service": "Lon",
+      "url": "http://54.195.196.98:9991/msnos",
+      "type": "MSNOS_HTTP",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Europe, Ireland, Dublin City, Dublin"
+    }
+  ],
+  "/hello": [
+    {
+      "service": "Syd-two",
+      "url": "http://52.64.20.49:9992/hello",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Oceania, Australia, New South Wales, Sydney"
+    },
+    {
+      "service": "Syd",
+      "url": "http://52.64.20.49:9991/hello",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Oceania, Australia, New South Wales, Sydney"
+    },
+    {
+      "service": "Lon",
+      "url": "http://54.195.196.98:9991/hello",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Europe, Ireland, Dublin City, Dublin"
+    }
+  ],
+  "/wassup": [
+    {
+      "service": "Syd-two",
+      "url": "http://52.64.20.49:9992/wassup",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Oceania, Australia, New South Wales, Sydney"
+    },
+    {
+      "service": "Syd",
+      "url": "http://52.64.20.49:9991/wassup",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Oceania, Australia, New South Wales, Sydney"
+    },
+    {
+      "service": "Lon",
+      "url": "http://54.195.196.98:9991/wassup",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Europe, Ireland, Dublin City, Dublin"
+    }
+  ],
+  "/health": [
+    {
+      "service": "Syd-two",
+      "url": "http://52.64.20.49:9992/health",
+      "type": "HEALTHCHECK",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Oceania, Australia, New South Wales, Sydney"
+    },
+    {
+      "service": "Syd",
+      "url": "http://52.64.20.49:9991/health",
+      "type": "HEALTHCHECK",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Oceania, Australia, New South Wales, Sydney"
+    },
+    {
+      "service": "Lon",
+      "url": "http://54.195.196.98:9991/health",
+      "type": "HEALTHCHECK",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Europe, Ireland, Dublin City, Dublin"
+    }
+  ],
+  "/favicon.ico": []
+}

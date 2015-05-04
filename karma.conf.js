@@ -12,7 +12,7 @@ module.exports = function (config) {
 
         // frameworks to use
         // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-        frameworks: ['jasmine', 'requirejs'],
+        frameworks: ['requirejs', 'mocha', 'chai', 'sinon'],
 
 
         // list of files / patterns to load in the browser
@@ -22,6 +22,8 @@ module.exports = function (config) {
             {pattern: 'frontend/app/**/*.js', included: false },
             //App templates
             {pattern: 'frontend/app/**/*.hbs', included: false, served : true },
+            'test/mockFactory/mockFactory.js',
+            'test/mockFactory/*.js',
             {pattern: 'test/unit/**/*Spec.js', included: false },
 
             'test/unit/test-main.js'
@@ -30,7 +32,7 @@ module.exports = function (config) {
 
         // list of files to exclude
         exclude: [
-
+            'frontend/bower_components/googlemaps-amd/bower_components/**/*.js'
         ],
 
 
@@ -44,7 +46,7 @@ module.exports = function (config) {
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['progress'],
+        reporters: ['dots'],
 
 
         // web server port
