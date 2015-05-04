@@ -33,15 +33,16 @@ define(function (require){
         /** @private */
         initialize: function (options){
             this.controller = options.controller;
-            this.firstView = this.controller.getMapBackground();
+
             //this.secondView = this.controller.getSecondView();
         },
 
         /** @private */
         onRender: function (){
             this.map = this._initializeMap();
+            this.firstView = this.controller.getMapBackground();
+            this.firstView.addMap(this.map);
             this.firstRegion.show(this.firstView);
-            this.firstView.addPointsToMap(this.map);
 
            // this.secondRegion.show(this.secondView);
         },

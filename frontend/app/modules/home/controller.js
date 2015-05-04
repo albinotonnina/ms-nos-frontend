@@ -17,6 +17,7 @@ define(function (require){
             this.ringsCollection = new RingsCollection();
 
         },
+
         index: function (){
             require(['googlemaps!'], _.bind(this._fetchPackage, this));
         },
@@ -42,7 +43,7 @@ define(function (require){
         },
 
         getMapBackground: function (){
-            this.mapBackgroundView = new IndexView({controller:this});
+            this.mapBackgroundView = new IndexView({controller:this, collection: this.ringsCollection});
             return this.mapBackgroundView;
         }
     });
