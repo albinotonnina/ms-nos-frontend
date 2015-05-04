@@ -4,14 +4,13 @@ define(function (require){
     'use strict';
 
     var Marionette = require('marionette'),
-        MarkerItemView = require('./MarkerItemView'),
-        _ = require('underscore');
+        IndexChildView = require('./IndexChildView');
 
     return Marionette.CompositeView.extend({
 
-        template: require('text!./../templates/index.hbs'),
+        template: require('text!./../templates/indexCompositeView.hbs'),
 
-        childView: MarkerItemView,
+        childView: IndexChildView,
 
         childViewContainer:'#items',
 

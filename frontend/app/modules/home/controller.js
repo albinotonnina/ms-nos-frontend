@@ -3,7 +3,7 @@ define(function (require){
 
     var Marionette = require('marionette'),
         _ = require('underscore'),
-        IndexView = require('./views/index'),
+        IndexView = require('./views/indexCompositeView'),
         IndexLayout = require('./views/indexLayout'),
         RingsCollection = require('./collections/RingsCollection'),
         MicroservicesCollection = require('./collections/MicroservicesCollection');

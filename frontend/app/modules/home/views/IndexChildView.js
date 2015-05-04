@@ -8,12 +8,8 @@ define(function (require){
 
     return Marionette.ItemView.extend({
 
-        template: require('text!./../templates/index.hbs'),
+        template: require('text!./../templates/IndexChildView.hbs'),
 
-        initialize: function (options){
-
-        },
-        
         /** @private */
         addMarker: function (map, latLng, ringObj){
 
