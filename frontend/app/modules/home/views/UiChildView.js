@@ -1,4 +1,3 @@
-/* global google */
 
 define(function (require){
     'use strict';
@@ -9,10 +8,13 @@ define(function (require){
 
     return Marionette.ItemView.extend({
 
-        template: require('text!./../templates/IndexChildView.hbs'),
+        /** @private */
+        template: require('text!./../templates/UiChildView.hbs'),
 
         /** @private */
-        addMarker: function (map, itemLocation, ringObj){
+        tagName: 'li',
+
+        addMarker: function (map, itemLocation){
             this.marker = Leaflet.marker([itemLocation.latitude, itemLocation.longitude]);
             this.marker.on('mouseover', _.bind(this._markerOnHover, this));
             this.marker.on('mouseout', _.bind(this._markerOnOut, this));
@@ -20,14 +22,17 @@ define(function (require){
             this.marker.addTo(map);
         },
 
+        /** @private */
         _markerOnHover: function (){
             console.log('hover');
         },
 
+        /** @private */
         _markerOnOut: function (){
             console.log('out');
         },
 
+        /** @private */
         _markerOnClick: function (ev){
             console.log('click');
             console.log(ev);

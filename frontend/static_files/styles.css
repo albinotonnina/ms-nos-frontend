@@ -1,12 +1,37 @@
-#first-region{
+html,body{
+    width:100%;
+    height:100%;
+}
+
+.container{
+    width:100%;
+    height:100%;
+}
+
+.indexLayout{
+    width:100%;
+    height:100%;
+}
+
+#ui-region{
+    width: 30%;
+    height :100%;
+    float:left;
+}
+
+#map-region{
+    width: 70%;
+    height :100%;
+    float:left;
+}
+
+.map-wrapper{
     width: 100%;
     height :100%;
+    float:left;
 }
+
 #map_canvas{
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height :100%;
 }

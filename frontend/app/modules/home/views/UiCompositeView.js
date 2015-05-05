@@ -1,27 +1,33 @@
-/* global google */
 
 define(function (require){
     'use strict';
 
     var Marionette = require('marionette'),
-        IndexChildView = require('./IndexChildView');
+        UiChildView = require('./UiChildView');
 
+    require('jquerysimpleaccordion');
     return Marionette.CompositeView.extend({
 
-        template: require('text!./../templates/indexCompositeView.hbs'),
+        /** @private */
+        template: require('text!./../templates/UiCompositeView.hbs'),
 
+        /** @private */
         className: 'items-wrapper',
 
-        childView: IndexChildView,
+        /** @private */
+        childView: UiChildView,
 
+        /** @private */
         childViewContainer:'#items',
 
+        /** @private */
         initialize: function (options){
             this.controller = options.controller;
             this.map = options.map;
             this.latLangArray = [];
         },
 
+        /** @private */
         onAddChild: function(childView){
             var itemLocation = childView.model.get('location').gps;
             if(itemLocation){
@@ -29,17 +35,9 @@ define(function (require){
             }
         },
 
-        onRender: function(){
-          //  this._fitBounds(this.map);
-        },
-
         /** @private */
-        _fitBounds: function (map){
-            var bounds = new google.maps.LatLngBounds();
-            for(var i = 0, LtLgLen = this.latLangArray.length; i < LtLgLen; i++){
-                bounds.extend(this.latLangArray[i]);
-            }
-            map.fitBounds(bounds);
+        onShow: function(){
+            this.$childViewContainer.jquerySimpleAccordion();
         }
 
     });

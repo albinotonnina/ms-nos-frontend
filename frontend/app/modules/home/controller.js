@@ -3,13 +3,15 @@ define(function (require){
 
     var Marionette = require('marionette'),
         _ = require('underscore'),
-        IndexView = require('./views/indexCompositeView'),
-        IndexLayout = require('./views/indexLayout'),
+        UiView = require('./views/UiCompositeView'),
+        MapView = require('./views/MapView'),
+        IndexLayout = require('./views/IndexLayout'),
         RingsCollection = require('./collections/RingsCollection'),
         MicroservicesCollection = require('./collections/MicroservicesCollection');
 
     return Marionette.Object.extend({
 
+        /** @private */
         initialize: function (options){
             this.app = options.app;
             this.logger = options.logger;
@@ -17,6 +19,7 @@ define(function (require){
             this.ringsCollection = new RingsCollection();
         },
 
+        /** @private */
         index: function (){
             this.microservicesCollection.fetch()
                 .done(_.bind(this._initCollections, this));
@@ -36,9 +39,14 @@ define(function (require){
             this.app.container.show(indexLayout);
         },
 
-        getMapBackground: function (map){
-            this.mapBackgroundView = new IndexView({controller:this, collection: this.ringsCollection, map: map});
-            return this.mapBackgroundView;
+        getUiView: function (map){
+            this.uiView = new UiView({controller:this, collection: this.ringsCollection, map: map});
+            return this.uiView;
+        },
+
+        getMapView: function (){
+            this.mapView = new MapView({controller:this});
+            return this.mapView;
         }
     });
 

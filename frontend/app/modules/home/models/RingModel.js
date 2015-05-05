@@ -31,8 +31,12 @@ define(function (require){
 
         addAgent: function(agentData){
             this.agentsCollection.addAgent({
+                uuid: agentData.agent.iden.uuid,
                 name: agentData.name,
-                faulty: agentData.faulty.value
+                faulty: agentData.faulty.value,
+                apis: agentData.apis,
+                lastUpdated: agentData.lastUpdated.value,
+                lastChecked: agentData.lastChecked.value
             });
         },
 
