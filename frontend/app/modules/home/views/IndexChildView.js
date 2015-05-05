@@ -4,43 +4,31 @@ define(function (require){
     'use strict';
 
     var Marionette = require('marionette'),
-        _ = require('underscore');
+        _ = require('underscore'),
+        Leaflet = require('leaflet');
 
     return Marionette.ItemView.extend({
 
         template: require('text!./../templates/IndexChildView.hbs'),
 
         /** @private */
-        addMarker: function (map, latLng, ringObj){
-
-            this.marker = new google.maps.Marker({
-                map: map,
-                position: latLng,
-                animation: google.maps.Animation.DROP,
-                //icon : 'img/buildings_32x32.png',
-                //title: this.model.get('name'),
-                descr: 'descr',
-                id: ringObj.get('uuid')
-            });
-
-            this.marker.infowindow = new google.maps.InfoWindow({
-                content: this.marker.descr
-            });
-
-            google.maps.event.addListener(this.marker, 'mouseover', _.bind(this._markerOnHover,this));
-            google.maps.event.addListener(this.marker, 'mouseout',  _.bind(this._markerOnOut,this));
-            google.maps.event.addListener(this.marker, 'click',  _.bind(this._markerOnClick,this));
+        addMarker: function (map, itemLocation, ringObj){
+            this.marker = Leaflet.marker([itemLocation.latitude, itemLocation.longitude]);
+            this.marker.on('mouseover', _.bind(this._markerOnHover, this));
+            this.marker.on('mouseout', _.bind(this._markerOnOut, this));
+            this.marker.on('click', _.bind(this._markerOnClick, this));
+            this.marker.addTo(map);
         },
-        
-        _markerOnHover: function(){
+
+        _markerOnHover: function (){
             console.log('hover');
         },
 
-        _markerOnOut: function(){
+        _markerOnOut: function (){
             console.log('out');
         },
 
-        _markerOnClick: function(ev){
+        _markerOnClick: function (ev){
             console.log('click');
             console.log(ev);
         }

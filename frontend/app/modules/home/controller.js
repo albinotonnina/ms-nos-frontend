@@ -15,15 +15,9 @@ define(function (require){
             this.logger = options.logger;
             this.microservicesCollection = new MicroservicesCollection();
             this.ringsCollection = new RingsCollection();
-
         },
 
         index: function (){
-            require(['googlemaps!'], _.bind(this._fetchPackage, this));
-        },
-
-        /** @private */
-        _fetchPackage: function (){
             this.microservicesCollection.fetch()
                 .done(_.bind(this._initCollections, this));
         },
@@ -42,8 +36,8 @@ define(function (require){
             this.app.container.show(indexLayout);
         },
 
-        getMapBackground: function (){
-            this.mapBackgroundView = new IndexView({controller:this, collection: this.ringsCollection});
+        getMapBackground: function (map){
+            this.mapBackgroundView = new IndexView({controller:this, collection: this.ringsCollection, map: map});
             return this.mapBackgroundView;
         }
     });

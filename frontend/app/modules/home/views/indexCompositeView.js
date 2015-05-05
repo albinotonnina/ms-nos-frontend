@@ -10,31 +10,27 @@ define(function (require){
 
         template: require('text!./../templates/indexCompositeView.hbs'),
 
+        className: 'items-wrapper',
+
         childView: IndexChildView,
 
         childViewContainer:'#items',
 
         initialize: function (options){
             this.controller = options.controller;
+            this.map = options.map;
             this.latLangArray = [];
         },
 
-        /** @private */
-        addMap: function (map){
-            this.map = map;
-        },
-
         onAddChild: function(childView){
-            var pos = childView.model.get('location').gps;
-            if(pos){
-                var latLng = new google.maps.LatLng(pos.latitude, pos.longitude);
-                this.latLangArray.push(latLng);
-                childView.addMarker(this.map, latLng, childView.model);
+            var itemLocation = childView.model.get('location').gps;
+            if(itemLocation){
+                childView.addMarker(this.map, itemLocation, childView.model);
             }
         },
 
         onRender: function(){
-            this._fitBounds(this.map);
+          //  this._fitBounds(this.map);
         },
 
         /** @private */

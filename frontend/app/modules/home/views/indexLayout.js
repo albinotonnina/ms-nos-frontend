@@ -1,10 +1,10 @@
-
 /*global define, google */
 
 define(function (require){
     'use strict';
 
-    var Marionette = require('marionette');
+    var Marionette = require('marionette'),
+        Leaflet = require('leaflet');
     /**
      * @class indexLayout
      * @extends Marionette.Layout
@@ -33,81 +33,29 @@ define(function (require){
         /** @private */
         initialize: function (options){
             this.controller = options.controller;
-
-            //this.secondView = this.controller.getSecondView();
         },
 
         /** @private */
-        onRender: function (){
-            this.map = this._initializeMap();
-            this.firstView = this.controller.getMapBackground();
-            this.firstView.addMap(this.map);
+        onShow: function (){
+            this.map = Leaflet.map(this.ui.map_canvas.get(0)).setView([10, 13], 3);
+            this._initializeMapBackground();
+            this.firstView = this.controller.getMapBackground(this.map);
             this.firstRegion.show(this.firstView);
 
-           // this.secondRegion.show(this.secondView);
+            //this.secondView = this.controller.getSecondView();
+            //this.secondRegion.show(this.secondView);
         },
 
         /** @private */
-        _initializeMap : function() {
-            var center = new google.maps.LatLng(10, 13);
+        _initializeMapBackground: function (){
+            
+            Leaflet.tileLayer('https://{s}.tiles.mapbox.com/v4/{mapId}/{z}/{x}/{y}.png?access_token={token}', {
+                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                subdomains: ['a', 'b', 'c', 'd'],
+                mapId: 'msnos.m3mi291g',
+                token: 'pk.eyJ1IjoibXNub3MiLCJhIjoiODZWbjFDWSJ9.w3qIikxygzbnPUiglLrvpA'
+            }).addTo(this.map);
 
-            var MY_MAPTYPE_ID = 'custom_style';
-
-            var styles = [
-                {
-                    elementType: 'geometry',
-                    stylers: [
-                        { hue: '#890000' },
-                        { visibility: 'simplified' },
-                        { gamma: 0.5 },
-                        { weight: 0.5 }
-                    ]
-                }
-            ];
-
-            var featureOpts = [
-                {
-                    stylers: [
-                        { hue: '#DBFFFF' },
-                        { visibility: 'simplified' },
-                        { gamma: 0.5 },
-                        { weight: 0.5 }
-                    ]
-                },
-                {
-                    elementType: 'labels',
-                    stylers: [
-                        { visibility: 'off' }
-                    ]
-                },
-                {
-                    featureType: 'water',
-                    stylers: [
-                        { color: '#DBFFFF' }
-                    ]
-                }
-            ];
-
-            var mapOptions = {
-                zoom: 3,
-                center: center,
-                mapTypeControlOptions: {
-                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-                },
-                mapTypeId: MY_MAPTYPE_ID
-            };
-
-            var map = new google.maps.Map(this.ui.map_canvas.get(0), mapOptions);
-
-            var styledMapOptions = {
-                name: 'Custom Style'
-            };
-
-            var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-
-            map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-
-            return map;
-        },
+        }
     });
 });
