@@ -1,40 +1,131 @@
-html,body{
-    width:100%;
-    height:100%;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(msnos-icons.css);
+
+html,
+body,
+.container,
+.indexLayout,
+#map_canvas {
+  width: 100%;
+  height: 100%;
 }
 
-.container{
-    width:100%;
-    height:100%;
+a {
+  color: #00adef;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: #f4f4f4;
+  }
+}
 
-    .indexLayout{
-        width:100%;
-        height:100%;
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#ui-region {
+  width: 30%;
+  height: 100%;
+  float: left;
+  background-color: #353a3e;
+
+  header {
+    color: #f4f4f4;
+    padding: 16px 32px;
+
+    h1 {
+      color: #f68220;
     }
-}
+  }
 
-#ui-region{
-    width: 30%;
-    height :100%;
-    float:left;
-}
+  .items-wrapper {
+    height: 100%;
+    overflow-y: scroll;
+  }
+  #items {
+    color: #ffffff;
+    list-style-type: none;
+    padding-left: 0;
 
-#map-region{
-    width: 70%;
-    height :100%;
-    float:left;
+    li {
 
-    .map-wrapper{
-        width: 100%;
-        height :100%;
-        float:left;
+      div {
+        height: 256px;
+        padding-left: 32px;
+        background-color: #494F53;
+      }
 
-        #map_canvas{
-            width: 100%;
-            height :100%;
+      a {
+        -webkit-transition: opacity .5s; /* Safari */
+        padding: 8px 8px 24px 32px;
+        font-size: 24px;
+        display: block;
+        color:#f4f4f4;
+
+        &:hover {
+          background-color: #f68220;
         }
+
+        span.icon {
+          font-size: 18px;
+        }
+
+        span.ring-uuid {
+          pointer-events: none;
+          color: #cccccc;
+          display: block;
+          font-size: 14px;
+          opacity: 0.3;
+          transition: opacity .5s;
+          color: #f4f4f4;
+          &:before {
+            content: 'uuid: ';
+            color: #f4f4f4;
+            display: inline-block;
+            margin-right: 8px;
+          }
+
+        }
+
+      }
+
+      &.collapsed {
+        a {
+          background-color: #f68220;
+          span.ring-uuid {
+            opacity: 0.5;
+          }
+        }
+        .icon-chevron {
+          &:before {
+            content: "\e600";
+          }
+        }
+      }
+
+      .icon-chevron {
+        float: right;
+        margin-top: 8px;
+        &:before {
+          content: "\e601";
+        }
+      }
+
     }
 
+  }
+}
+
+#map-region {
+  width: 70%;
+  height: 100%;
+  float: left;
+
+  .map-wrapper {
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
 }
 
 
