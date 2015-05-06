@@ -1,11 +1,10 @@
-
 define(function (require){
     'use strict';
 
     var Marionette = require('marionette'),
         UiChildView = require('./UiChildView');
-
     require('jquerysimpleaccordion');
+
     return Marionette.CompositeView.extend({
 
         /** @private */
@@ -18,7 +17,7 @@ define(function (require){
         childView: UiChildView,
 
         /** @private */
-        childViewContainer:'#items',
+        childViewContainer: '#items',
 
         /** @private */
         initialize: function (options){
@@ -28,7 +27,7 @@ define(function (require){
         },
 
         /** @private */
-        onAddChild: function(childView){
+        onAddChild: function (childView){
             var itemLocation = childView.model.get('location').gps;
             if(itemLocation){
                 childView.addMarker(this.map, itemLocation, childView.model);
@@ -36,7 +35,7 @@ define(function (require){
         },
 
         /** @private */
-        onShow: function(){
+        onShow: function (){
             this.$childViewContainer.jquerySimpleAccordion();
         }
 

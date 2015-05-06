@@ -1,8 +1,3 @@
-/**
- * Created by albinotonnina on 04/05/15.
- */
-
-/*global define*/
 
 define(function (require){
     'use strict';
@@ -19,17 +14,25 @@ define(function (require){
         /** @private */
         initialize: function (){
             this.agentsCollection = new AgentsCollection();
-            this.set('agents',this.agentsCollection);
+            this.set('agents', this.agentsCollection);
         },
 
         /** @private */
         defaults: {
             uuid: undefined,
-            location: undefined,
+            name: undefined,
+            location: {
+                country: {
+                    name: 'Ring'
+                },
+                city: {
+                    name: 'Somewhere'
+                }
+            },
             agents: undefined
         },
 
-        addAgent: function(agentData){
+        addAgent: function (agentData){
             this.agentsCollection.addAgent({
                 uuid: agentData.agent.iden.uuid,
                 name: agentData.name,
@@ -40,7 +43,7 @@ define(function (require){
             });
         },
 
-        clear: function() {
+        clear: function (){
             this.destroy();
         }
     });
