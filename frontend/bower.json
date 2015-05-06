@@ -15,7 +15,8 @@
     "lumberman": "0.0.3",
     "requirejs-plugins": "~1.0.3",
     "leaflet": "~0.7.3",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "leaflet.markercluster": "~0.4.0"
   },
   "devDependencies": {
     "mocha": "1.18.2",

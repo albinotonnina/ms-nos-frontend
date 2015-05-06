@@ -16,6 +16,7 @@
     "grunt-contrib-jshint": "0.10.0",
     "grunt-contrib-requirejs": "0.4.3",
     "grunt-contrib-watch": "0.6.1",
+    "grunt-contrib-less": "^1.0.1",
     "grunt-execute": "^0.2.2",
     "grunt-karma": "0.8.3",
     "karma": "0.12.16",
@@ -37,6 +38,7 @@
     "start": "node ./dyson.js"
   },
   "dependencies": {
+
     "jsonfile": "^2.0.0"
   }
 }
