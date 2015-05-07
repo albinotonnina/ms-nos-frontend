@@ -2,7 +2,7 @@
     "globals": {
         "define": false,
         "require": false,
-
+        "$":false,
         "jasmine" : false,
         "describe" : false,
         "it" : false,

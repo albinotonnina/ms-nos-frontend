@@ -38,6 +38,55 @@ body {
     }
   }
 
+  .agents-wrapper {
+    padding: 16px 0;
+  }
+  #agents {
+    list-style-type: none;
+    padding: 0 16px;
+
+    > li {
+      padding: 16px 0;
+
+      > a {
+        display: block;
+        color: #f4f4f4;
+
+        span.ring-uuid {
+          pointer-events: none;
+          color: #cccccc;
+          display: block;
+          font-size: 14px;
+          opacity: 0.3;
+          transition: opacity .5s;
+          color: #f4f4f4;
+          &:before {
+            content: 'uuid: ';
+            color: #f4f4f4;
+            display: inline-block;
+            margin-right: 8px;
+          }
+
+        }
+      }
+
+      >div{
+        .icon-healthy{
+          color: #19d512;
+        }
+
+        .icon-faulty{
+          color: #d50410;
+        }
+
+        .date{
+          font-size: 12px;
+          opacity:0.5;
+        }
+      }
+    }
+  }
+
   .items-wrapper {
     height: 100%;
     overflow-y: scroll;
@@ -47,27 +96,25 @@ body {
     list-style-type: none;
     padding-left: 0;
 
-    li {
+    > li {
 
-      div {
-        height: 256px;
-        padding-left: 32px;
+      > div {
         background-color: #494F53;
+        border-bottom: 2px solid #333;
       }
 
-      a {
-        -webkit-transition: opacity .5s; /* Safari */
-        padding: 8px 8px 24px 32px;
-        font-size: 24px;
+      > a {
+        padding: 4px 8px 16px 16px;
+        font-size: 18px;
         display: block;
-        color:#f4f4f4;
+        color: #f4f4f4;
 
         &:hover {
           background-color: #f68220;
         }
 
         span.icon {
-          font-size: 18px;
+          font-size: 12px;
         }
 
         span.ring-uuid {
@@ -90,7 +137,7 @@ body {
       }
 
       &.collapsed {
-        a {
+        > a {
           background-color: #f68220;
           span.ring-uuid {
             opacity: 0.5;

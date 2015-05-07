@@ -1,0 +1,23 @@
+<a href="#"><span class="icon-shareable"></span> {{name}} <span class="icon-chevron"></span> <span class="ring-uuid">{{uuid}}</span></a>
+
+
+
+
+<div>
+    <p class="date">lastChecked: {{lastChecked}}</p>
+    <p class="date">lastUpdated: {{lastUpdated}}</p>
+
+    {{#each apis}}
+        <div>
+            {{#unless faulty}}
+                <span class="icon-vinyl icon-healthy"></span>
+            {{else}}
+                <span class="icon-warning icon-faulty"></span>
+            {{/unless}}
+
+
+            {{path}}
+        </div>
+    {{/each}}
+
+</div>

@@ -75,7 +75,7 @@
         "sticky": false,
         "type": "PUB",
         "priority": 0,
-        "faulty":0,
+        "faulty":1,
         "tempFaults": {
           "value": 0
         }
@@ -111,7 +111,7 @@
         "sticky": false,
         "type": "HCK",
         "priority": 0,
-        "faulty":0,
+        "faulty":1,
         "tempFaults": {
           "value": 0
         }

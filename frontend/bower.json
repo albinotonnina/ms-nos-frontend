@@ -16,7 +16,9 @@
     "requirejs-plugins": "~1.0.3",
     "leaflet": "~0.7.3",
     "normalize.css": "~3.0.3",
-    "leaflet.markercluster": "~0.4.0"
+    "leaflet.markercluster": "~0.4.0",
+    "jquery-simple-accordion": "~1.0.3",
+    "momentjs": "2.9.0"
   },
   "devDependencies": {
     "mocha": "1.18.2",

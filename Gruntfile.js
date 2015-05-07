@@ -31,7 +31,7 @@ module.exports = function (grunt) {
     /**
      * Serves the application from localhost:9001
      */
-    grunt.registerTask('serve', [ 'jshint', 'configureProxies:server', 'build', 'connect', 'concurrent:execute', 'concurrent:watch']);
+    grunt.registerTask('serve', [ 'jshint', 'configureProxies:server', 'build', 'connect', 'execute']);
 
     /**
      * Runs the tests
