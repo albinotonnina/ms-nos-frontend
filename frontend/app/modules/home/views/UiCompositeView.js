@@ -3,7 +3,7 @@ define(function (require){
 
     var Marionette = require('marionette'),
         UiChildView = require('./UiChildView');
-    require('jquerysimpleaccordion');
+        require('jquery.scrollto');
 
     return Marionette.CompositeView.extend({
 
@@ -21,9 +21,11 @@ define(function (require){
 
         /** @private */
         initialize: function (options){
+            this.accordion = require('accordion');
+
             this.controller = options.controller;
             this.map = options.map;
-            this.latLangArray = [];
+            //this.latLangArray = [];
         },
 
         /** @private */
@@ -36,7 +38,9 @@ define(function (require){
 
         /** @private */
         onShow: function (){
-            this.$childViewContainer.jquerySimpleAccordion();
+            this.accordion.init({
+                naturalBehavior: true
+            });
         }
 
     });

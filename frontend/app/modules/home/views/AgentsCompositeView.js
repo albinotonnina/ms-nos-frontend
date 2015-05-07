@@ -20,7 +20,7 @@ define(function (require){
         childViewContainer: '#agents',
 
         /** @private */
-        onShow: function (){
+        onRender: function (){
             this.$childViewContainer.jquerySimpleAccordion();
         }
 

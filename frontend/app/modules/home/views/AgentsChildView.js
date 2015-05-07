@@ -2,7 +2,7 @@ define(function (require){
     'use strict';
 
     var Marionette = require('marionette'),
-        _ =require('underscore'),
+        _ = require('underscore'),
         moment = require('moment');
 
 
@@ -14,17 +14,13 @@ define(function (require){
         /** @private */
         tagName: 'li',
 
-        serializeData:function(){
+        serializeData: function (){
 
             //debugger;
 
-
-            return _.extend(this.model.toJSON(),{
-
-            lastChecked:moment(this.model.get('lastChecked')).fromNow(),
-            lastUpdated:moment(this.model.get('lastUpdated')).fromNow()
-
-
+            return _.extend(this.model.toJSON(), {
+                lastChecked: moment(this.model.get('lastChecked')).fromNow(),
+                lastUpdated: moment(this.model.get('lastUpdated')).fromNow()
             });
 
         }
