@@ -3,7 +3,7 @@ define(function (require){
 
     var Marionette = require('marionette'),
         AgentsChildView = require('./AgentsChildView');
-    require('jquerysimpleaccordion');
+    
 
     return Marionette.CompositeView.extend({
 

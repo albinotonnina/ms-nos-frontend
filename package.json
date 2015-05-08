@@ -1,5 +1,13 @@
 {
-  "name": "nos",
+  "name": "msnos",
+  "engines": {
+    "node": "0.12.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test:continuous",
+    "start": "node ./index.js"
+  },
   "version": "0.0.0",
   "devDependencies": {
     "chai": "^2.3.0",
@@ -33,15 +41,17 @@
     "requirejs": "^2.1.11",
     "sinon": "^1.14.1"
   },
-  "scripts": {
-    "test": "grunt test:continuous",
-    "start": "node ./dyson.js"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albinotonnina/ms-nos-frontend"
   },
+  "keywords": [],
+  "author": "Albino Tonnina",
   "dependencies": {
     "dyson": "^0.5.0",
-    "dyson-generators": "^0.1.1",
+    "express": "^4.0.0",
     "faker": "^2.1.2",
-    "jsonfile": "^2.0.0",
-    "moment": "^2.10.2"
+    "http-proxy": "^1.11.1",
+    "jsonfile": "^2.0.0"
   }
 }

@@ -4,6 +4,8 @@ define(function (require) {
     return function (app) {
         /** Autoload plugins */
         require('vendors/handlebars')(app);
+        require('vendors/jquery.accordion')(app);
+
     };
 
 });

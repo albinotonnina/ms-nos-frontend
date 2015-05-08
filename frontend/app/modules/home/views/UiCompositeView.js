@@ -3,7 +3,7 @@ define(function (require){
 
     var Marionette = require('marionette'),
         UiChildView = require('./UiChildView');
-        require('jquery.scrollto');
+
 
     return Marionette.CompositeView.extend({
 

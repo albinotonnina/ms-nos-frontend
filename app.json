@@ -1,0 +1,7 @@
+{
+  "name": "MSNOS",
+  "description": "",
+  "repository": "https://github.com/albinotonnina/ms-nos-frontend",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"]
+}
