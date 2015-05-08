@@ -22,18 +22,28 @@ define(function (require){
         /** @private */
         initialize: function (options){
             this.accordion = require('accordion');
-
             this.controller = options.controller;
             this.map = options.map;
-            //this.latLangArray = [];
+            this.listenTo(this,'childview:marker:click', _.bind(this._markerClick,this));
         },
 
         /** @private */
         onAddChild: function (childView){
             var itemLocation = childView.model.get('location').gps;
             if(itemLocation){
-                childView.addMarker(this.map, itemLocation, childView.model);
+                childView.addMarker(this.map);
             }
+        },
+
+        /** @private */
+        _markerClick: function(itemview){
+
+            itemview.marker.setIcon(itemview.markerActiveIcon);
+
+            if(this.lastMarker){
+                this.lastMarker.setIcon(itemview.markerIcon);
+            }
+            this.lastMarker = itemview.marker;
         },
 
         /** @private */
