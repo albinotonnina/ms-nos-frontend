@@ -34,7 +34,7 @@ define(function (require){
 
             return Leaflet.Icon.extend({
                 options: {
-                    shadowUrl: 'static_files/marker-shadow.png',
+                    shadowUrl: 'static_files/images/marker-shadow.png',
                     iconSize: [30, 30],
                     shadowSize: [30, 30],
                     iconAnchor: [0, 0],
@@ -49,7 +49,7 @@ define(function (require){
         addMarker: function (map, itemLocation){
 
             var MarkerIcon  = this._getMarkerIcon();
-            var markerIcon = new MarkerIcon({iconUrl: 'static_files/marker.png'});
+            var markerIcon = new MarkerIcon({iconUrl: 'static_files/images/marker.png'});
 
 
             this.marker = Leaflet.marker([itemLocation.latitude, itemLocation.longitude], {icon: markerIcon});

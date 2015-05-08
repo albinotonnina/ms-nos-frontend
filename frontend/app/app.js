@@ -12,15 +12,9 @@ define(function (require) {
     /**
      * Load our application
      */
-
-
-
-
     require('autoload/vendors')(app);
     require('autoload/plugins')(app);
     require('autoload/modules')(app);
-
-
 
     app.addRegions({
         container : '#container'
@@ -31,11 +25,6 @@ define(function (require) {
             Backbone.history.navigate('home', { trigger : true });
         }
     });
-
-
-
-
-
 
     return app;
 });
