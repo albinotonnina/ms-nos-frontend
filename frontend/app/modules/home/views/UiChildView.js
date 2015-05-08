@@ -49,7 +49,7 @@ define(function (require){
         addMarker: function (map, itemLocation){
 
             var MarkerIcon  = this._getMarkerIcon();
-            var markerIcon = new MarkerIcon({iconUrl: 'static_files/marker.png'})
+            var markerIcon = new MarkerIcon({iconUrl: 'static_files/marker.png'});
 
 
             this.marker = Leaflet.marker([itemLocation.latitude, itemLocation.longitude], {icon: markerIcon});
@@ -75,7 +75,7 @@ define(function (require){
         },
 
         /** @private */
-        _markerOnClick: function (ev){
+        _markerOnClick: function (){
             if(this.isOpened){
                 this._scrollToMe();
             } else{
