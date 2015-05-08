@@ -14,6 +14,8 @@ define(function (require) {
      */
 
 
+
+
     require('autoload/vendors')(app);
     require('autoload/plugins')(app);
     require('autoload/modules')(app);
@@ -30,8 +32,15 @@ define(function (require) {
         }
     });
 
+
+
+
+
+
     return app;
 });
+
+
 
 
 

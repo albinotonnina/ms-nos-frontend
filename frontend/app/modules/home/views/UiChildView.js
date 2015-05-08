@@ -67,6 +67,17 @@ define(function (require){
         /** @private */
         _scrollToMe: function (){
             this.$el.closest('.items-wrapper').scrollTo(this.$el, 500, {easing: 'linear'});
+
+
+            //var offTop = this.$el.offset().top;
+            //
+            //this.$el.closest('.items-wrapper').animate({
+            //    scrollTop: offTop
+            //}, 2000);
+
+
+
+
         },
 
         /** @private */
