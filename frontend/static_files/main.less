@@ -53,11 +53,11 @@ body {
     padding: 0 16px;
 
     > li {
-      padding: 16px 0;
-
+      padding: 16px 0 0 32px;
+      color: #353a3e;
       > a {
         display: block;
-        color: #f4f4f4;
+        color: #353a3e;
 
         span.ring-uuid {
           pointer-events: none;
@@ -66,16 +66,16 @@ body {
           font-size: 14px;
           opacity: 0.3;
           transition: opacity .5s;
-          color: #f4f4f4;
+          color: #353a3e;
           &:before {
             content: 'uuid: ';
-            color: #f4f4f4;
+            color: #ccc;
             display: inline-block;
             margin-right: 8px;
           }
-
         }
       }
+
 
       > div {
         .icon-healthy {
@@ -126,7 +126,7 @@ body {
       }
 
       > div {
-        background-color: #494F53;
+        background-color: #f4f4f4;
         border-bottom: 2px solid #333;
       }
 
