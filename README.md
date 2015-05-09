@@ -20,11 +20,5 @@ $ grunt watch
 
 ```
 $ grunt production
-```
-
-####Node app
-port 5000
-
-```
-npm start
+$ npm start
 ```
