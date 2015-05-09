@@ -21,7 +21,14 @@ define(function (require){
 
         /** @private */
         index: function (){
-            this.microservicesCollection.fetch()
+
+            var useCustomUrl = decodeURIComponent((new RegExp('[?|&]url=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+            this._fetchData(useCustomUrl);
+        },
+
+        /** @private */
+        _fetchData: function(useCustomUrl){
+            this.microservicesCollection.fetchData(useCustomUrl)
                 .done(_.bind(this._initCollections, this));
         },
 

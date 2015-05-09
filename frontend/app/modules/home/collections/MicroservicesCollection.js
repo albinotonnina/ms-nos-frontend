@@ -1,4 +1,3 @@
-
 /*global define*/
 
 define(function (require){
@@ -15,11 +14,21 @@ define(function (require){
 
         /** @private */
         url: function (){
-            return 'admin/microservices';
+            return this.useCustomUrl ? this.useCustomUrl: 'admin/microservices';
         },
 
         /** @private */
-        model: NodeModule
+        model: NodeModule,
+
+        fetchData: function (useCustomUrl){
+            var deferred = $.Deferred();
+            this.useCustomUrl = useCustomUrl;
+
+            this.fetch()
+                .done(deferred.resolve);
+
+            return deferred.promise();
+        }
 
     });
 });
