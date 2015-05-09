@@ -39,7 +39,7 @@ define(function (require){
                     shadowSize: [30, 30],
                     iconAnchor: [15, 15],
                     shadowAnchor: [10, 10],
-                    popupAnchor: [0, 0]
+                    popupAnchor: [0, -15]
                 }
             });
 
