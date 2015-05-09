@@ -12,7 +12,6 @@
         "Lumberman" : "<%= path %>bower_components/lumberman/src",
         "googlemaps": "<%= path %>bower_components/googlemaps-amd/src/googlemaps",
         "leaflet": "<%= path %>bower_components/leaflet/dist/leaflet",
-        "jquerysimpleaccordion": "<%= path %>bower_components/jquery-simple-accordion/dist/jquery.simple-accordion",
         "moment": "<%= path %>bower_components/momentjs/moment",
         "accordion": "<%= path %>bower_components/accordion/accordion",
         "jquery.exists": "<%= path %>bower_components/jquery.exists/jquery.exists",

@@ -18,7 +18,7 @@
     "normalize.css": "~3.0.3",
     "leaflet.markercluster": "~0.4.0",
     "momentjs": "2.9.0",
-    "accordion": "~2.2.1",
+    "accordion": "git@github.com:albinotonnina/accordion.git",
     "jquery.exists": "~1.0.0",
     "jquery.scrollTo": "~2.1.0",
     "jquery-simple-accordion": "~1.0.3",

@@ -22,6 +22,14 @@ define(function (require){
             headerlink: '.accordion-header'
         },
 
+        events:{
+          'mouseover': '_itemHover',
+          'mouseout': '_itemOut',
+          'mousedown': '_itemClick',
+          'accordion.opened': '_setOpened',
+          'accordion.closed': '_setClosed'
+        },
+
         /** @private */
         initialize: function (){
             this.agentsView = new AgentsCompositeView({
@@ -31,7 +39,6 @@ define(function (require){
 
         /** @private */
         _initMarkerIcons: function (){
-
             var MarkerIcon = Leaflet.Icon.extend({
                 options: {
                     shadowUrl: 'static_files/images/marker-shadow.png',
@@ -45,7 +52,6 @@ define(function (require){
 
             this.markerIcon = new MarkerIcon({iconUrl: 'static_files/images/marker.png'});
             this.markerActiveIcon = new MarkerIcon({iconUrl: 'static_files/images/marker-active.png'});
-
         },
 
 
@@ -110,22 +116,19 @@ define(function (require){
         },
 
         /** @private */
+        _setOpened: function (){
+            this.isOpened = true;
+        },
+        /** @private */
+        _setClosed: function (){
+            this.isOpened = false;
+        },
+
+        /** @private */
         onRender: function (){
-
-            $(this.ui.headerlink).on('mouseover', _.bind(this._itemHover,this));
-            $(this.ui.headerlink).on('mouseout', _.bind(this._itemOut,this));
-            $(this.ui.headerlink).on('mousedown', _.bind(this._itemClick,this));
-
-            $(this.ui.headerlink).on('accordion.opened', _.bind(function (){
-                this.isOpened = true;
-            }, this));
-
-            $(this.ui.headerlink).on('accordion.closed', _.bind(function (){
-                this.isOpened = false;
-            }, this));
-
             this.agentsView.render();
             $(this.ui.agentscontainer).html(this.agentsView.$el);
+            this.trigger('refresh');
         }
 
     });

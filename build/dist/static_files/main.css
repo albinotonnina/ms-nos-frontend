@@ -67,6 +67,9 @@ body {
   display: inline-block;
   margin-right: 8px;
 }
+#ui-region #agents > li > div.hidden {
+  display: none;
+}
 #ui-region #agents > li > div .icon-healthy {
   color: #19d512;
 }

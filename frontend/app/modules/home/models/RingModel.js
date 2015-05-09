@@ -1,4 +1,3 @@
-
 define(function (require){
     'use strict';
 
@@ -32,15 +31,23 @@ define(function (require){
             agents: undefined
         },
 
-        addAgent: function (agentData){
-            this.agentsCollection.addAgent({
+        setAgent: function (agentData){
+
+            var existingModel = this.agentsCollection.findWhere({'uuid': agentData.agent.iden.uuid});
+            var objData = {
                 uuid: agentData.agent.iden.uuid,
                 name: agentData.name,
                 faulty: agentData.faulty.value,
                 apis: agentData.apis,
                 lastUpdated: agentData.lastUpdated.value,
                 lastChecked: agentData.lastChecked.value
-            });
+            };
+
+            if(existingModel){
+                existingModel.set(objData);
+            } else{
+                this.agentsCollection.addAgent(objData);
+            }
         },
 
         clear: function (){

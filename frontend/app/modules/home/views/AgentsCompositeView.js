@@ -3,7 +3,7 @@ define(function (require){
 
     var Marionette = require('marionette'),
         AgentsChildView = require('./AgentsChildView');
-    
+
 
     return Marionette.CompositeView.extend({
 
@@ -17,13 +17,7 @@ define(function (require){
         childView: AgentsChildView,
 
         /** @private */
-        childViewContainer: '#agents',
-
-        /** @private */
-        onRender: function (){
-            this.$childViewContainer.jquerySimpleAccordion();
-        }
-
+        childViewContainer: '#agents'
     });
 
 });

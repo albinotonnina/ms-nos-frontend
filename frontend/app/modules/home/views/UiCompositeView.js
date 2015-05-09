@@ -26,6 +26,7 @@ define(function (require){
             this.controller = options.controller;
             this.map = options.map;
             this.listenTo(this,'childview:marker:click', _.bind(this._markerClick,this));
+            this.listenTo(this,'childview:refresh', _.bind(this._initAccordion,this));
         },
 
         /** @private */
@@ -34,13 +35,12 @@ define(function (require){
             if(itemLocation){
                 childView.addMarker(this.map);
             }
+
         },
 
         /** @private */
         _markerClick: function(itemview){
-
             itemview.marker.setIcon(itemview.markerActiveIcon);
-
             if(this.lastMarker){
                 this.lastMarker.setIcon(itemview.markerIcon);
             }
@@ -49,11 +49,18 @@ define(function (require){
 
         /** @private */
         onShow: function (){
-            this.accordion.init({
-                naturalBehavior: true
-            });
-        }
+            this._initAccordion();
+        },
 
+        /** @private */
+        _initAccordion: function (){
+           setTimeout(_.bind(function(){
+               this.accordion.destroy();
+               this.accordion.init({
+                   naturalBehavior: true
+               });
+           },this),1);
+        }
     });
 
 });

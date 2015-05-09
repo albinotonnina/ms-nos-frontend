@@ -17,21 +17,21 @@ define(function (require){
         model: RingModel,
 
         addRings: function (response){
+            var models = [];
             _.each(response, _.bind(function (responseItem){
-                this._add_new(responseItem);
+                var existingRingModel = this.findWhere({uuid: responseItem.agent.ring.uuid});
+                if(!existingRingModel){
+                    var model = new RingModel(this._getSanitizedResponse(responseItem));
+                    model.setAgent(responseItem);
+                    this.add(model);
+                    models.push(model);
+                } else{
+                    existingRingModel.setAgent(responseItem);
+                    models.push(existingRingModel);
+                }
             }, this));
-        },
 
-        /** @private */
-        _add_new: function (responseItem){
-            var existingRingModel = this.findWhere({uuid: responseItem.agent.ring.uuid});
-            if(!existingRingModel){
-                var model = new RingModel(this._getSanitizedResponse(responseItem));
-                this.add(model);
-                model.addAgent(responseItem);
-            } else{
-                existingRingModel.addAgent(responseItem);
-            }
+            this.remove(_.difference(this.models, models));
         },
 
         /** @private */
@@ -42,7 +42,10 @@ define(function (require){
                 location: {
                     country: response.agent.ring.location.country ? response.agent.ring.location.country.name : 'Ring',
                     city: response.agent.ring.location.city ? response.agent.ring.location.city.name : '',
-                    gps: response.agent.ring.location.gps ? response.agent.ring.location.gps : {latitude:0,longitude:0}
+                    gps: response.agent.ring.location.gps ? response.agent.ring.location.gps : {
+                        latitude: 0,
+                        longitude: 0
+                    }
                 }
             };
         }

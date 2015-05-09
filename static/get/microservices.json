@@ -2,817 +2,5201 @@
   {
     "agent": {
       "ring": {
-        "uuid": "007e5800-5b00-0000-0000-000000000020",
+        "uuid": "646b72cd-1c2d-44fe-9657-e869de034991",
         "location": {
-          "continent": {
-            "type": "CONTINENT",
-            "name": "Asia",
-            "code": "AS"
-          },
-          "country": {
-            "type": "COUNTRY",
-            "name": "Singapore",
-            "code": "SG"
-          },
-          "city": {
-            "type": "CITY",
-            "name": "Singapore",
-            "code": "1880252"
-          },
-          "precision": 11,
+          "country": {"name": "Armenia"},
+          "region": {"name": "Washington"},
+          "city": {"name": "East Edmondville"},
           "gps": {
-            "latitude": 1.2931,
-            "longitude": 103.8558
+            "latitude": "2.8730",
+            "longitude": "85.1243"
           }
         }
       },
-      "endpoints": [
-        {
-          "type": "UDP",
-          "network": {
-            "address": [
-              52,
-              74,
-              88,
-              91
-            ],
-            "prefix": 32
-          },
-          "port": 0
-        },
-        {
-          "url": "http://52.74.88.91:9991/msnos",
-          "type": "HTTP",
-          "network": {
-            "address": [
-              52,
-              74,
-              88,
-              91
-            ],
-            "prefix": 32
-          },
-          "port": 9991
-        }
-      ],
-      "iden": {
-        "type": "AGT",
-        "uuid": "a01dd47e-a58d-408f-ae87-fdd7db82fc4f"
-      },
-      "sequencer": {
-        "value": 0
-      },
-      "accessTime": {
-        "value": 1430758449849
-      }
+      "iden": {"uuid": "d91ebc1e-bb85-4589-b4e2-d0962486e7fe"},
+      "accessTime": {"value": 1430758449840}
     },
-    "name": "Pore",
+    "name": "Friesen, Erdman and Gutkowski",
     "apis": [
       {
-        "path": "/wassup",
-        "host": "52.74.88.91",
+        "path": "/online",
+        "host": "244.7.250.27",
         "port": 9991,
-        "sticky": false,
-        "type": "PUB",
-        "priority": 0,
-        "faulty":1,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/msnos",
-        "host": "52.74.88.91",
-        "port": 9991,
-        "sticky": false,
         "type": "MHT",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
+        "faulty": 1
       },
       {
-        "path": "/hello",
-        "host": "52.74.88.91",
+        "path": "/optical",
+        "host": "244.7.250.27",
         "port": 9991,
-        "sticky": false,
-        "type": "PUB",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
+        "type": "MHT",
+        "faulty": 1
       },
       {
-        "path": "/health",
-        "host": "52.74.88.91",
+        "path": "/digital",
+        "host": "244.7.250.27",
         "port": 9991,
-        "sticky": false,
         "type": "HCK",
-        "priority": 0,
-        "faulty":1,
-        "tempFaults": {
-          "value": 0
-        }
+        "faulty": 1
+      },
+      {
+        "path": "/solid state",
+        "host": "244.7.250.27",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
       }
     ],
-    "faulty": {
-      "value": 0
-    },
-    "lastUpdated": {
-      "value": 1430758304849
-    },
-    "lastChecked": {
-      "value": 1430758449849
-    },
-    "location": {
-      "continent": {
-        "type": "CONTINENT",
-        "name": "Asia",
-        "code": "AS"
-      },
-      "country": {
-        "type": "COUNTRY",
-        "name": "Singapore",
-        "code": "SG"
-      },
-      "city": {
-        "type": "CITY",
-        "name": "Singapore",
-        "code": "1880252"
-      },
-      "precision": 11,
-      "gps": {
-        "latitude": 1.2931,
-        "longitude": 103.8558
-      }
-    }
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
   },
   {
     "agent": {
       "ring": {
-        "uuid": "00741400-3100-0000-0000-000000000020",
+        "uuid": "9368a512-aaea-434f-8f12-b61df5993f5b",
         "location": {
-          "continent": {
-            "type": "CONTINENT",
-            "name": "Oceania",
-            "code": "OC"
-          },
-          "country": {
-            "type": "COUNTRY",
-            "name": "Australia",
-            "code": "AU"
-          },
-          "region": {
-            "type": "REGION",
-            "name": "NewSouthWales",
-            "code": "NSW"
-          },
-          "city": {
-            "type": "CITY",
-            "name": "Sydney",
-            "code": "2147714"
-          },
-          "precision": 15,
+          "country": {"name": "Dominica"},
+          "region": {"name": "Arizona"},
+          "city": {"name": "Ornmouth"},
           "gps": {
-            "latitude": -33.8666,
-            "longitude": 151.2082
+            "latitude": "73.3643",
+            "longitude": "-162.5835"
           }
         }
       },
-      "endpoints": [
-        {
-          "type": "UDP",
-          "network": {
-            "address": [
-              52,
-              64,
-              20,
-              49
-            ],
-            "prefix": 32
-          },
-          "port": 0
-        },
-        {
-          "url": "http://52.64.20.49:9992/msnos",
-          "type": "HTTP",
-          "network": {
-            "address": [
-              52,
-              64,
-              20,
-              49
-            ],
-            "prefix": 32
-          },
-          "port": 9992
-        }
-      ],
-      "iden": {
-        "type": "AGT",
-        "uuid": "2c177618-4cac-419f-86a9-32d883d63f19"
-      },
-      "sequencer": {
-        "value": 0
-      },
-      "accessTime": {
-        "value": 1430758449848
-      }
+      "iden": {"uuid": "fcfe2de6-e61c-4e8b-8087-c9556b3115e7"},
+      "accessTime": {"value": 1430758449840}
     },
-    "name": "Syd-two",
+    "name": "Durgan and Sons",
     "apis": [
       {
-        "path": "/msnos",
-        "host": "52.64.20.49",
-        "port": 9992,
-        "sticky": false,
-        "type": "MHT",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/wassup",
-        "host": "52.64.20.49",
-        "port": 9992,
-        "sticky": false,
-        "type": "PUB",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/hello",
-        "host": "52.64.20.49",
-        "port": 9992,
-        "sticky": false,
-        "type": "PUB",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/health",
-        "host": "52.64.20.49",
-        "port": 9992,
-        "sticky": false,
+        "path": "/digital",
+        "host": "246.4.136.188",
+        "port": 9991,
         "type": "HCK",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
+        "faulty": 1
+      },
+      {
+        "path": "/wireless",
+        "host": "246.4.136.188",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/cross-platform",
+        "host": "246.4.136.188",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/bluetooth",
+        "host": "246.4.136.188",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
       }
     ],
-    "faulty": {
-      "value": 0
-    },
-    "lastUpdated": {
-      "value": 1430758439839
-    },
-    "lastChecked": {
-      "value": 1430758449848
-    },
-    "location": {
-      "continent": {
-        "type": "CONTINENT",
-        "name": "Oceania",
-        "code": "OC"
-      },
-      "country": {
-        "type": "COUNTRY",
-        "name": "Australia",
-        "code": "AU"
-      },
-      "region": {
-        "type": "REGION",
-        "name": "NewSouthWales",
-        "code": "NSW"
-      },
-      "city": {
-        "type": "CITY",
-        "name": "Sydney",
-        "code": "2147714"
-      },
-      "precision": 15,
-      "gps": {
-        "latitude": -33.8666,
-        "longitude": 151.2082
-      }
-    }
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
   },
   {
     "agent": {
       "ring": {
-        "uuid": "00f9c400-6200-0000-0000-000000000020",
+        "uuid": "84b3352b-54c4-4ee0-ac0d-93481adc2b65",
         "location": {
-          "continent": {
-            "type": "CONTINENT",
-            "name": "Europe",
-            "code": "EU"
-          },
-          "country": {
-            "type": "COUNTRY",
-            "name": "Ireland",
-            "code": "IE"
-          },
-          "region": {
-            "type": "REGION",
-            "name": "DublinCity",
-            "code": "7778677"
-          },
-          "city": {
-            "type": "CITY",
-            "name": "Dublin",
-            "code": "2964574"
-          },
-          "precision": 15,
+          "country": {"name": "Saudi Arabia"},
+          "region": {"name": "Pennsylvania"},
+          "city": {"name": "Eraside"},
           "gps": {
-            "latitude": 53.3331,
-            "longitude": -6.2489
+            "latitude": "43.3085",
+            "longitude": "172.8692"
           }
         }
       },
-      "endpoints": [
-        {
-          "url": "http://54.195.196.98:9991/msnos",
-          "type": "HTTP",
-          "network": {
-            "address": [
-              54,
-              -61,
-              -60,
-              98
-            ],
-            "prefix": 32
-          },
-          "port": 9991
-        },
-        {
-          "type": "UDP",
-          "network": {
-            "address": [
-              54,
-              -61,
-              -60,
-              98
-            ],
-            "prefix": 32
-          },
-          "port": 0
-        }
-      ],
-      "iden": {
-        "type": "AGT",
-        "uuid": "3765a8c0-1ed0-463d-85bd-ead1d629b287"
-      },
-      "sequencer": {
-        "value": 0
-      },
-      "accessTime": {
-        "value": 1430758449852
-      }
+      "iden": {"uuid": "bb2a100f-14d4-405b-8ed5-fb7b5cb40265"},
+      "accessTime": {"value": 1430758449840}
     },
-    "name": "Lon",
+    "name": "Beahan Inc",
     "apis": [
       {
-        "path": "/msnos",
-        "host": "54.195.196.98",
+        "path": "/mobile",
+        "host": "235.34.71.181",
         "port": 9991,
-        "sticky": false,
-        "type": "MHT",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
+        "type": "PUB",
+        "faulty": 1
       },
       {
-        "path": "/health",
-        "host": "54.195.196.98",
+        "path": "/optical",
+        "host": "235.34.71.181",
         "port": 9991,
-        "sticky": false,
         "type": "HCK",
-        "priority": 0,
-        "tempFaults": {
-          "value": 0
-        }
+        "faulty": 0
       },
       {
-        "path": "/wassup",
-        "host": "54.195.196.98",
+        "path": "/wireless",
+        "host": "235.34.71.181",
         "port": 9991,
-        "sticky": false,
-        "type": "PUB",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/hello",
-        "host": "54.195.196.98",
-        "port": 9991,
-        "sticky": false,
-        "type": "PUB",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
-      }
-    ],
-    "faulty": {
-      "value": 0
-    },
-    "lastUpdated": {
-      "value": 1430758449852
-    },
-    "lastChecked": {
-      "value": 1430758419860
-    },
-    "location": {
-      "continent": {
-        "type": "CONTINENT",
-        "name": "Europe",
-        "code": "EU"
-      },
-      "country": {
-        "type": "COUNTRY",
-        "name": "Ireland",
-        "code": "IE"
-      },
-      "region": {
-        "type": "REGION",
-        "name": "DublinCity",
-        "code": "7778677"
-      },
-      "city": {
-        "type": "CITY",
-        "name": "Dublin",
-        "code": "2964574"
-      },
-      "precision": 15,
-      "gps": {
-        "latitude": 53.3331,
-        "longitude": -6.2489
-      }
-    }
-  },
-  {
-    "agent": {
-      "ring": {
-        "uuid": "01680100-0700-0000-0000-000000000018",
-        "location": {
-          "precision": 0
-        }
-      },
-      "endpoints": [
-        {
-          "type": "UDP",
-          "network": {
-            "address": [
-              -64,
-              -88,
-              1,
-              7
-            ],
-            "prefix": 24
-          },
-          "port": 0
-        },
-        {
-          "url": "http://192.168.1.7:9991/msnos",
-          "type": "HTTP",
-          "network": {
-            "address": [
-              -64,
-              -88,
-              1,
-              7
-            ],
-            "prefix": 24
-          },
-          "port": 9991
-        }
-      ],
-      "iden": {
-        "type": "AGT",
-        "uuid": "8596b56b-a49e-4afc-b3a7-24d382aa552e"
-      },
-      "sequencer": {
-        "value": 0
-      },
-      "accessTime": {
-        "value": 1430758464841
-      }
-    },
-    "name": "Proxy",
-    "apis": [
-      {
-        "path": "/msnos",
-        "host": "192.168.1.7",
-        "port": 9991,
-        "sticky": false,
-        "type": "MHT",
-        "priority": 0,
-        "tempFaults": {
-          "value": 0
-        }
-      }
-    ],
-    "faulty": {
-      "value": 0
-    },
-    "lastUpdated": {
-      "value": 1430758289835
-    },
-    "lastChecked": {
-      "value": 1430758034842
-    },
-    "location": {
-      "precision": 0
-    }
-  },
-  {
-    "agent": {
-      "ring": {
-        "uuid": "01680100-0700-0000-0000-000000000018",
-        "location": {
-          "precision": 0
-        }
-      },
-      "endpoints": [
-        {
-          "url": "http://192.168.1.7:8889/msnos",
-          "type": "HTTP",
-          "network": {
-            "address": [
-              -64,
-              -88,
-              1,
-              7
-            ],
-            "prefix": 24
-          },
-          "port": 8889
-        },
-        {
-          "type": "UDP",
-          "network": {
-            "address": [
-              -64,
-              -88,
-              1,
-              7
-            ],
-            "prefix": 24
-          },
-          "port": 0
-        }
-      ],
-      "iden": {
-        "type": "AGT",
-        "uuid": "75cf8f53-3729-4443-8d63-b2288893c62f"
-      },
-      "sequencer": {
-        "value": 0
-      },
-      "accessTime": {
-        "value": 1430758359836
-      }
-    },
-    "name": "john",
-    "apis": [
-      {
-        "path": "/msnos",
-        "host": "192.168.1.7",
-        "port": 8889,
-        "sticky": false,
-        "type": "MHT",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/wassup",
-        "host": "192.168.1.7",
-        "port": 8889,
-        "sticky": false,
-        "type": "PUB",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/health",
-        "host": "192.168.1.7",
-        "port": 8889,
-        "sticky": false,
         "type": "HCK",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
+        "faulty": 1
       },
       {
-        "path": "/hello",
-        "host": "192.168.1.7",
-        "port": 8889,
-        "sticky": false,
+        "path": "/haptic",
+        "host": "235.34.71.181",
+        "port": 9991,
         "type": "PUB",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
+        "faulty": 0
       }
     ],
-    "faulty": {
-      "value": 1
-    },
-    "lastUpdated": {
-      "value": 1430758244836
-    },
-    "lastChecked": {
-      "value": 1430758384842
-    },
-    "location": {
-      "precision": 0
-    }
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
   },
   {
     "agent": {
       "ring": {
-        "uuid": "00741400-3100-0000-0000-000000000020",
+        "uuid": "bec96e72-3f6d-49f9-ada7-9ba5d3c40e74",
         "location": {
-          "continent": {
-            "type": "CONTINENT",
-            "name": "Oceania",
-            "code": "OC"
-          },
-          "country": {
-            "type": "COUNTRY",
-            "name": "Australia",
-            "code": "AU"
-          },
-          "region": {
-            "type": "REGION",
-            "name": "NewSouthWales",
-            "code": "NSW"
-          },
-          "city": {
-            "type": "CITY",
-            "name": "Sydney",
-            "code": "2147714"
-          },
-          "precision": 15,
+          "country": {"name": "Australia"},
+          "region": {"name": "Georgia"},
+          "city": {"name": "Port Stevie"},
           "gps": {
-            "latitude": -33.8666,
-            "longitude": 151.2082
+            "latitude": "4.3980",
+            "longitude": "178.4452"
           }
         }
       },
-      "endpoints": [
-        {
-          "type": "UDP",
-          "network": {
-            "address": [
-              52,
-              64,
-              20,
-              49
-            ],
-            "prefix": 32
-          },
-          "port": 0
-        },
-        {
-          "url": "http://52.64.20.49:9991/msnos",
-          "type": "HTTP",
-          "network": {
-            "address": [
-              52,
-              64,
-              20,
-              49
-            ],
-            "prefix": 32
-          },
-          "port": 9991
-        }
-      ],
-      "iden": {
-        "type": "AGT",
-        "uuid": "4b06807f-6fd0-4268-b8c0-495930a65da3"
-      },
-      "sequencer": {
-        "value": 0
-      },
-      "accessTime": {
-        "value": 1430758449840
-      }
+      "iden": {"uuid": "9b5cdd5a-eab2-44c0-8136-597137da4ab6"},
+      "accessTime": {"value": 1430758449840}
     },
-    "name": "Syd",
+    "name": "Frami and Sons",
     "apis": [
       {
-        "path": "/health",
-        "host": "52.64.20.49",
+        "path": "/back-end",
+        "host": "187.163.103.106",
         "port": 9991,
-        "sticky": false,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/mobile",
+        "host": "187.163.103.106",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/mobile",
+        "host": "187.163.103.106",
+        "port": 9991,
         "type": "HCK",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
+        "faulty": 1
       },
       {
-        "path": "/msnos",
-        "host": "52.64.20.49",
+        "path": "/cross-platform",
+        "host": "187.163.103.106",
         "port": 9991,
-        "sticky": false,
-        "type": "MHT",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/wassup",
-        "host": "52.64.20.49",
-        "port": 9991,
-        "sticky": false,
-        "type": "PUB",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/hello",
-        "host": "52.64.20.49",
-        "port": 9991,
-        "sticky": false,
-        "type": "PUB",
-        "priority": 0,
-        "faulty":0,
-        "tempFaults": {
-          "value": 0
-        }
+        "type": "HCK",
+        "faulty": 1
       }
     ],
-    "faulty": {
-      "value": 0
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "2bbfd919-9b11-42ae-8cec-30c636733ac9",
+        "location": {
+          "country": {"name": "Canada"},
+          "region": {"name": "Colorado"},
+          "city": {"name": "South Izaiahhaven"},
+          "gps": {
+            "latitude": "48.7738",
+            "longitude": "-164.0834"
+          }
+        }
+      },
+      "iden": {"uuid": "fc1aaf6a-1b8e-49ca-a830-fd9eb74215a7"},
+      "accessTime": {"value": 1430758449840}
     },
-    "lastUpdated": {
-      "value": 1430758464838
-    },
-    "lastChecked": {
-      "value": 1430758449840
-    },
-    "location": {
-      "continent": {
-        "type": "CONTINENT",
-        "name": "Oceania",
-        "code": "OC"
+    "name": "Schmeler-Jerde",
+    "apis": [
+      {
+        "path": "/bluetooth",
+        "host": "126.227.64.136",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
       },
-      "country": {
-        "type": "COUNTRY",
-        "name": "Australia",
-        "code": "AU"
+      {
+        "path": "/bluetooth",
+        "host": "126.227.64.136",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
       },
-      "region": {
-        "type": "REGION",
-        "name": "NewSouthWales",
-        "code": "NSW"
+      {
+        "path": "/mobile",
+        "host": "126.227.64.136",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
       },
-      "city": {
-        "type": "CITY",
-        "name": "Sydney",
-        "code": "2147714"
-      },
-      "precision": 15,
-      "gps": {
-        "latitude": -33.8666,
-        "longitude": 151.2082
+      {
+        "path": "/online",
+        "host": "126.227.64.136",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
       }
-    }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "a28e923b-2ae1-4d29-90c5-2b63a43bc19d",
+        "location": {
+          "country": {"name": "Oman"},
+          "region": {"name": "New Hampshire"},
+          "city": {"name": "West Amyaton"},
+          "gps": {
+            "latitude": "-31.1719",
+            "longitude": "8.2693"
+          }
+        }
+      },
+      "iden": {"uuid": "52ddd4f9-bc08-427a-b289-ecf238522024"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Tromp, Funk and Heidenreich",
+    "apis": [
+      {
+        "path": "/online",
+        "host": "109.21.91.24",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/back-end",
+        "host": "109.21.91.24",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/bluetooth",
+        "host": "109.21.91.24",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/neural",
+        "host": "109.21.91.24",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "994a9bfd-98a4-40bc-9f36-aebf28641c01",
+        "location": {
+          "country": {"name": "Madagascar"},
+          "region": {"name": "Michigan"},
+          "city": {"name": "South Fridaton"},
+          "gps": {
+            "latitude": "-15.2906",
+            "longitude": "-52.4708"
+          }
+        }
+      },
+      "iden": {"uuid": "ac95e397-e823-467d-a945-c0392b0b27ef"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Maggio-Deckow",
+    "apis": [
+      {
+        "path": "/solid state",
+        "host": "24.138.65.160",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/primary",
+        "host": "24.138.65.160",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/primary",
+        "host": "24.138.65.160",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/1080p",
+        "host": "24.138.65.160",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "e9fd9a22-ed59-46e1-85dd-b1c76234728b",
+        "location": {
+          "country": {"name": "Russian Federation"},
+          "region": {"name": "Wisconsin"},
+          "city": {"name": "North Borismouth"},
+          "gps": {
+            "latitude": "-31.0108",
+            "longitude": "-99.0330"
+          }
+        }
+      },
+      "iden": {"uuid": "5a0e1dec-2fe1-4759-afcc-d9a7a5715a51"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Wisozk, Gutmann and Ebert",
+    "apis": [
+      {
+        "path": "/1080p",
+        "host": "207.28.66.148",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/wireless",
+        "host": "207.28.66.148",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/cross-platform",
+        "host": "207.28.66.148",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/neural",
+        "host": "207.28.66.148",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "b5eb6687-1585-423d-bb54-944fafb31db9",
+        "location": {
+          "country": {"name": "Armenia"},
+          "region": {"name": "Wisconsin"},
+          "city": {"name": "Wilsonchester"},
+          "gps": {
+            "latitude": "83.0803",
+            "longitude": "170.8274"
+          }
+        }
+      },
+      "iden": {"uuid": "8f174453-7421-49ba-be02-de56c648e9d2"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Grady and Sons",
+    "apis": [
+      {
+        "path": "/1080p",
+        "host": "122.33.195.229",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/haptic",
+        "host": "122.33.195.229",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/auxiliary",
+        "host": "122.33.195.229",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/neural",
+        "host": "122.33.195.229",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "615380ef-297c-4ee6-a957-891edfe0ebba",
+        "location": {
+          "country": {"name": "Libyan Arab Jamahiriya"},
+          "region": {"name": "Nevada"},
+          "city": {"name": "East Amarishire"},
+          "gps": {
+            "latitude": "45.5277",
+            "longitude": "42.1540"
+          }
+        }
+      },
+      "iden": {"uuid": "a6c7f5ea-1c49-4d1e-b1e7-67cd99fc9e06"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Mills-Morar",
+    "apis": [
+      {
+        "path": "/cross-platform",
+        "host": "246.85.72.45",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/virtual",
+        "host": "246.85.72.45",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/open-source",
+        "host": "246.85.72.45",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/virtual",
+        "host": "246.85.72.45",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "aec11642-709d-4456-b8f8-4df0d01c4b46",
+        "location": {
+          "country": {"name": "British Indian Ocean Territory (Chagos Archipelago)"},
+          "region": {"name": "Arizona"},
+          "city": {"name": "Mikaylastad"},
+          "gps": {
+            "latitude": "16.8513",
+            "longitude": "-136.3013"
+          }
+        }
+      },
+      "iden": {"uuid": "c25ed3be-aa93-4d2a-bde9-3389c95c450d"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Kuhlman Group",
+    "apis": [
+      {
+        "path": "/virtual",
+        "host": "96.20.95.223",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/virtual",
+        "host": "96.20.95.223",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/neural",
+        "host": "96.20.95.223",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/multi-byte",
+        "host": "96.20.95.223",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "785a0fc5-c1f9-487a-897c-7544d34593da",
+        "location": {
+          "country": {"name": "Jamaica"},
+          "region": {"name": "Mississippi"},
+          "city": {"name": "North Idella"},
+          "gps": {
+            "latitude": "-36.0059",
+            "longitude": "-12.5076"
+          }
+        }
+      },
+      "iden": {"uuid": "2fc78943-f9a9-4e81-bfa7-e08e47829c9e"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Will Group",
+    "apis": [
+      {
+        "path": "/auxiliary",
+        "host": "157.64.110.168",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/open-source",
+        "host": "157.64.110.168",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/cross-platform",
+        "host": "157.64.110.168",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/haptic",
+        "host": "157.64.110.168",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "a3530340-7174-435b-91d3-dc2ac9ece453",
+        "location": {
+          "country": {"name": "Cape Verde"},
+          "region": {"name": "Montana"},
+          "city": {"name": "North Ernestinestad"},
+          "gps": {
+            "latitude": "57.9711",
+            "longitude": "103.5249"
+          }
+        }
+      },
+      "iden": {"uuid": "81857746-113a-4e58-bfbb-608e84b069d4"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Zulauf-Conn",
+    "apis": [
+      {
+        "path": "/neural",
+        "host": "249.39.92.153",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/back-end",
+        "host": "249.39.92.153",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/haptic",
+        "host": "249.39.92.153",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/online",
+        "host": "249.39.92.153",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "fd20144b-b59a-4353-8246-8478957b572d",
+        "location": {
+          "country": {"name": "Turks and Caicos Islands"},
+          "region": {"name": "Kentucky"},
+          "city": {"name": "Port Ashtyn"},
+          "gps": {
+            "latitude": "16.7209",
+            "longitude": "-53.6831"
+          }
+        }
+      },
+      "iden": {"uuid": "3d942d46-3430-462a-bf6d-915bb24dd9fd"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Kling, Pollich and Parisian",
+    "apis": [
+      {
+        "path": "/solid state",
+        "host": "108.164.148.100",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/multi-byte",
+        "host": "108.164.148.100",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/cross-platform",
+        "host": "108.164.148.100",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/neural",
+        "host": "108.164.148.100",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "9368a512-aaea-434f-8f12-b61df5993f5b",
+        "location": {
+          "country": {"name": "Austria"},
+          "region": {"name": "California"},
+          "city": {"name": "West Jose"},
+          "gps": {
+            "latitude": "12.7070",
+            "longitude": "-131.9220"
+          }
+        }
+      },
+      "iden": {"uuid": "69dabdc1-20d5-425d-aef4-a51bb32baa9d"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Hudson, Quigley and Nitzsche",
+    "apis": [
+      {
+        "path": "/wireless",
+        "host": "198.240.53.31",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/primary",
+        "host": "198.240.53.31",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/bluetooth",
+        "host": "198.240.53.31",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/bluetooth",
+        "host": "198.240.53.31",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "3fe46374-7ebf-42bd-8aec-acefd6bc8593",
+        "location": {
+          "country": {"name": "Indonesia"},
+          "region": {"name": "Connecticut"},
+          "city": {"name": "Sengerfort"},
+          "gps": {
+            "latitude": "66.0055",
+            "longitude": "-155.8111"
+          }
+        }
+      },
+      "iden": {"uuid": "26d2d414-11d4-4045-8539-ae83577b31ab"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Greenholt, Borer and Luettgen",
+    "apis": [
+      {
+        "path": "/solid state",
+        "host": "105.196.185.212",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/open-source",
+        "host": "105.196.185.212",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/redundant",
+        "host": "105.196.185.212",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/mobile",
+        "host": "105.196.185.212",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "aec11642-709d-4456-b8f8-4df0d01c4b46",
+        "location": {
+          "country": {"name": "United Kingdom"},
+          "region": {"name": "Nebraska"},
+          "city": {"name": "Keelingport"},
+          "gps": {
+            "latitude": "-52.9353",
+            "longitude": "-85.0880"
+          }
+        }
+      },
+      "iden": {"uuid": "ac99d006-1007-4733-8398-e9225e80524e"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Eichmann Inc",
+    "apis": [
+      {
+        "path": "/solid state",
+        "host": "19.117.209.194",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/digital",
+        "host": "19.117.209.194",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/mobile",
+        "host": "19.117.209.194",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/cross-platform",
+        "host": "19.117.209.194",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "e9fd9a22-ed59-46e1-85dd-b1c76234728b",
+        "location": {
+          "country": {"name": "Jordan"},
+          "region": {"name": "Oklahoma"},
+          "city": {"name": "South Alishaton"},
+          "gps": {
+            "latitude": "42.6975",
+            "longitude": "29.5672"
+          }
+        }
+      },
+      "iden": {"uuid": "215cf822-d074-43e1-8249-7cd63c973312"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Hauck and Daughters",
+    "apis": [
+      {
+        "path": "/auxiliary",
+        "host": "159.63.101.169",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/optical",
+        "host": "159.63.101.169",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/optical",
+        "host": "159.63.101.169",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/haptic",
+        "host": "159.63.101.169",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "2e0fd244-217a-42d9-a605-8daa1c859a4b",
+        "location": {
+          "country": {"name": "Monaco"},
+          "region": {"name": "Nebraska"},
+          "city": {"name": "Antoniofurt"},
+          "gps": {
+            "latitude": "-75.2680",
+            "longitude": "-73.5837"
+          }
+        }
+      },
+      "iden": {"uuid": "4740825a-2994-46e4-9ac4-90c4b9ef3d55"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Green-Schaefer",
+    "apis": [
+      {
+        "path": "/open-source",
+        "host": "190.6.88.80",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/haptic",
+        "host": "190.6.88.80",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/solid state",
+        "host": "190.6.88.80",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/haptic",
+        "host": "190.6.88.80",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "8c496960-f003-4843-a164-125a219e6693",
+        "location": {
+          "country": {"name": "Russian Federation"},
+          "region": {"name": "Montana"},
+          "city": {"name": "West Dexterburgh"},
+          "gps": {
+            "latitude": "-68.5672",
+            "longitude": "-63.2806"
+          }
+        }
+      },
+      "iden": {"uuid": "f0aa91d0-cc2b-4e74-a6ba-c9757501155c"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Auer and Daughters",
+    "apis": [
+      {
+        "path": "/multi-byte",
+        "host": "2.210.5.124",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/1080p",
+        "host": "2.210.5.124",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/solid state",
+        "host": "2.210.5.124",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/online",
+        "host": "2.210.5.124",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "3e6dc876-f5ef-4b20-a120-465391b99c43",
+        "location": {
+          "country": {"name": "China"},
+          "region": {"name": "Virginia"},
+          "city": {"name": "North Elias"},
+          "gps": {
+            "latitude": "44.4466",
+            "longitude": "178.6413"
+          }
+        }
+      },
+      "iden": {"uuid": "b7a14022-0cf6-4296-a5b4-ec9a7cad1b27"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Halvorson, Greenholt and Hyatt",
+    "apis": [
+      {
+        "path": "/mobile",
+        "host": "2.252.121.221",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/auxiliary",
+        "host": "2.252.121.221",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/primary",
+        "host": "2.252.121.221",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/open-source",
+        "host": "2.252.121.221",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "382619eb-4323-4ecc-bc40-125f6a67deea",
+        "location": {
+          "country": {"name": "Anguilla"},
+          "region": {"name": "Arkansas"},
+          "city": {"name": "Koepptown"},
+          "gps": {
+            "latitude": "-34.6635",
+            "longitude": "-35.9027"
+          }
+        }
+      },
+      "iden": {"uuid": "70300ddf-c4ba-40bd-84c7-00292d0e79fd"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Rippin and Daughters",
+    "apis": [
+      {
+        "path": "/auxiliary",
+        "host": "59.67.253.148",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/wireless",
+        "host": "59.67.253.148",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/1080p",
+        "host": "59.67.253.148",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/haptic",
+        "host": "59.67.253.148",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "966e9815-0edf-4b76-93a1-ac13a9ab7706",
+        "location": {
+          "country": {"name": "Switzerland"},
+          "region": {"name": "Alabama"},
+          "city": {"name": "Smithville"},
+          "gps": {
+            "latitude": "-83.7279",
+            "longitude": "98.3018"
+          }
+        }
+      },
+      "iden": {"uuid": "4431b986-fbea-43ed-92a2-6fdb7adbb625"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Bergstrom-Hane",
+    "apis": [
+      {
+        "path": "/mobile",
+        "host": "204.177.61.249",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/online",
+        "host": "204.177.61.249",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/mobile",
+        "host": "204.177.61.249",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/wireless",
+        "host": "204.177.61.249",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "42fbf74d-f292-4064-a261-9607cc43fef5",
+        "location": {
+          "country": {"name": "Reunion"},
+          "region": {"name": "Wisconsin"},
+          "city": {"name": "Annetteshire"},
+          "gps": {
+            "latitude": "-17.6472",
+            "longitude": "-7.5330"
+          }
+        }
+      },
+      "iden": {"uuid": "e0021f71-da4b-4e37-91ed-db7c82efb1e3"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Thiel and Daughters",
+    "apis": [
+      {
+        "path": "/bluetooth",
+        "host": "115.136.83.95",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/neural",
+        "host": "115.136.83.95",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/multi-byte",
+        "host": "115.136.83.95",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/multi-byte",
+        "host": "115.136.83.95",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "994a9bfd-98a4-40bc-9f36-aebf28641c01",
+        "location": {
+          "country": {"name": "Morocco"},
+          "region": {"name": "Arizona"},
+          "city": {"name": "Lueilwitztown"},
+          "gps": {
+            "latitude": "25.6592",
+            "longitude": "-110.4310"
+          }
+        }
+      },
+      "iden": {"uuid": "0fc50d70-728f-4e3b-add2-128cc834c8c8"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Hettinger-Sanford",
+    "apis": [
+      {
+        "path": "/haptic",
+        "host": "79.56.249.149",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/neural",
+        "host": "79.56.249.149",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/mobile",
+        "host": "79.56.249.149",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/auxiliary",
+        "host": "79.56.249.149",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "59cc1f57-b200-4dda-ba04-45cce6fb246a",
+        "location": {
+          "country": {"name": "Isle of Man"},
+          "region": {"name": "Delaware"},
+          "city": {"name": "West Lemuel"},
+          "gps": {
+            "latitude": "28.5166",
+            "longitude": "-140.6333"
+          }
+        }
+      },
+      "iden": {"uuid": "c635744c-3f7a-4547-b652-1c41fe9fe85b"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Koepp, Balistreri and Kohler",
+    "apis": [
+      {
+        "path": "/digital",
+        "host": "61.130.239.207",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/digital",
+        "host": "61.130.239.207",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/wireless",
+        "host": "61.130.239.207",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/auxiliary",
+        "host": "61.130.239.207",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "056cf2c0-4f9c-4056-be95-53d256a0a3a7",
+        "location": {
+          "country": {"name": "Bolivia"},
+          "region": {"name": "West Virginia"},
+          "city": {"name": "North Curt"},
+          "gps": {
+            "latitude": "11.9681",
+            "longitude": "-141.4978"
+          }
+        }
+      },
+      "iden": {"uuid": "31634129-e339-41d3-854f-e235cc3879cd"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Leffler-Rutherford",
+    "apis": [
+      {
+        "path": "/bluetooth",
+        "host": "34.38.122.231",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/cross-platform",
+        "host": "34.38.122.231",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/solid state",
+        "host": "34.38.122.231",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/multi-byte",
+        "host": "34.38.122.231",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "bec96e72-3f6d-49f9-ada7-9ba5d3c40e74",
+        "location": {
+          "country": {"name": "Seychelles"},
+          "region": {"name": "Mississippi"},
+          "city": {"name": "Kimberlyview"},
+          "gps": {
+            "latitude": "-13.4061",
+            "longitude": "-147.6466"
+          }
+        }
+      },
+      "iden": {"uuid": "fe2c3994-b45b-4eb9-8fc4-44d89b996d93"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Ward-Beier",
+    "apis": [
+      {
+        "path": "/neural",
+        "host": "163.148.176.167",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/wireless",
+        "host": "163.148.176.167",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/optical",
+        "host": "163.148.176.167",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/primary",
+        "host": "163.148.176.167",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "2bbfd919-9b11-42ae-8cec-30c636733ac9",
+        "location": {
+          "country": {"name": "Jordan"},
+          "region": {"name": "Tennessee"},
+          "city": {"name": "Chesleymouth"},
+          "gps": {
+            "latitude": "-50.4702",
+            "longitude": "112.6066"
+          }
+        }
+      },
+      "iden": {"uuid": "88b74b5d-6062-4ff2-8055-a675b0ca5d83"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Wiegand-Wiza",
+    "apis": [
+      {
+        "path": "/cross-platform",
+        "host": "244.251.178.196",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/neural",
+        "host": "244.251.178.196",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/multi-byte",
+        "host": "244.251.178.196",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/open-source",
+        "host": "244.251.178.196",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "056cf2c0-4f9c-4056-be95-53d256a0a3a7",
+        "location": {
+          "country": {"name": "Honduras"},
+          "region": {"name": "Michigan"},
+          "city": {"name": "Heathcotestad"},
+          "gps": {
+            "latitude": "-53.5527",
+            "longitude": "-116.2889"
+          }
+        }
+      },
+      "iden": {"uuid": "031b4761-436d-40eb-94d6-9702270b2855"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Purdy-Bartoletti",
+    "apis": [
+      {
+        "path": "/neural",
+        "host": "70.39.194.187",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/primary",
+        "host": "70.39.194.187",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/redundant",
+        "host": "70.39.194.187",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/redundant",
+        "host": "70.39.194.187",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "869b2797-5f27-45ed-98bf-364fb92d603c",
+        "location": {
+          "country": {"name": "Burundi"},
+          "region": {"name": "North Carolina"},
+          "city": {"name": "Brekkefurt"},
+          "gps": {
+            "latitude": "-14.3664",
+            "longitude": "141.1179"
+          }
+        }
+      },
+      "iden": {"uuid": "544c310d-7bce-4779-904a-6ac94a439407"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Robel, Terry and Dicki",
+    "apis": [
+      {
+        "path": "/cross-platform",
+        "host": "29.207.56.31",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/virtual",
+        "host": "29.207.56.31",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/online",
+        "host": "29.207.56.31",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/auxiliary",
+        "host": "29.207.56.31",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "856b7b79-9944-40cd-b95b-117a5c5c9107",
+        "location": {
+          "country": {"name": "Western Sahara"},
+          "region": {"name": "Kansas"},
+          "city": {"name": "Port Elisabeth"},
+          "gps": {
+            "latitude": "32.5575",
+            "longitude": "-93.0191"
+          }
+        }
+      },
+      "iden": {"uuid": "95c3851c-0ffe-46fc-8d8e-2499bea3ac24"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Kulas and Daughters",
+    "apis": [
+      {
+        "path": "/1080p",
+        "host": "85.76.123.126",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/solid state",
+        "host": "85.76.123.126",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/digital",
+        "host": "85.76.123.126",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/back-end",
+        "host": "85.76.123.126",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "352f6bda-c62e-40d1-a4a8-cd363a6b9036",
+        "location": {
+          "country": {"name": "Senegal"},
+          "region": {"name": "Idaho"},
+          "city": {"name": "New Bradfordview"},
+          "gps": {
+            "latitude": "38.6497",
+            "longitude": "-163.9204"
+          }
+        }
+      },
+      "iden": {"uuid": "c2b3f52a-1241-4eca-b2eb-ce748ce84446"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Breitenberg, Purdy and Koch",
+    "apis": [
+      {
+        "path": "/neural",
+        "host": "131.124.71.193",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/bluetooth",
+        "host": "131.124.71.193",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/online",
+        "host": "131.124.71.193",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/haptic",
+        "host": "131.124.71.193",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "4feab25e-7f6b-4632-8bc4-b1f030e369b6",
+        "location": {
+          "country": {"name": "Rwanda"},
+          "region": {"name": "Oregon"},
+          "city": {"name": "Jaedenstad"},
+          "gps": {
+            "latitude": "88.4925",
+            "longitude": "115.0123"
+          }
+        }
+      },
+      "iden": {"uuid": "a51d3f2d-59bc-4060-a672-410a80a2d47d"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Effertz Inc",
+    "apis": [
+      {
+        "path": "/mobile",
+        "host": "150.2.179.55",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/digital",
+        "host": "150.2.179.55",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/primary",
+        "host": "150.2.179.55",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/solid state",
+        "host": "150.2.179.55",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "856b7b79-9944-40cd-b95b-117a5c5c9107",
+        "location": {
+          "country": {"name": "Slovakia (Slovak Republic)"},
+          "region": {"name": "North Carolina"},
+          "city": {"name": "Edentown"},
+          "gps": {
+            "latitude": "-46.9765",
+            "longitude": "117.8910"
+          }
+        }
+      },
+      "iden": {"uuid": "fd775e75-878b-469a-81e8-4589316eac5b"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Rowe and Sons",
+    "apis": [
+      {
+        "path": "/back-end",
+        "host": "237.35.90.57",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/primary",
+        "host": "237.35.90.57",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/online",
+        "host": "237.35.90.57",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/open-source",
+        "host": "237.35.90.57",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "fb5fb2d0-0095-480f-b445-21c49156707d",
+        "location": {
+          "country": {"name": "Chad"},
+          "region": {"name": "Indiana"},
+          "city": {"name": "Simeonview"},
+          "gps": {
+            "latitude": "-84.7954",
+            "longitude": "101.0271"
+          }
+        }
+      },
+      "iden": {"uuid": "e077a1d8-dcfe-4201-b369-b4eeb847a88f"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "O'Reilly, O'Conner and Kling",
+    "apis": [
+      {
+        "path": "/redundant",
+        "host": "28.179.218.103",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/haptic",
+        "host": "28.179.218.103",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/open-source",
+        "host": "28.179.218.103",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/cross-platform",
+        "host": "28.179.218.103",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "6bd706b3-3ca0-4d37-a0ba-b4069fc2f51e",
+        "location": {
+          "country": {"name": "Equatorial Guinea"},
+          "region": {"name": "North Dakota"},
+          "city": {"name": "New Shea"},
+          "gps": {
+            "latitude": "-80.8279",
+            "longitude": "-156.2574"
+          }
+        }
+      },
+      "iden": {"uuid": "223e191f-f29e-4bbc-8834-cd299dcc897a"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Zemlak, Kuphal and Nolan",
+    "apis": [
+      {
+        "path": "/auxiliary",
+        "host": "23.103.95.112",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/haptic",
+        "host": "23.103.95.112",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/cross-platform",
+        "host": "23.103.95.112",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/bluetooth",
+        "host": "23.103.95.112",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "966e9815-0edf-4b76-93a1-ac13a9ab7706",
+        "location": {
+          "country": {"name": "Lithuania"},
+          "region": {"name": "Washington"},
+          "city": {"name": "Hermanmouth"},
+          "gps": {
+            "latitude": "-21.1790",
+            "longitude": "-105.8980"
+          }
+        }
+      },
+      "iden": {"uuid": "3ef4c7ff-97a2-4e5d-9b6e-8fbf5d44d0f6"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Mertz, Beatty and Reinger",
+    "apis": [
+      {
+        "path": "/mobile",
+        "host": "104.49.58.71",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/bluetooth",
+        "host": "104.49.58.71",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/auxiliary",
+        "host": "104.49.58.71",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/redundant",
+        "host": "104.49.58.71",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "57128c83-4a21-4bdb-91c5-a39c753c7d37",
+        "location": {
+          "country": {"name": "South Georgia and the South Sandwich Islands"},
+          "region": {"name": "Illinois"},
+          "city": {"name": "Kertzmannmouth"},
+          "gps": {
+            "latitude": "-55.7805",
+            "longitude": "-148.0485"
+          }
+        }
+      },
+      "iden": {"uuid": "43095aed-dc2e-4163-96b4-d9a8d00b35b1"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Considine LLC",
+    "apis": [
+      {
+        "path": "/neural",
+        "host": "149.190.220.122",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/optical",
+        "host": "149.190.220.122",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/bluetooth",
+        "host": "149.190.220.122",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/online",
+        "host": "149.190.220.122",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "4feab25e-7f6b-4632-8bc4-b1f030e369b6",
+        "location": {
+          "country": {"name": "Niue"},
+          "region": {"name": "Washington"},
+          "city": {"name": "Carrollburgh"},
+          "gps": {
+            "latitude": "-36.4120",
+            "longitude": "41.4621"
+          }
+        }
+      },
+      "iden": {"uuid": "b42b4fcf-e95c-4efa-9095-8ca5af122bb1"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Reinger, Kunze and Beatty",
+    "apis": [
+      {
+        "path": "/online",
+        "host": "193.37.116.215",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/back-end",
+        "host": "193.37.116.215",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/mobile",
+        "host": "193.37.116.215",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/online",
+        "host": "193.37.116.215",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "ee4e9578-475f-4341-ab92-13189173d507",
+        "location": {
+          "country": {"name": "Australia"},
+          "region": {"name": "Vermont"},
+          "city": {"name": "Bruenton"},
+          "gps": {
+            "latitude": "-54.4546",
+            "longitude": "-16.3915"
+          }
+        }
+      },
+      "iden": {"uuid": "9b77e70c-58da-433e-822b-7208453da1b5"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Dietrich-Fahey",
+    "apis": [
+      {
+        "path": "/solid state",
+        "host": "66.198.83.31",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/online",
+        "host": "66.198.83.31",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/optical",
+        "host": "66.198.83.31",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/optical",
+        "host": "66.198.83.31",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "a28e923b-2ae1-4d29-90c5-2b63a43bc19d",
+        "location": {
+          "country": {"name": "Samoa"},
+          "region": {"name": "Texas"},
+          "city": {"name": "East Laurettaville"},
+          "gps": {
+            "latitude": "37.5626",
+            "longitude": "58.4752"
+          }
+        }
+      },
+      "iden": {"uuid": "247e8750-4348-4110-8a4b-bfdefe1c2ce5"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Towne LLC",
+    "apis": [
+      {
+        "path": "/haptic",
+        "host": "243.220.79.136",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/wireless",
+        "host": "243.220.79.136",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/wireless",
+        "host": "243.220.79.136",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/digital",
+        "host": "243.220.79.136",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "62b83a1b-3bec-49d6-85b5-323bb4a73589",
+        "location": {
+          "country": {"name": "Sao Tome and Principe"},
+          "region": {"name": "Washington"},
+          "city": {"name": "Jadenview"},
+          "gps": {
+            "latitude": "-74.1333",
+            "longitude": "138.6062"
+          }
+        }
+      },
+      "iden": {"uuid": "0527e570-0ab5-48c9-9c16-41f0c2fd4605"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Cruickshank-Reynolds",
+    "apis": [
+      {
+        "path": "/redundant",
+        "host": "6.209.2.155",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/optical",
+        "host": "6.209.2.155",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/online",
+        "host": "6.209.2.155",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/open-source",
+        "host": "6.209.2.155",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "4cf1ee83-580b-4eb7-8cac-fff777ea66d8",
+        "location": {
+          "country": {"name": "Reunion"},
+          "region": {"name": "Florida"},
+          "city": {"name": "New Jordy"},
+          "gps": {
+            "latitude": "-78.5561",
+            "longitude": "-7.3223"
+          }
+        }
+      },
+      "iden": {"uuid": "cbbb63e8-d034-4700-a568-902109666c7a"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Dach and Daughters",
+    "apis": [
+      {
+        "path": "/mobile",
+        "host": "101.142.111.47",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/back-end",
+        "host": "101.142.111.47",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/digital",
+        "host": "101.142.111.47",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/online",
+        "host": "101.142.111.47",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "9368a512-aaea-434f-8f12-b61df5993f5b",
+        "location": {
+          "country": {"name": "Sierra Leone"},
+          "region": {"name": "New Hampshire"},
+          "city": {"name": "South Neomaville"},
+          "gps": {
+            "latitude": "-1.3674",
+            "longitude": "-40.3699"
+          }
+        }
+      },
+      "iden": {"uuid": "3155c433-18d2-4242-b5f0-93d3911d059c"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Schiller-Hodkiewicz",
+    "apis": [
+      {
+        "path": "/back-end",
+        "host": "44.199.177.232",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/haptic",
+        "host": "44.199.177.232",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/multi-byte",
+        "host": "44.199.177.232",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/back-end",
+        "host": "44.199.177.232",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "615380ef-297c-4ee6-a957-891edfe0ebba",
+        "location": {
+          "country": {"name": "Syrian Arab Republic"},
+          "region": {"name": "Tennessee"},
+          "city": {"name": "Alekport"},
+          "gps": {
+            "latitude": "-86.5266",
+            "longitude": "154.4650"
+          }
+        }
+      },
+      "iden": {"uuid": "1b26b3af-f0da-43b6-bf30-602d1d35aa78"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Cremin LLC",
+    "apis": [
+      {
+        "path": "/digital",
+        "host": "8.211.144.118",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/open-source",
+        "host": "8.211.144.118",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/mobile",
+        "host": "8.211.144.118",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/online",
+        "host": "8.211.144.118",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "2e0fd244-217a-42d9-a605-8daa1c859a4b",
+        "location": {
+          "country": {"name": "Belarus"},
+          "region": {"name": "Washington"},
+          "city": {"name": "South Rahsaan"},
+          "gps": {
+            "latitude": "83.7050",
+            "longitude": "-129.6269"
+          }
+        }
+      },
+      "iden": {"uuid": "a83240a9-1f28-4df1-b1a4-b8d6ce286fe7"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Murazik, Flatley and Bartell",
+    "apis": [
+      {
+        "path": "/online",
+        "host": "190.3.43.129",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/online",
+        "host": "190.3.43.129",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/wireless",
+        "host": "190.3.43.129",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/wireless",
+        "host": "190.3.43.129",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "ee4e9578-475f-4341-ab92-13189173d507",
+        "location": {
+          "country": {"name": "Colombia"},
+          "region": {"name": "Delaware"},
+          "city": {"name": "Heberborough"},
+          "gps": {
+            "latitude": "-51.8581",
+            "longitude": "57.2458"
+          }
+        }
+      },
+      "iden": {"uuid": "336b8a03-b797-4a66-b4a9-75ed88aae178"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Harber-Runolfsson",
+    "apis": [
+      {
+        "path": "/online",
+        "host": "15.155.180.100",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/bluetooth",
+        "host": "15.155.180.100",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/back-end",
+        "host": "15.155.180.100",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/mobile",
+        "host": "15.155.180.100",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "4cf1ee83-580b-4eb7-8cac-fff777ea66d8",
+        "location": {
+          "country": {"name": "Mauritania"},
+          "region": {"name": "Alaska"},
+          "city": {"name": "Zoilaland"},
+          "gps": {
+            "latitude": "-56.4227",
+            "longitude": "-148.0364"
+          }
+        }
+      },
+      "iden": {"uuid": "3c440250-a934-4157-bbcb-8ceb00bd24ce"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Moore and Sons",
+    "apis": [
+      {
+        "path": "/optical",
+        "host": "60.131.98.68",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/haptic",
+        "host": "60.131.98.68",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/mobile",
+        "host": "60.131.98.68",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/online",
+        "host": "60.131.98.68",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "6bd706b3-3ca0-4d37-a0ba-b4069fc2f51e",
+        "location": {
+          "country": {"name": "United States Minor Outlying Islands"},
+          "region": {"name": "Montana"},
+          "city": {"name": "Romaguerachester"},
+          "gps": {
+            "latitude": "6.1782",
+            "longitude": "-94.3091"
+          }
+        }
+      },
+      "iden": {"uuid": "c858b718-74d0-472a-baf8-c13e55def8e3"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Mills-Jerde",
+    "apis": [
+      {
+        "path": "/digital",
+        "host": "240.37.235.127",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/back-end",
+        "host": "240.37.235.127",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/auxiliary",
+        "host": "240.37.235.127",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/virtual",
+        "host": "240.37.235.127",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "59cc1f57-b200-4dda-ba04-45cce6fb246a",
+        "location": {
+          "country": {"name": "Guinea-Bissau"},
+          "region": {"name": "Wisconsin"},
+          "city": {"name": "Port Lyricville"},
+          "gps": {
+            "latitude": "8.4653",
+            "longitude": "-120.2544"
+          }
+        }
+      },
+      "iden": {"uuid": "35446636-9f63-423c-bfd1-5ff3914dfede"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Blanda-Murazik",
+    "apis": [
+      {
+        "path": "/wireless",
+        "host": "225.208.242.183",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/cross-platform",
+        "host": "225.208.242.183",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/auxiliary",
+        "host": "225.208.242.183",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/multi-byte",
+        "host": "225.208.242.183",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "b5eb6687-1585-423d-bb54-944fafb31db9",
+        "location": {
+          "country": {"name": "Burkina Faso"},
+          "region": {"name": "Florida"},
+          "city": {"name": "Port Anissabury"},
+          "gps": {
+            "latitude": "15.6434",
+            "longitude": "7.4167"
+          }
+        }
+      },
+      "iden": {"uuid": "b72689ae-11d3-4990-a724-136319201da3"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Barrows LLC",
+    "apis": [
+      {
+        "path": "/digital",
+        "host": "66.187.54.187",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/optical",
+        "host": "66.187.54.187",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/mobile",
+        "host": "66.187.54.187",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/multi-byte",
+        "host": "66.187.54.187",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "33c52eb0-38b3-4c67-a484-e2e408520234",
+        "location": {
+          "country": {"name": "Dominica"},
+          "region": {"name": "Iowa"},
+          "city": {"name": "West Reeceborough"},
+          "gps": {
+            "latitude": "-70.1664",
+            "longitude": "59.9407"
+          }
+        }
+      },
+      "iden": {"uuid": "242cc0e4-9f71-43ec-a3a0-a33c660e67f2"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Crist-Reichel",
+    "apis": [
+      {
+        "path": "/neural",
+        "host": "112.245.145.219",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/open-source",
+        "host": "112.245.145.219",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/neural",
+        "host": "112.245.145.219",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/digital",
+        "host": "112.245.145.219",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "9bc0a42d-e5ac-4328-8ee5-1aaf51103597",
+        "location": {
+          "country": {"name": "Gabon"},
+          "region": {"name": "Louisiana"},
+          "city": {"name": "Lake Libbyville"},
+          "gps": {
+            "latitude": "-0.0316",
+            "longitude": "-54.4752"
+          }
+        }
+      },
+      "iden": {"uuid": "09ec2456-1775-47e2-a06b-b1d6d56e7e91"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Kulas-Donnelly",
+    "apis": [
+      {
+        "path": "/neural",
+        "host": "20.92.79.154",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/1080p",
+        "host": "20.92.79.154",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/open-source",
+        "host": "20.92.79.154",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/open-source",
+        "host": "20.92.79.154",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "8c496960-f003-4843-a164-125a219e6693",
+        "location": {
+          "country": {"name": "Norway"},
+          "region": {"name": "South Carolina"},
+          "city": {"name": "Rubiestad"},
+          "gps": {
+            "latitude": "8.3611",
+            "longitude": "98.6664"
+          }
+        }
+      },
+      "iden": {"uuid": "903f3395-fae5-40be-aba2-ffb45c03c57d"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Considine-Pacocha",
+    "apis": [
+      {
+        "path": "/back-end",
+        "host": "6.81.151.181",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/solid state",
+        "host": "6.81.151.181",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/neural",
+        "host": "6.81.151.181",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/redundant",
+        "host": "6.81.151.181",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "352f6bda-c62e-40d1-a4a8-cd363a6b9036",
+        "location": {
+          "country": {"name": "Tokelau"},
+          "region": {"name": "New Mexico"},
+          "city": {"name": "West Chloe"},
+          "gps": {
+            "latitude": "28.5794",
+            "longitude": "131.9646"
+          }
+        }
+      },
+      "iden": {"uuid": "0a0302e3-9f71-42bc-af99-acff63e4c32a"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Ledner, Block and Dicki",
+    "apis": [
+      {
+        "path": "/digital",
+        "host": "167.239.6.208",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/back-end",
+        "host": "167.239.6.208",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/wireless",
+        "host": "167.239.6.208",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/auxiliary",
+        "host": "167.239.6.208",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "015472c9-dbe1-4164-af55-77fafa45f2fc",
+        "location": {
+          "country": {"name": "Chad"},
+          "region": {"name": "Florida"},
+          "city": {"name": "Olsonshire"},
+          "gps": {
+            "latitude": "13.9593",
+            "longitude": "156.6260"
+          }
+        }
+      },
+      "iden": {"uuid": "892d5f1a-c8cb-4583-9fa1-6071acc3dcd7"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Yost Group",
+    "apis": [
+      {
+        "path": "/redundant",
+        "host": "179.227.79.170",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/multi-byte",
+        "host": "179.227.79.170",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/wireless",
+        "host": "179.227.79.170",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/cross-platform",
+        "host": "179.227.79.170",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "831670c2-ef51-47f4-977a-354124871425",
+        "location": {
+          "country": {"name": "Marshall Islands"},
+          "region": {"name": "New Mexico"},
+          "city": {"name": "Antoniettachester"},
+          "gps": {
+            "latitude": "-80.2489",
+            "longitude": "-71.7141"
+          }
+        }
+      },
+      "iden": {"uuid": "a2cff6b9-2f6a-4539-9381-13613e223ba5"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Zieme Inc",
+    "apis": [
+      {
+        "path": "/haptic",
+        "host": "243.7.209.195",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/multi-byte",
+        "host": "243.7.209.195",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/redundant",
+        "host": "243.7.209.195",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/solid state",
+        "host": "243.7.209.195",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "6cfdf2fb-dd8d-4886-9dc4-6b3555feb1a0",
+        "location": {
+          "country": {"name": "Jamaica"},
+          "region": {"name": "New York"},
+          "city": {"name": "Port Noebury"},
+          "gps": {
+            "latitude": "-58.4724",
+            "longitude": "-135.4236"
+          }
+        }
+      },
+      "iden": {"uuid": "ac8ee270-d130-410e-bcd0-0ab3079ec2ea"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Kreiger, Dibbert and Armstrong",
+    "apis": [
+      {
+        "path": "/virtual",
+        "host": "82.253.21.114",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/haptic",
+        "host": "82.253.21.114",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/redundant",
+        "host": "82.253.21.114",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/online",
+        "host": "82.253.21.114",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "4cf1ee83-580b-4eb7-8cac-fff777ea66d8",
+        "location": {
+          "country": {"name": "Rwanda"},
+          "region": {"name": "New Mexico"},
+          "city": {"name": "North Braulio"},
+          "gps": {
+            "latitude": "0.5790",
+            "longitude": "-144.5163"
+          }
+        }
+      },
+      "iden": {"uuid": "95fde61e-7278-45f8-989e-40ef4f6d7cfd"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Heidenreich Inc",
+    "apis": [
+      {
+        "path": "/mobile",
+        "host": "30.32.245.112",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/online",
+        "host": "30.32.245.112",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/1080p",
+        "host": "30.32.245.112",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/haptic",
+        "host": "30.32.245.112",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "6cfdf2fb-dd8d-4886-9dc4-6b3555feb1a0",
+        "location": {
+          "country": {"name": "Saint Barthelemy"},
+          "region": {"name": "Mississippi"},
+          "city": {"name": "South Anahihaven"},
+          "gps": {
+            "latitude": "-18.0756",
+            "longitude": "-158.4422"
+          }
+        }
+      },
+      "iden": {"uuid": "202ed1ed-aca3-4e30-b9ec-df12cbb54c26"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Thompson, Schmidt and Grady",
+    "apis": [
+      {
+        "path": "/cross-platform",
+        "host": "57.217.187.197",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/haptic",
+        "host": "57.217.187.197",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/online",
+        "host": "57.217.187.197",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/open-source",
+        "host": "57.217.187.197",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "4cf1ee83-580b-4eb7-8cac-fff777ea66d8",
+        "location": {
+          "country": {"name": "Papua New Guinea"},
+          "region": {"name": "Alaska"},
+          "city": {"name": "Lake Juwanfort"},
+          "gps": {
+            "latitude": "-79.7073",
+            "longitude": "69.8217"
+          }
+        }
+      },
+      "iden": {"uuid": "4c7e90c0-2f42-4f91-a93b-e09c6549eef4"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Torphy-Leuschke",
+    "apis": [
+      {
+        "path": "/wireless",
+        "host": "247.174.240.56",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/mobile",
+        "host": "247.174.240.56",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/virtual",
+        "host": "247.174.240.56",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/online",
+        "host": "247.174.240.56",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "fe78d384-4998-4bc7-94d7-6ebd5c351615",
+        "location": {
+          "country": {"name": "Afghanistan"},
+          "region": {"name": "Louisiana"},
+          "city": {"name": "East Aliyafort"},
+          "gps": {
+            "latitude": "-7.5110",
+            "longitude": "-122.4476"
+          }
+        }
+      },
+      "iden": {"uuid": "96e98fd6-1e6f-4f93-8687-d101b84d5e9d"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Kuhic-Gerlach",
+    "apis": [
+      {
+        "path": "/auxiliary",
+        "host": "59.46.152.244",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/wireless",
+        "host": "59.46.152.244",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/neural",
+        "host": "59.46.152.244",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/mobile",
+        "host": "59.46.152.244",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "4feab25e-7f6b-4632-8bc4-b1f030e369b6",
+        "location": {
+          "country": {"name": "Namibia"},
+          "region": {"name": "Georgia"},
+          "city": {"name": "Alexanneport"},
+          "gps": {
+            "latitude": "-72.7031",
+            "longitude": "-179.4600"
+          }
+        }
+      },
+      "iden": {"uuid": "0275f2b9-2036-41de-b649-6e4282cf62a2"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Hartmann, Howell and Klein",
+    "apis": [
+      {
+        "path": "/primary",
+        "host": "88.169.14.49",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/digital",
+        "host": "88.169.14.49",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/digital",
+        "host": "88.169.14.49",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/bluetooth",
+        "host": "88.169.14.49",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "9368a512-aaea-434f-8f12-b61df5993f5b",
+        "location": {
+          "country": {"name": "Guinea-Bissau"},
+          "region": {"name": "Vermont"},
+          "city": {"name": "New Johan"},
+          "gps": {
+            "latitude": "-20.7589",
+            "longitude": "-177.8133"
+          }
+        }
+      },
+      "iden": {"uuid": "87eda585-a79e-447d-aff6-d49de1ccbd21"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Turcotte-Gibson",
+    "apis": [
+      {
+        "path": "/cross-platform",
+        "host": "81.117.213.82",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/redundant",
+        "host": "81.117.213.82",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/cross-platform",
+        "host": "81.117.213.82",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/digital",
+        "host": "81.117.213.82",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "fb5fb2d0-0095-480f-b445-21c49156707d",
+        "location": {
+          "country": {"name": "Bulgaria"},
+          "region": {"name": "Colorado"},
+          "city": {"name": "West Madisynport"},
+          "gps": {
+            "latitude": "-7.3680",
+            "longitude": "12.0386"
+          }
+        }
+      },
+      "iden": {"uuid": "57c6d21b-f718-4e43-928a-e782090d5c5f"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Simonis and Daughters",
+    "apis": [
+      {
+        "path": "/bluetooth",
+        "host": "17.248.237.151",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/bluetooth",
+        "host": "17.248.237.151",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/haptic",
+        "host": "17.248.237.151",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/mobile",
+        "host": "17.248.237.151",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "8c496960-f003-4843-a164-125a219e6693",
+        "location": {
+          "country": {"name": "Pitcairn Islands"},
+          "region": {"name": "Alabama"},
+          "city": {"name": "Port Eleazarmouth"},
+          "gps": {
+            "latitude": "-49.4216",
+            "longitude": "68.6427"
+          }
+        }
+      },
+      "iden": {"uuid": "7ff5819a-bab6-4d52-99fa-2ac2e52e3047"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Dare Group",
+    "apis": [
+      {
+        "path": "/online",
+        "host": "51.84.119.140",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/primary",
+        "host": "51.84.119.140",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/cross-platform",
+        "host": "51.84.119.140",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/solid state",
+        "host": "51.84.119.140",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "646b72cd-1c2d-44fe-9657-e869de034991",
+        "location": {
+          "country": {"name": "Thailand"},
+          "region": {"name": "New Mexico"},
+          "city": {"name": "South Daphneychester"},
+          "gps": {
+            "latitude": "-11.6542",
+            "longitude": "18.2626"
+          }
+        }
+      },
+      "iden": {"uuid": "cc7cf846-2888-43a5-96f1-27b0c6f1e5f4"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Bayer-Vandervort",
+    "apis": [
+      {
+        "path": "/haptic",
+        "host": "1.159.113.7",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/back-end",
+        "host": "1.159.113.7",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/auxiliary",
+        "host": "1.159.113.7",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/virtual",
+        "host": "1.159.113.7",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "bec96e72-3f6d-49f9-ada7-9ba5d3c40e74",
+        "location": {
+          "country": {"name": "Spain"},
+          "region": {"name": "Delaware"},
+          "city": {"name": "Baileemouth"},
+          "gps": {
+            "latitude": "-42.8709",
+            "longitude": "-105.5916"
+          }
+        }
+      },
+      "iden": {"uuid": "07591cd9-ef49-43f6-9305-ebbbb17a481f"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Koch Inc",
+    "apis": [
+      {
+        "path": "/virtual",
+        "host": "204.78.75.198",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/back-end",
+        "host": "204.78.75.198",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/bluetooth",
+        "host": "204.78.75.198",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/virtual",
+        "host": "204.78.75.198",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "42fbf74d-f292-4064-a261-9607cc43fef5",
+        "location": {
+          "country": {"name": "Saint Pierre and Miquelon"},
+          "region": {"name": "Connecticut"},
+          "city": {"name": "Port Augustusland"},
+          "gps": {
+            "latitude": "-56.0657",
+            "longitude": "-67.1680"
+          }
+        }
+      },
+      "iden": {"uuid": "21285357-c81d-4b2d-9ea0-7f1998b58026"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Jacobson, Reichel and Hermiston",
+    "apis": [
+      {
+        "path": "/1080p",
+        "host": "207.119.145.160",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/auxiliary",
+        "host": "207.119.145.160",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/optical",
+        "host": "207.119.145.160",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/back-end",
+        "host": "207.119.145.160",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "9368a512-aaea-434f-8f12-b61df5993f5b",
+        "location": {
+          "country": {"name": "Greece"},
+          "region": {"name": "Michigan"},
+          "city": {"name": "Okunevaville"},
+          "gps": {
+            "latitude": "-8.6270",
+            "longitude": "-15.9200"
+          }
+        }
+      },
+      "iden": {"uuid": "58b8e0f1-ca9c-4c55-a77e-ba0c52233548"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Pfannerstill, MacGyver and Leannon",
+    "apis": [
+      {
+        "path": "/optical",
+        "host": "19.140.103.9",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/open-source",
+        "host": "19.140.103.9",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/multi-byte",
+        "host": "19.140.103.9",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/digital",
+        "host": "19.140.103.9",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "4feab25e-7f6b-4632-8bc4-b1f030e369b6",
+        "location": {
+          "country": {"name": "Kazakhstan"},
+          "region": {"name": "Michigan"},
+          "city": {"name": "Wizaburgh"},
+          "gps": {
+            "latitude": "18.8500",
+            "longitude": "69.9988"
+          }
+        }
+      },
+      "iden": {"uuid": "e66033b2-3fab-414a-a188-7f0f9edb6f41"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Cruickshank, Hessel and Jakubowski",
+    "apis": [
+      {
+        "path": "/mobile",
+        "host": "97.142.19.44",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/bluetooth",
+        "host": "97.142.19.44",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/mobile",
+        "host": "97.142.19.44",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/solid state",
+        "host": "97.142.19.44",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "4cf1ee83-580b-4eb7-8cac-fff777ea66d8",
+        "location": {
+          "country": {"name": "Finland"},
+          "region": {"name": "New Hampshire"},
+          "city": {"name": "Earlborough"},
+          "gps": {
+            "latitude": "-61.0112",
+            "longitude": "18.3958"
+          }
+        }
+      },
+      "iden": {"uuid": "8e8d1a2b-1138-425a-9348-47fed8a43577"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Deckow, Nicolas and Botsford",
+    "apis": [
+      {
+        "path": "/digital",
+        "host": "42.49.166.188",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/wireless",
+        "host": "42.49.166.188",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/cross-platform",
+        "host": "42.49.166.188",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/1080p",
+        "host": "42.49.166.188",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "056cf2c0-4f9c-4056-be95-53d256a0a3a7",
+        "location": {
+          "country": {"name": "Isle of Man"},
+          "region": {"name": "Arizona"},
+          "city": {"name": "Konopelskishire"},
+          "gps": {
+            "latitude": "-77.5349",
+            "longitude": "-49.0425"
+          }
+        }
+      },
+      "iden": {"uuid": "7520113f-e27e-4d1d-9cd9-5d6176746fa5"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Torphy and Sons",
+    "apis": [
+      {
+        "path": "/haptic",
+        "host": "229.75.124.74",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/digital",
+        "host": "229.75.124.74",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/virtual",
+        "host": "229.75.124.74",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/neural",
+        "host": "229.75.124.74",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "fe78d384-4998-4bc7-94d7-6ebd5c351615",
+        "location": {
+          "country": {"name": "Togo"},
+          "region": {"name": "Montana"},
+          "city": {"name": "East Gilda"},
+          "gps": {
+            "latitude": "-73.5111",
+            "longitude": "-88.9103"
+          }
+        }
+      },
+      "iden": {"uuid": "410497b7-920a-4198-b3fb-bd859acc825b"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Bailey-Kihn",
+    "apis": [
+      {
+        "path": "/cross-platform",
+        "host": "74.151.96.105",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/online",
+        "host": "74.151.96.105",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/redundant",
+        "host": "74.151.96.105",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/solid state",
+        "host": "74.151.96.105",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "039987aa-f6e4-4786-b94c-1074de1a322f",
+        "location": {
+          "country": {"name": "Afghanistan"},
+          "region": {"name": "South Carolina"},
+          "city": {"name": "New Gunner"},
+          "gps": {
+            "latitude": "-57.6507",
+            "longitude": "25.0915"
+          }
+        }
+      },
+      "iden": {"uuid": "1c496451-0864-487a-99b8-6e135cce0727"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Rosenbaum, Ratke and Durgan",
+    "apis": [
+      {
+        "path": "/primary",
+        "host": "25.197.100.201",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/1080p",
+        "host": "25.197.100.201",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/mobile",
+        "host": "25.197.100.201",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/open-source",
+        "host": "25.197.100.201",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "ee4e9578-475f-4341-ab92-13189173d507",
+        "location": {
+          "country": {"name": "Mayotte"},
+          "region": {"name": "North Dakota"},
+          "city": {"name": "Port Lois"},
+          "gps": {
+            "latitude": "71.2525",
+            "longitude": "137.5152"
+          }
+        }
+      },
+      "iden": {"uuid": "10f8a8e9-1eef-4abd-9d94-9f051b177701"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Veum and Sons",
+    "apis": [
+      {
+        "path": "/wireless",
+        "host": "136.251.131.154",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/cross-platform",
+        "host": "136.251.131.154",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/multi-byte",
+        "host": "136.251.131.154",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/solid state",
+        "host": "136.251.131.154",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "6cfdf2fb-dd8d-4886-9dc4-6b3555feb1a0",
+        "location": {
+          "country": {"name": "Egypt"},
+          "region": {"name": "New York"},
+          "city": {"name": "Hodkiewiczburgh"},
+          "gps": {
+            "latitude": "-45.2032",
+            "longitude": "88.1007"
+          }
+        }
+      },
+      "iden": {"uuid": "11e24be2-78ac-4b02-803c-0714c8c65aa9"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Raynor, Runolfsdottir and Greenholt",
+    "apis": [
+      {
+        "path": "/primary",
+        "host": "107.189.67.225",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/back-end",
+        "host": "107.189.67.225",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/mobile",
+        "host": "107.189.67.225",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/bluetooth",
+        "host": "107.189.67.225",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "994a9bfd-98a4-40bc-9f36-aebf28641c01",
+        "location": {
+          "country": {"name": "French Guiana"},
+          "region": {"name": "New Jersey"},
+          "city": {"name": "West Catharine"},
+          "gps": {
+            "latitude": "-80.7301",
+            "longitude": "110.1336"
+          }
+        }
+      },
+      "iden": {"uuid": "d5aeaa04-2dfc-42a8-a4e3-658fb69d1313"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Haley-Blick",
+    "apis": [
+      {
+        "path": "/mobile",
+        "host": "49.179.15.227",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/cross-platform",
+        "host": "49.179.15.227",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/solid state",
+        "host": "49.179.15.227",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/haptic",
+        "host": "49.179.15.227",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "a221db8c-a92c-4738-8d82-df708370d274",
+        "location": {
+          "country": {"name": "Malta"},
+          "region": {"name": "Arkansas"},
+          "city": {"name": "South Erik"},
+          "gps": {
+            "latitude": "37.5495",
+            "longitude": "56.2470"
+          }
+        }
+      },
+      "iden": {"uuid": "91b2a90d-6de4-47a1-97a4-c32c17dadd09"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Bruen and Daughters",
+    "apis": [
+      {
+        "path": "/wireless",
+        "host": "149.251.4.20",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/auxiliary",
+        "host": "149.251.4.20",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/solid state",
+        "host": "149.251.4.20",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/back-end",
+        "host": "149.251.4.20",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "216ffb80-05d4-4adc-89c5-aaf0740c684f",
+        "location": {
+          "country": {"name": "Canada"},
+          "region": {"name": "Kansas"},
+          "city": {"name": "Ethanstad"},
+          "gps": {
+            "latitude": "11.7585",
+            "longitude": "160.5708"
+          }
+        }
+      },
+      "iden": {"uuid": "04222d3b-4001-4146-85c6-76907f8c1c63"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Kilback, Frami and Nicolas",
+    "apis": [
+      {
+        "path": "/cross-platform",
+        "host": "173.55.7.42",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/wireless",
+        "host": "173.55.7.42",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/solid state",
+        "host": "173.55.7.42",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/cross-platform",
+        "host": "173.55.7.42",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "352f6bda-c62e-40d1-a4a8-cd363a6b9036",
+        "location": {
+          "country": {"name": "Georgia"},
+          "region": {"name": "Michigan"},
+          "city": {"name": "Labadieville"},
+          "gps": {
+            "latitude": "-65.0802",
+            "longitude": "-30.8405"
+          }
+        }
+      },
+      "iden": {"uuid": "6865bac9-89d1-4c41-b4e4-c84f3999a600"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Lakin and Daughters",
+    "apis": [
+      {
+        "path": "/wireless",
+        "host": "202.203.135.116",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/back-end",
+        "host": "202.203.135.116",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/bluetooth",
+        "host": "202.203.135.116",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/wireless",
+        "host": "202.203.135.116",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "f18e4154-6916-4a58-8536-19a66f8f6c1b",
+        "location": {
+          "country": {"name": "New Zealand"},
+          "region": {"name": "Rhode Island"},
+          "city": {"name": "East Laurieberg"},
+          "gps": {
+            "latitude": "41.5353",
+            "longitude": "135.4999"
+          }
+        }
+      },
+      "iden": {"uuid": "b530a184-4402-4866-a316-d6a5c760d687"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Mosciski, Upton and Zulauf",
+    "apis": [
+      {
+        "path": "/cross-platform",
+        "host": "255.97.167.222",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/wireless",
+        "host": "255.97.167.222",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/cross-platform",
+        "host": "255.97.167.222",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/multi-byte",
+        "host": "255.97.167.222",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "869b2797-5f27-45ed-98bf-364fb92d603c",
+        "location": {
+          "country": {"name": "Madagascar"},
+          "region": {"name": "Indiana"},
+          "city": {"name": "Derekview"},
+          "gps": {
+            "latitude": "2.0652",
+            "longitude": "2.4099"
+          }
+        }
+      },
+      "iden": {"uuid": "276d7346-5137-46dc-93a5-296015eedfd6"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Ritchie Group",
+    "apis": [
+      {
+        "path": "/solid state",
+        "host": "7.96.18.15",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/haptic",
+        "host": "7.96.18.15",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/multi-byte",
+        "host": "7.96.18.15",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/redundant",
+        "host": "7.96.18.15",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "216ffb80-05d4-4adc-89c5-aaf0740c684f",
+        "location": {
+          "country": {"name": "Barbados"},
+          "region": {"name": "Idaho"},
+          "city": {"name": "Lorenzochester"},
+          "gps": {
+            "latitude": "12.1764",
+            "longitude": "-153.8540"
+          }
+        }
+      },
+      "iden": {"uuid": "4699c7e9-03af-437a-b871-f644d61d718d"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Ritchie, Gislason and Bogan",
+    "apis": [
+      {
+        "path": "/virtual",
+        "host": "166.128.168.54",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/online",
+        "host": "166.128.168.54",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/open-source",
+        "host": "166.128.168.54",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/multi-byte",
+        "host": "166.128.168.54",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "ee4e9578-475f-4341-ab92-13189173d507",
+        "location": {
+          "country": {"name": "Netherlands"},
+          "region": {"name": "Maryland"},
+          "city": {"name": "Ellsworthfurt"},
+          "gps": {
+            "latitude": "-19.6135",
+            "longitude": "-71.1404"
+          }
+        }
+      },
+      "iden": {"uuid": "027e3408-e32c-4f20-816b-6a6b8fa60b03"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Grimes-Langworth",
+    "apis": [
+      {
+        "path": "/cross-platform",
+        "host": "39.164.17.39",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/wireless",
+        "host": "39.164.17.39",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/multi-byte",
+        "host": "39.164.17.39",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/neural",
+        "host": "39.164.17.39",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "2bbfd919-9b11-42ae-8cec-30c636733ac9",
+        "location": {
+          "country": {"name": "Myanmar"},
+          "region": {"name": "Texas"},
+          "city": {"name": "Lake Gilbertoside"},
+          "gps": {
+            "latitude": "68.1717",
+            "longitude": "-148.3634"
+          }
+        }
+      },
+      "iden": {"uuid": "3900e800-95a7-47e7-a9c6-e58af3ed246b"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Bode-Mertz",
+    "apis": [
+      {
+        "path": "/solid state",
+        "host": "115.218.95.23",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/online",
+        "host": "115.218.95.23",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/neural",
+        "host": "115.218.95.23",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/primary",
+        "host": "115.218.95.23",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "7d061c74-a537-45b5-92c3-746a5abfa07c",
+        "location": {
+          "country": {"name": "Cuba"},
+          "region": {"name": "Pennsylvania"},
+          "city": {"name": "North Samsonland"},
+          "gps": {
+            "latitude": "46.2395",
+            "longitude": "-123.0419"
+          }
+        }
+      },
+      "iden": {"uuid": "e4386ed2-a72b-447e-be00-d085be8ed2b8"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Murazik, Gleichner and Steuber",
+    "apis": [
+      {
+        "path": "/solid state",
+        "host": "255.7.213.166",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/online",
+        "host": "255.7.213.166",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/cross-platform",
+        "host": "255.7.213.166",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/1080p",
+        "host": "255.7.213.166",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "869b2797-5f27-45ed-98bf-364fb92d603c",
+        "location": {
+          "country": {"name": "Malawi"},
+          "region": {"name": "Maine"},
+          "city": {"name": "Batzberg"},
+          "gps": {
+            "latitude": "79.1916",
+            "longitude": "73.5982"
+          }
+        }
+      },
+      "iden": {"uuid": "b5ecaa76-3fe1-4853-b125-7ebfe92fc74b"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Ferry, Koch and Kertzmann",
+    "apis": [
+      {
+        "path": "/neural",
+        "host": "160.128.113.161",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/cross-platform",
+        "host": "160.128.113.161",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/primary",
+        "host": "160.128.113.161",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/primary",
+        "host": "160.128.113.161",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "f18e4154-6916-4a58-8536-19a66f8f6c1b",
+        "location": {
+          "country": {"name": "Portugal"},
+          "region": {"name": "California"},
+          "city": {"name": "Rylanland"},
+          "gps": {
+            "latitude": "-62.1704",
+            "longitude": "92.1384"
+          }
+        }
+      },
+      "iden": {"uuid": "b37d78da-5831-46a3-b2a6-e4370161ec93"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "McCullough and Daughters",
+    "apis": [
+      {
+        "path": "/neural",
+        "host": "211.234.108.57",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/cross-platform",
+        "host": "211.234.108.57",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/multi-byte",
+        "host": "211.234.108.57",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/wireless",
+        "host": "211.234.108.57",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "8c496960-f003-4843-a164-125a219e6693",
+        "location": {
+          "country": {"name": "Nigeria"},
+          "region": {"name": "Mississippi"},
+          "city": {"name": "Carliton"},
+          "gps": {
+            "latitude": "-7.6500",
+            "longitude": "-29.2671"
+          }
+        }
+      },
+      "iden": {"uuid": "43b7bc06-63a2-4976-b054-8c1c38e5b031"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Nikolaus-Fritsch",
+    "apis": [
+      {
+        "path": "/haptic",
+        "host": "195.253.96.173",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/bluetooth",
+        "host": "195.253.96.173",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/wireless",
+        "host": "195.253.96.173",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/redundant",
+        "host": "195.253.96.173",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "f18e4154-6916-4a58-8536-19a66f8f6c1b",
+        "location": {
+          "country": {"name": "Reunion"},
+          "region": {"name": "Connecticut"},
+          "city": {"name": "Williamsonport"},
+          "gps": {
+            "latitude": "-3.5750",
+            "longitude": "-154.5666"
+          }
+        }
+      },
+      "iden": {"uuid": "f9a7c0ba-f8e1-41f6-8d88-f89f399725d6"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Hoppe, Farrell and Mayert",
+    "apis": [
+      {
+        "path": "/multi-byte",
+        "host": "241.153.154.156",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/mobile",
+        "host": "241.153.154.156",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/optical",
+        "host": "241.153.154.156",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/neural",
+        "host": "241.153.154.156",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "42fbf74d-f292-4064-a261-9607cc43fef5",
+        "location": {
+          "country": {"name": "Seychelles"},
+          "region": {"name": "Illinois"},
+          "city": {"name": "Schultzport"},
+          "gps": {
+            "latitude": "3.0191",
+            "longitude": "61.8017"
+          }
+        }
+      },
+      "iden": {"uuid": "51f495e3-14b5-4825-81af-577203054952"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Schulist, Harber and Ebert",
+    "apis": [
+      {
+        "path": "/online",
+        "host": "142.123.137.139",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/digital",
+        "host": "142.123.137.139",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/cross-platform",
+        "host": "142.123.137.139",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/solid state",
+        "host": "142.123.137.139",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "9bc0a42d-e5ac-4328-8ee5-1aaf51103597",
+        "location": {
+          "country": {"name": "Zimbabwe"},
+          "region": {"name": "New Jersey"},
+          "city": {"name": "Lake Green"},
+          "gps": {
+            "latitude": "-5.3994",
+            "longitude": "50.8949"
+          }
+        }
+      },
+      "iden": {"uuid": "1ffe4776-c66b-47b2-81c2-50e346180525"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Keeling, Frami and Von",
+    "apis": [
+      {
+        "path": "/neural",
+        "host": "124.251.126.195",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/primary",
+        "host": "124.251.126.195",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/optical",
+        "host": "124.251.126.195",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/redundant",
+        "host": "124.251.126.195",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "a3530340-7174-435b-91d3-dc2ac9ece453",
+        "location": {
+          "country": {"name": "Senegal"},
+          "region": {"name": "Vermont"},
+          "city": {"name": "Cheyenneborough"},
+          "gps": {
+            "latitude": "-22.7901",
+            "longitude": "90.1425"
+          }
+        }
+      },
+      "iden": {"uuid": "2d62fa14-444d-4f63-b068-3de510433bc8"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Kertzmann and Sons",
+    "apis": [
+      {
+        "path": "/optical",
+        "host": "9.172.106.216",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/primary",
+        "host": "9.172.106.216",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/1080p",
+        "host": "9.172.106.216",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/digital",
+        "host": "9.172.106.216",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 1},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "3e6dc876-f5ef-4b20-a120-465391b99c43",
+        "location": {
+          "country": {"name": "Samoa"},
+          "region": {"name": "Montana"},
+          "city": {"name": "North Koby"},
+          "gps": {
+            "latitude": "87.1104",
+            "longitude": "134.2664"
+          }
+        }
+      },
+      "iden": {"uuid": "712bfbca-46c5-4811-9eb0-f3a7152ec9cb"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Wilkinson, Homenick and Morar",
+    "apis": [
+      {
+        "path": "/optical",
+        "host": "137.124.45.93",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/optical",
+        "host": "137.124.45.93",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/cross-platform",
+        "host": "137.124.45.93",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/digital",
+        "host": "137.124.45.93",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "aec11642-709d-4456-b8f8-4df0d01c4b46",
+        "location": {
+          "country": {"name": "Afghanistan"},
+          "region": {"name": "Nebraska"},
+          "city": {"name": "South Esperanzaberg"},
+          "gps": {
+            "latitude": "-55.8305",
+            "longitude": "-174.8449"
+          }
+        }
+      },
+      "iden": {"uuid": "d19335f3-34c0-4a3e-b145-8b2abc85b141"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Yost LLC",
+    "apis": [
+      {
+        "path": "/neural",
+        "host": "71.32.94.26",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/neural",
+        "host": "71.32.94.26",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/multi-byte",
+        "host": "71.32.94.26",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/solid state",
+        "host": "71.32.94.26",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "a28e923b-2ae1-4d29-90c5-2b63a43bc19d",
+        "location": {
+          "country": {"name": "Canada"},
+          "region": {"name": "New Mexico"},
+          "city": {"name": "Port Dudley"},
+          "gps": {
+            "latitude": "72.0902",
+            "longitude": "-86.9770"
+          }
+        }
+      },
+      "iden": {"uuid": "77671909-8490-459a-84ac-9a5625dc919b"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Farrell-Hoppe",
+    "apis": [
+      {
+        "path": "/redundant",
+        "host": "143.255.165.247",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      },
+      {
+        "path": "/open-source",
+        "host": "143.255.165.247",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/wireless",
+        "host": "143.255.165.247",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/1080p",
+        "host": "143.255.165.247",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "7d061c74-a537-45b5-92c3-746a5abfa07c",
+        "location": {
+          "country": {"name": "Austria"},
+          "region": {"name": "Texas"},
+          "city": {"name": "West Aleen"},
+          "gps": {
+            "latitude": "23.9128",
+            "longitude": "99.7408"
+          }
+        }
+      },
+      "iden": {"uuid": "f6fb7d88-7737-41b4-88ec-1108f8ff2de4"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Runolfsson-Klocko",
+    "apis": [
+      {
+        "path": "/bluetooth",
+        "host": "138.100.199.253",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 1
+      },
+      {
+        "path": "/1080p",
+        "host": "138.100.199.253",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 1
+      },
+      {
+        "path": "/optical",
+        "host": "138.100.199.253",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/redundant",
+        "host": "138.100.199.253",
+        "port": 9991,
+        "type": "PUB",
+        "faulty": 0
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "966e9815-0edf-4b76-93a1-ac13a9ab7706",
+        "location": {
+          "country": {"name": "Paraguay"},
+          "region": {"name": "Kentucky"},
+          "city": {"name": "New Helga"},
+          "gps": {
+            "latitude": "-56.8493",
+            "longitude": "-98.4759"
+          }
+        }
+      },
+      "iden": {"uuid": "0a94ff51-36df-4226-8d7c-cab8c2ab90a2"},
+      "accessTime": {"value": 1430758449840}
+    },
+    "name": "Heathcote, Weissnat and Buckridge",
+    "apis": [
+      {
+        "path": "/redundant",
+        "host": "175.194.29.23",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      },
+      {
+        "path": "/digital",
+        "host": "175.194.29.23",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 0
+      },
+      {
+        "path": "/optical",
+        "host": "175.194.29.23",
+        "port": 9991,
+        "type": "HCK",
+        "faulty": 0
+      },
+      {
+        "path": "/neural",
+        "host": "175.194.29.23",
+        "port": 9991,
+        "type": "MHT",
+        "faulty": 1
+      }
+    ],
+    "faulty": {"value": 0},
+    "lastUpdated": {"value": 1430758464838},
+    "lastChecked": {"value": 1430758449840}
   }
 ]

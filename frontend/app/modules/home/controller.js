@@ -17,19 +17,29 @@ define(function (require){
             this.logger = options.logger;
             this.microservicesCollection = new MicroservicesCollection();
             this.ringsCollection = new RingsCollection();
+
+            setInterval(_.bind(this._refreshCollections,this),10000);
         },
 
         /** @private */
         index: function (){
 
             var useCustomUrl = decodeURIComponent((new RegExp('[?|&]url=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,''])[1].replace(/\+/g, '%20'))||null;
-            this._fetchData(useCustomUrl);
+            this._fetchData(useCustomUrl).done(_.bind(this._initCollections, this));
         },
 
         /** @private */
         _fetchData: function(useCustomUrl){
-            this.microservicesCollection.fetchData(useCustomUrl)
-                .done(_.bind(this._initCollections, this));
+            return this.microservicesCollection.fetchData(useCustomUrl);
+        },
+
+        /** @private */
+        _refreshCollections: function(){
+            this._fetchData().done(_.bind(this._generateRingsModels,this));
+        },
+
+        _generateRingsModels: function(response){
+            this.ringsCollection.addRings(response);
         },
 
         /** @private */
