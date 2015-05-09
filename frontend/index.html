@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MSNOS - Microservices</title>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+    <link rel="shortcut icon" href="static_files/images/favicon.ico" type="image/x-icon" />
+    <link href="static_files/styles/style.css" media="all" rel="stylesheet" />
+</head>
+<body lang="en">
+    <div id="container" class="container"></div>
+    <script>var application = {"paths":{"staticFiles":"static_files"},"pushState":false};</script>
+    <script> var requirejs = {
+    "paths": {
+        "jquery": "../bower_components/jquery/dist/jquery",
+        "underscore": "../bower_components/underscore/underscore",
+        "backbone": "../bower_components/backbone/backbone",
+        "marionette": "../bower_components/backbone.marionette/lib/backbone.marionette",
+        "backbone.babysitter": "../bower_components/backbone.babysitter/lib/backbone.babysitter",
+        "backbone.wreqr": "../bower_components/backbone.wreqr/lib/backbone.wreqr",
+        "text": "../bower_components/requirejs-text/text",
+        "handlebars" : "../bower_components/handlebars/handlebars",
+        "when" : "../bower_components/when",
+        "Lumberman" : "../bower_components/lumberman/src",
+        "googlemaps": "../bower_components/googlemaps-amd/src/googlemaps",
+        "leaflet": "../bower_components/leaflet/dist/leaflet",
+        "jquerysimpleaccordion": "../bower_components/jquery-simple-accordion/dist/jquery.simple-accordion",
+        "moment": "../bower_components/momentjs/moment",
+        "accordion": "../bower_components/accordion/accordion",
+        "jquery.exists": "../bower_components/jquery.exists/jquery.exists",
+        "jquery.scrollto": "../bower_components/jquery.scrollTo/jquery.scrollTo"
+    },
+    "shim": {
+        "handlebars" : {
+            "exports": "Handlebars"
+        }
+    }
+};</script>
+    <script data-main="/app/bootstrap.js" src="/bower_components/requirejs/require.js"></script>
+    
+</body>
+</html>
