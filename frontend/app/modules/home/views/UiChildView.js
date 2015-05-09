@@ -37,9 +37,9 @@ define(function (require){
                     shadowUrl: 'static_files/images/marker-shadow.png',
                     iconSize: [30, 30],
                     shadowSize: [30, 30],
-                    iconAnchor: [-15, -15],
-                    shadowAnchor: [-25, -15],
-                    popupAnchor: [30, 15]
+                    iconAnchor: [15, 15],
+                    shadowAnchor: [10, 10],
+                    popupAnchor: [0, 0]
                 }
             });
 
