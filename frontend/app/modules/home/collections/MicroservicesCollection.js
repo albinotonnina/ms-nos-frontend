@@ -14,7 +14,7 @@ define(function (require){
 
         /** @private */
         url: function (){
-            return this.useCustomUrl ? this.useCustomUrl: 'admin/microservices';
+            return this.useCustomUrl ? decodeURIComponent(this.useCustomUrl): 'admin/microservices';
         },
 
         /** @private */

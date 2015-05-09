@@ -22,7 +22,7 @@ define(function (require){
         /** @private */
         index: function (){
 
-            var useCustomUrl = decodeURIComponent((new RegExp('[?|&]url=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+            var useCustomUrl = decodeURIComponent((new RegExp('[?|&]url=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,''])[1].replace(/\+/g, '%20'))||null;
             this._fetchData(useCustomUrl);
         },
 
