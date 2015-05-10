@@ -17,11 +17,11 @@ define(function (require){
                 options: {
                     number: options.agentsLength,
                     shadowUrl: 'static_files/images/marker-shadow.png',
-                    iconSize: new L.Point(30, 60),
-                    shadowSize: new L.Point(30, 60),
-                    iconAnchor: new L.Point(15, 60),
+                    iconSize: new L.Point(30, 42),
+                    shadowSize: new L.Point(30, 42),
+                    iconAnchor: new L.Point(15, 42),
                     popupAnchor: new L.Point(0, -45),
-                    shadowAnchor: new L.Point(10, 60),
+                    shadowAnchor: new L.Point(10, 42),
                     /*
                      iconAnchor: (Point)
                      popupAnchor: (Point)
