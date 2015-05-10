@@ -8,7 +8,7 @@ define(function (require){
         RingModel = require('../models/RingModel');
 
     /**
-     * @class CompanyCollection
+     * @class RingsCollection
      * @extends Backbone.Collection
      */
     return Backbone.Collection.extend({
@@ -29,7 +29,11 @@ define(function (require){
                     existingRingModel.setAgent(responseItem);
                     models.push(existingRingModel);
                 }
+
+
             }, this));
+
+            this._removeInvalidAgents(response);
 
             this.remove(_.difference(this.models, models));
         },
@@ -37,8 +41,8 @@ define(function (require){
         /** @private */
         _getSanitizedResponse: function (response){
 
-            var randomLongitude = Math.floor(Math.random()*40) + 1; // this will get a number between 1 and 99;
-            randomLongitude *= Math.floor(Math.random()*2) == 1 ? 1 : -1; // this will add minus sign in 50% of cases
+            var randomLongitude = Math.floor(Math.random() * 40) + 1;
+            randomLongitude *= Math.floor(Math.random() * 2) == 1 ? 1 : -1; // this will add minus sign in 50% of cases
 
             return {
                 uuid: response.agent.ring.uuid,
@@ -51,6 +55,27 @@ define(function (require){
                     }
                 }
             };
+        },
+
+        /** @private */
+        _removeInvalidAgents: function (response){
+
+            this.agentsUUids = _.pluck(_.pluck(_.pluck(response, 'agent'), 'iden'), 'uuid');
+
+            this.each(_.bind(function (ringModel){
+
+                ringModel.get('agents').each(_.bind(function (agentModel){
+
+                    if(this.agentsUUids.indexOf(agentModel.get('uuid')) === -1){
+
+                        ringModel.get('agents').remove(agentModel);
+                    }
+
+                }, this));
+
+            }, this));
+
+
         }
 
     });

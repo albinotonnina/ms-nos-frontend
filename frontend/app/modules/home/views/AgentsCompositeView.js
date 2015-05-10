@@ -17,7 +17,17 @@ define(function (require){
         childView: AgentsChildView,
 
         /** @private */
-        childViewContainer: '#agents'
+        childViewContainer: '#agents',
+
+        /** @private */
+        collectionEvents: {
+            'add': function(){
+                this.trigger('refresh');
+            },
+            'remove': function(){
+                this.trigger('refresh');
+            }
+        }
     });
 
 });

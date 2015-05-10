@@ -34,7 +34,8 @@ define(function (require){
         initialize: function (){
             this.agentsView = new AgentsCompositeView({
                 collection: this.model.get('agents')
-            });
+            })
+                .on('refresh', _.bind(this._refreshMarker,this));
         },
 
         /** @private */
@@ -55,6 +56,11 @@ define(function (require){
 
         addMarker: function (map){
             this.map = map;
+            this._createMarker();
+        },
+
+        /** @private */
+        _createMarker: function (){
             this._initMarkerIcons();
             this.marker = this.uiMarker.getMarker([this.model.get('location').gps.latitude, this.model.get('location').gps.longitude]);
             this.marker.on('mouseover', _.bind(this._markerOnHover, this));
@@ -62,20 +68,31 @@ define(function (require){
             this.marker.on('click', _.bind(this._markerOnClick, this));
             this.marker.addTo(this.map);
             var popupText = this._getMarkerPopup();
-            this.marker.bindPopup(popupText,{
-                closeButton:false
+            this.marker.bindPopup(popupText, {
+                closeButton: false
             });
+        },
+
+        /** @private */
+        _removeMarker: function (){
+            this.map.removeLayer(this.marker);
+        },
+
+        /** @private */
+        _refreshMarker: function(){
+            this._removeMarker();
+            this._createMarker();
         },
 
         /** @private */
         _getMarkerPopup: function (){
 
             var popupData = {
-                location: this.model.get('location').city+ ', ' + this.model.get('location').country,
+                location: this.model.get('location').city + ', ' + this.model.get('location').country,
                 servicesKOLength: _.compact(this.model.get('agents').pluck('faulty')).length,
                 servicesOKLength: _.without(this.model.get('agents').pluck('faulty'), 1).length,
                 apiKOLength: _.compact(_.pluck(_.flatten(this.model.get('agents').pluck('apis')), 'faulty')).length,
-                apiOKLength: _.without(_.pluck(_.flatten(this.model.get('agents').pluck('apis')), 'faulty'),true).length
+                apiOKLength: _.without(_.pluck(_.flatten(this.model.get('agents').pluck('apis')), 'faulty'), true).length
             };
 
 
@@ -143,8 +160,9 @@ define(function (require){
             this.trigger('refresh');
         },
 
-        onDestroy: function(){
-            this.map.removeLayer(this.marker);
+        /** @private */
+        onDestroy: function (){
+            this._removeMarker();
         }
 
     });
