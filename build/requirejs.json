@@ -15,7 +15,8 @@
         "moment": "<%= path %>bower_components/momentjs/moment",
         "accordion": "<%= path %>bower_components/accordion/accordion",
         "jquery.exists": "<%= path %>bower_components/jquery.exists/jquery.exists",
-        "jquery.scrollto": "<%= path %>bower_components/jquery.scrollTo/jquery.scrollTo"
+        "jquery.scrollto": "<%= path %>bower_components/jquery.scrollTo/jquery.scrollTo",
+        "fullpage": "<%= path %>bower_components/fullpage.js/jquery.fullPage.min"
     },
     "shim": {
         "handlebars" : {

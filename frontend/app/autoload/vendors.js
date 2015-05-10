@@ -5,6 +5,8 @@ define(function (require) {
         /** Autoload plugins */
         require('vendors/handlebars')(app);
         require('jquery.scrollto');
+        require('fullpage');
+
     };
 
 });

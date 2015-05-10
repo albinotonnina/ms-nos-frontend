@@ -21,6 +21,7 @@ define(function (require) {
     });
 
     app.on('start', function (options) {
+
         if (!Backbone.history.start({ pushState : options.pushState })) {
             Backbone.history.navigate('home', { trigger : true });
         }

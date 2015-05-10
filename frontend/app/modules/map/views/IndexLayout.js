@@ -36,21 +36,10 @@ define(function (require){
 
         /** @private */
         onShow: function (){
-
-            $('#fullpage').fullpage({
-                anchors:['firstPage', 'secondPage', '3rdPage','4thpage'],
-                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
-                menu: '#menu'
-            });
-
-
-            $('#trigger_map').on('click', _.bind(function(ev){
-                ev.preventDefault();
-                this.controller.app.commands.execute('navigate:map',{url:'http://microservices.dev.workshare.com:9991'});
-
-
-            },this));
-
+            this.mapView = this.controller.getMapView();
+            this.mapRegion.show(this.mapView);
+            this.uiView = this.controller.getUiView(this.mapView.getMapObject());
+            this.uiRegion.show(this.uiView);
         }
 
     });

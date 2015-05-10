@@ -6,13 +6,13 @@ define(function (require) {
 
     return function (app) {
 
-        app.module('home', function () {
+        app.module('map', function () {
 
             /**
              * This modules logger
              * @type {SimpleLogger|Logger|*}
              */
-            this.logger = app.lumberman.getLogger('home');
+            this.logger = app.lumberman.getLogger('map');
 
             /**
              * This modules controller
@@ -29,12 +29,10 @@ define(function (require) {
             /**
              * Commands, basically this modules "public api".
              */
-            app.commands.setHandler('navigate:home', function () {
-                controller.index();
-                router.navigate('home');
+            app.commands.setHandler('navigate:map', function (options) {
+                controller.index(options);
+                router.navigate('map');
             });
-
-
 
         });
 

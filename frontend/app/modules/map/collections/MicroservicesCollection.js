@@ -14,15 +14,15 @@ define(function (require){
 
         /** @private */
         url: function (){
-            return this.useCustomUrl ? decodeURIComponent(this.useCustomUrl): 'admin/microservices';
+            return this.baseUrl ? decodeURIComponent(this.baseUrl)+'/admin/microservices': 'admin/microservices';
         },
 
         /** @private */
         model: NodeModule,
 
-        fetchData: function (useCustomUrl){
+        fetchData: function (baseUrl){
             var deferred = $.Deferred();
-            this.useCustomUrl = useCustomUrl;
+            this.baseUrl = baseUrl;
 
             this.fetch()
                 .done(deferred.resolve);

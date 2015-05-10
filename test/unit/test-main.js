@@ -32,7 +32,8 @@
         "moment": "../bower_components/momentjs/moment",
         "accordion": "../bower_components/accordion/accordion",
         "jquery.exists": "../bower_components/jquery.exists/jquery.exists",
-        "jquery.scrollto": "../bower_components/jquery.scrollTo/jquery.scrollTo"
+        "jquery.scrollto": "../bower_components/jquery.scrollTo/jquery.scrollTo",
+        "fullpage": "../bower_components/fullpage.js/jquery.fullPage.min"
     },
     "shim": {
         "handlebars" : {

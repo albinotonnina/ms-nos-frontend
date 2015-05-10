@@ -22,7 +22,8 @@
     "jquery.exists": "~1.0.0",
     "jquery.scrollTo": "~2.1.0",
     "jquery-simple-accordion": "~1.0.3",
-    "lessfonts-open-sans": "~1.0.2"
+    "lessfonts-open-sans": "~1.0.2",
+    "fullpage.js": "~2.6.5"
   },
   "devDependencies": {
     "mocha": "1.18.2",
