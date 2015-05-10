@@ -35,8 +35,6 @@ define(function (require){
             this.agentsView = new AgentsCompositeView({
                 collection: this.model.get('agents')
             });
-
-
         },
 
         /** @private */
@@ -44,7 +42,11 @@ define(function (require){
 
             this.uiMarker = new UiMarker({
                 agentsLength: this.model.get('agents').length,
-                faulty: _.pluck(_.flatten(this.model.get('agents').pluck('apis')),'faulty').indexOf(1) > -1
+                apiLength: _.flatten(this.model.get('agents').pluck('apis')).length,
+
+                apiKO: _.pluck(_.flatten(this.model.get('agents').pluck('apis')), 'faulty').indexOf(1) > -1,
+                servicesKO: this.model.get('agents').pluck('faulty').indexOf(1) > -1,
+
             });
 
             this.markerIcon = this.uiMarker.markerIcon;
@@ -53,15 +55,30 @@ define(function (require){
 
         addMarker: function (map){
             this._initMarkerIcons();
-
-
             this.marker = this.uiMarker.getMarker([this.model.get('location').gps.latitude, this.model.get('location').gps.longitude]);
             this.marker.on('mouseover', _.bind(this._markerOnHover, this));
             this.marker.on('mouseout', _.bind(this._markerOnOut, this));
             this.marker.on('click', _.bind(this._markerOnClick, this));
             this.marker.addTo(map);
-            var popupText = this.model.get('location').city + ', ' + this.model.get('location').country;
-            this.marker.bindPopup(popupText);
+            var popupText = this._getMarkerPopup();
+            this.marker.bindPopup(popupText,{
+                closeButton:false
+            });
+        },
+
+        /** @private */
+        _getMarkerPopup: function (){
+
+            var popupData = {
+                location: this.model.get('location').city+ ', ' + this.model.get('location').country,
+                servicesKOLength: _.compact(this.model.get('agents').pluck('faulty')).length,
+                servicesOKLength: _.without(this.model.get('agents').pluck('faulty'), 1).length,
+                apiKOLength: _.compact(_.pluck(_.flatten(this.model.get('agents').pluck('apis')), 'faulty')).length,
+                apiOKLength: _.without(_.pluck(_.flatten(this.model.get('agents').pluck('apis')), 'faulty'),1).length
+            };
+
+
+            return this.uiMarker.getPopupContent(popupData);
         },
 
         /** @private */
@@ -88,7 +105,7 @@ define(function (require){
 
         /** @private */
         _markerOnOut: function (){
-            this.marker.closePopup();
+        //    this.marker.closePopup();
         },
 
         /** @private */

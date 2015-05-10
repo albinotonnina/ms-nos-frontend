@@ -77,11 +77,10 @@ body {
         }
       }
 
-
       > div {
 
-        &.hidden{
-          display:none;
+        &.hidden {
+          display: none;
         }
 
         .icon-healthy {
@@ -101,7 +100,7 @@ body {
 
           .api-type {
             background-color: #0074da;
-            color:white;
+            color: white;
             padding: 0 4px;
             min-width: 40px;
             display: inline-block;
@@ -147,7 +146,7 @@ body {
           background-color: #f68220;
         }
 
-        &:focus{
+        &:focus {
           outline: darkgoldenrod;
           background-color: #f68220;
         }
@@ -182,7 +181,6 @@ body {
       }
 
       .accordion-active {
-
 
         .icon-chevron {
           &:before {
@@ -221,7 +219,7 @@ body {
   border: none;
 }
 
-.leaflet-marker-icon .number{
+.leaflet-marker-icon .number {
   position: relative;
   top: -43px;
   font-size: 14px;
@@ -229,5 +227,44 @@ body {
   text-align: center;
   left: 0px;
   color: white;
-  pointer-events:none;
+  pointer-events: none;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 4px;
+
+  .leaflet-popup-content {
+    margin: 16px;
+
+    p {
+      margin: 4px 0;
+
+      &.location{
+        margin:8px 0;
+      }
+    }
+
+    .title {
+      display: inline-block;
+      width: 70px;
+    }
+    .dot {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      text-align: center;
+      border-radius: 11px;
+      color: #fff;
+      line-height: 22px;
+    }
+    .green-dot {
+      background-color: #19d512;
+
+    }
+
+    .red-dot {
+      background-color: #ff0000;
+
+    }
+  }
 }

@@ -43,8 +43,8 @@ define(function (require){
                     country: response.agent.ring.location.country ? response.agent.ring.location.country.name : 'Ring',
                     city: response.agent.ring.location.city ? response.agent.ring.location.city.name : '',
                     gps: response.agent.ring.location.gps ? response.agent.ring.location.gps : {
-                        latitude: 0,
-                        longitude: 0
+                        latitude: 82,
+                        longitude: 220
                     }
                 }
             };
