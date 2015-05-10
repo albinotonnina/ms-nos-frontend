@@ -74,7 +74,7 @@ define(function (require){
                 servicesKOLength: _.compact(this.model.get('agents').pluck('faulty')).length,
                 servicesOKLength: _.without(this.model.get('agents').pluck('faulty'), 1).length,
                 apiKOLength: _.compact(_.pluck(_.flatten(this.model.get('agents').pluck('apis')), 'faulty')).length,
-                apiOKLength: _.without(_.pluck(_.flatten(this.model.get('agents').pluck('apis')), 'faulty'),1).length
+                apiOKLength: _.without(_.pluck(_.flatten(this.model.get('agents').pluck('apis')), 'faulty'),true).length
             };
 
 

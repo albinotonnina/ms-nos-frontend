@@ -37,14 +37,17 @@ define(function (require){
         /** @private */
         _getSanitizedResponse: function (response){
 
+            var randomLongitude = Math.floor(Math.random()*180) + 1; // this will get a number between 1 and 99;
+            randomLongitude *= Math.floor(Math.random()*2) == 1 ? 1 : -1; // this will add minus sign in 50% of cases
+
             return {
                 uuid: response.agent.ring.uuid,
                 location: {
                     country: response.agent.ring.location.country ? response.agent.ring.location.country.name : 'Ring',
                     city: response.agent.ring.location.city ? response.agent.ring.location.city.name : '',
                     gps: response.agent.ring.location.gps ? response.agent.ring.location.gps : {
-                        latitude: 82,
-                        longitude: 220
+                        latitude: -84,
+                        longitude: randomLongitude
                     }
                 }
             };
