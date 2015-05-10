@@ -38,7 +38,7 @@ module.exports = {
             var apisArray = [];
             var randomIP = faker.internet.ip();
 
-            for(var y = 0; y < 4; y++){
+            for(var y = 0; y < 2; y++){
 
                 var api = {
                     path: '/' + faker.hacker.adjective(),

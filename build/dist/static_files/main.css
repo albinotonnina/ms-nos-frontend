@@ -82,6 +82,7 @@ body {
 }
 #ui-region #agents > li > div .api-wrapper .api-type {
   background-color: #0074da;
+  color: white;
   padding: 0 4px;
   min-width: 40px;
   display: inline-block;
@@ -157,4 +158,17 @@ body {
   width: 100%;
   height: 100%;
   float: left;
+}
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
+}
+.leaflet-marker-icon .number {
+  position: relative;
+  top: -43px;
+  font-size: 14px;
+  width: 30px;
+  text-align: center;
+  left: 0px;
+  color: white;
 }

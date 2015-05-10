@@ -3,8 +3,8 @@ define(function (require){
 
     var Marionette = require('marionette'),
         _ = require('underscore'),
-        AgentsCompositeView = require('./AgentsCompositeView'),
-        Leaflet = require('leaflet');
+        UiMarker = require('./UiMarker'),
+        AgentsCompositeView = require('./AgentsCompositeView');
 
     return Marionette.ItemView.extend({
 
@@ -22,12 +22,12 @@ define(function (require){
             headerlink: '.accordion-header'
         },
 
-        events:{
-          'mouseover': '_itemHover',
-          'mouseout': '_itemOut',
-          'mousedown': '_itemClick',
-          'accordion.opened': '_setOpened',
-          'accordion.closed': '_setClosed'
+        events: {
+            'mouseover': '_itemHover',
+            'mouseout': '_itemOut',
+            'mousedown': '_itemClick',
+            'accordion.opened': '_setOpened',
+            'accordion.closed': '_setClosed'
         },
 
         /** @private */
@@ -35,38 +35,34 @@ define(function (require){
             this.agentsView = new AgentsCompositeView({
                 collection: this.model.get('agents')
             });
+
+
         },
 
         /** @private */
         _initMarkerIcons: function (){
-            var MarkerIcon = Leaflet.Icon.extend({
-                options: {
-                    shadowUrl: 'static_files/images/marker-shadow.png',
-                    iconSize: [30, 30],
-                    shadowSize: [30, 30],
-                    iconAnchor: [15, 15],
-                    shadowAnchor: [10, 10],
-                    popupAnchor: [0, -15]
-                }
+
+            this.uiMarker = new UiMarker({
+                agentsLength: this.model.get('agents').length,
+                faulty: _.pluck(_.flatten(this.model.get('agents').pluck('apis')),'faulty').indexOf(1) > -1
             });
 
-            this.markerIcon = new MarkerIcon({iconUrl: 'static_files/images/marker.png'});
-            this.markerActiveIcon = new MarkerIcon({iconUrl: 'static_files/images/marker-active.png'});
+            this.markerIcon = this.uiMarker.markerIcon;
+            this.markerActiveIcon = this.uiMarker.markerActiveIcon;
         },
-
 
         addMarker: function (map){
             this._initMarkerIcons();
-            this.marker = Leaflet.marker([this.model.get('location').gps.latitude, this.model.get('location').gps.longitude], {icon: this.markerIcon});
+
+
+            this.marker = this.uiMarker.getMarker([this.model.get('location').gps.latitude, this.model.get('location').gps.longitude]);
             this.marker.on('mouseover', _.bind(this._markerOnHover, this));
             this.marker.on('mouseout', _.bind(this._markerOnOut, this));
             this.marker.on('click', _.bind(this._markerOnClick, this));
             this.marker.addTo(map);
-
             var popupText = this.model.get('location').city + ', ' + this.model.get('location').country;
             this.marker.bindPopup(popupText);
         },
-
 
         /** @private */
         _itemHover: function (){
@@ -105,9 +101,7 @@ define(function (require){
                     this._scrollToMe();
                 }, this));
             }
-
             this.trigger('marker:click');
-
         },
 
         /** @private */
