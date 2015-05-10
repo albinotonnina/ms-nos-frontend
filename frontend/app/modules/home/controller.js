@@ -24,8 +24,8 @@ define(function (require){
         /** @private */
         index: function (){
 
-            var useCustomUrl = decodeURIComponent((new RegExp('[?|&]url=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,''])[1].replace(/\+/g, '%20'))||null;
-            this._fetchData(useCustomUrl).done(_.bind(this._initCollections, this));
+            this.useCustomUrl = decodeURIComponent((new RegExp('[?|&]url=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,''])[1].replace(/\+/g, '%20'))||null;
+            this._fetchData(this.useCustomUrl).done(_.bind(this._initCollections, this));
         },
 
         /** @private */
@@ -35,7 +35,7 @@ define(function (require){
 
         /** @private */
         _refreshCollections: function(){
-            this._fetchData().done(_.bind(this._generateRingsModels,this));
+            this._fetchData(this.useCustomUrl).done(_.bind(this._generateRingsModels,this));
         },
 
         _generateRingsModels: function(response){
