@@ -44,7 +44,10 @@ this.inputRegion.show(this.inputView);
             $('#fullpage').fullpage({
                 anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
                 sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
-                menu: '#menu'
+                menu: '#menu',
+                css3: true,
+                scrollingSpeed: 1000
+
             });
 
 
