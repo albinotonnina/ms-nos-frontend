@@ -42,50 +42,81 @@ body {
 }
 #ui-region #agents {
   list-style-type: none;
-  padding: 0 16px;
+  padding-right: 16px;
+  padding-left: 0;
 }
 #ui-region #agents > li {
-  padding: 16px 0 0 32px;
+  padding-left: 24px;
   color: #353a3e;
+}
+#ui-region #agents > li:nth-child(odd) {
+  background-color: #ffffff;
 }
 #ui-region #agents > li > a {
   display: block;
   color: #353a3e;
+  padding: 4px 0;
+  font-size: 14px;
 }
 #ui-region #agents > li > a span.ring-uuid {
   pointer-events: none;
   color: #cccccc;
   display: block;
-  font-size: 14px;
-  opacity: 0.3;
+  font-size: 11px;
+  opacity: 0.6;
   transition: opacity .5s;
   color: #353a3e;
 }
 #ui-region #agents > li > a span.ring-uuid:before {
   content: 'uuid: ';
-  color: #ccc;
+  color: #353a3e;
   display: inline-block;
   margin-right: 8px;
 }
-#ui-region #agents > li > div.hidden {
+#ui-region #agents > li > a span.icon-chevron {
+  margin: 4px;
+}
+#ui-region #agents > li .container {
+  position: relative;
+  padding-bottom: 8px;
+}
+#ui-region #agents > li .container.hidden {
   display: none;
 }
-#ui-region #agents > li > div .icon-healthy {
-  color: #19d512;
+#ui-region #agents > li .container:before {
+  content: ' APIs:';
+  position: absolute;
+  top: 8px;
+  font-size: 14px;
 }
-#ui-region #agents > li > div .icon-faulty {
-  color: #d50410;
-}
-#ui-region #agents > li > div .date {
+#ui-region #agents > li .container .date {
   font-size: 12px;
   opacity: 0.5;
+  margin: 0;
+  text-align: right;
+  padding-right: 8px;
 }
-#ui-region #agents > li > div .api-wrapper .api-type {
+#ui-region #agents > li .container .api-wrapper span {
+  display: inline-block;
+  font-size: 14px;
+}
+#ui-region #agents > li .container .api-wrapper .icon-healthy {
+  color: #19d512;
+}
+#ui-region #agents > li .container .api-wrapper .icon-faulty {
+  color: #d50410;
+}
+#ui-region #agents > li .container .api-wrapper .api-path {
+  min-width: 120px;
+}
+#ui-region #agents > li .container .api-wrapper .api-host {
+  text-align: right;
+}
+#ui-region #agents > li .container .api-wrapper .api-type {
   background-color: #0074da;
   color: white;
   padding: 0 4px;
   min-width: 40px;
-  display: inline-block;
   text-align: center;
   font-size: 12px;
 }
@@ -106,7 +137,7 @@ body {
   border-bottom: 2px solid #333;
 }
 #ui-region #items > li > a {
-  padding: 4px 8px 16px 16px;
+  padding: 4px 8px 8px 16px;
   font-size: 18px;
   display: block;
   color: #f4f4f4;
@@ -139,7 +170,8 @@ body {
   display: inline-block;
   margin-right: 8px;
 }
-#ui-region #items > li .accordion-active .icon-chevron:before {
+#ui-region #items > li .accordion-active .icon-chevron:before,
+#ui-region #items > li .collapsed .icon-chevron:before {
   content: "\e600";
 }
 #ui-region #items > li .icon-chevron {

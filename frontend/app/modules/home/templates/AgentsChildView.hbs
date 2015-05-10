@@ -1,7 +1,12 @@
 <a href="#" class="toggle"><span class="icon-shareable"></span> {{name}} <span class="icon-chevron"></span> <span class="ring-uuid">{{uuid}}</span></a>
 <div class="container hidden">
+
+
     <p class="date">last checked: {{lastChecked}}</p>
     <p class="date">last updated: {{lastUpdated}}</p>
+
+
+
 
     {{#each apis}}
         <div class="api-wrapper">
@@ -9,12 +14,12 @@
             {{#unless faulty}}
                 <span class="icon-vinyl icon-healthy"></span>
             {{else}}
-                <span class="icon-warning icon-faulty"></span>
+                <span class="icon-vinyl icon-faulty"></span>
             {{/unless}}
-
-            <span class="api-path">{{path}}</span>
-            <span class="api-host">{{host}}</span>
             <span class="api-type">{{type}}</span>
+            <span class="api-path">{{path}}</span>
+            <span class="api-host">{{host}}:{{port}}</span>
+
 
         </div>
     {{/each}}
