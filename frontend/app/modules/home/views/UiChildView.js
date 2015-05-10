@@ -54,12 +54,13 @@ define(function (require){
         },
 
         addMarker: function (map){
+            this.map = map;
             this._initMarkerIcons();
             this.marker = this.uiMarker.getMarker([this.model.get('location').gps.latitude, this.model.get('location').gps.longitude]);
             this.marker.on('mouseover', _.bind(this._markerOnHover, this));
             this.marker.on('mouseout', _.bind(this._markerOnOut, this));
             this.marker.on('click', _.bind(this._markerOnClick, this));
-            this.marker.addTo(map);
+            this.marker.addTo(this.map);
             var popupText = this._getMarkerPopup();
             this.marker.bindPopup(popupText,{
                 closeButton:false
@@ -105,7 +106,7 @@ define(function (require){
 
         /** @private */
         _markerOnOut: function (){
-        //    this.marker.closePopup();
+            this.marker.closePopup();
         },
 
         /** @private */
@@ -140,6 +141,10 @@ define(function (require){
             this.agentsView.render();
             $(this.ui.agentscontainer).html(this.agentsView.$el);
             this.trigger('refresh');
+        },
+
+        onDestroy: function(){
+            this.map.removeLayer(this.marker);
         }
 
     });
