@@ -18,7 +18,7 @@ define(function (require){
             this.microservicesCollection = new MicroservicesCollection();
             this.ringsCollection = new RingsCollection();
 
-            setInterval(_.bind(this._refreshCollections,this),10000);
+
         },
 
         /** @private */
@@ -30,6 +30,8 @@ define(function (require){
             }
 
             this._fetchData(this.baseUrl).done(_.bind(this._initCollections, this));
+
+            setInterval(_.bind(this._refreshCollections,this),10000);
         },
 
         /** @private */

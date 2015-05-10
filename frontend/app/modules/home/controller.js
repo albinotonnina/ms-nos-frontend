@@ -2,8 +2,7 @@ define(function (require){
     'use strict';
 
     var Marionette = require('marionette'),
-        _ = require('underscore'),
-        IndexLayout = require('./views/IndexLayout')
+        IndexLayout = require('./views/IndexLayout');
 
     return Marionette.Object.extend({
 

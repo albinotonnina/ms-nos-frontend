@@ -14,7 +14,7 @@ module.exports = {
         }
     },
     less: {
-        files: ['frontend/static_files/main.less'],
+        files: ['frontend/static_files/*.less'],
         tasks: ['build'],
         options: {
             spawn: false

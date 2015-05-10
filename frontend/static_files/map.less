@@ -1,0 +1,313 @@
+
+.accordion-header {
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
+}
+
+a {
+  color: #00adef;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: #f4f4f4;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#ui-region {
+  width: 30%;
+  height: 100%;
+  float: left;
+  background-color: #353a3e;
+
+  header {
+    color: #f4f4f4;
+    padding: 16px 32px;
+
+
+    position: fixed;
+    right: 0;
+    width: 300px;
+    z-index: 999999;
+    background: #333;
+    -webkit-box-shadow: -5px 3px 17px 2px rgba(0,0,0,0.31);
+    -moz-box-shadow: -5px 3px 17px 2px rgba(0,0,0,0.31);
+    box-shadow: -5px 3px 17px 2px rgba(0,0,0,0.31);
+
+
+    h1 {
+      color: #f68220;
+    }
+  }
+
+  .agents-wrapper {
+    padding: 16px 0;
+  }
+  #agents {
+    list-style-type: none;
+    padding-right: 16px;
+    padding-left: 0;
+
+    > li {
+      padding-left: 24px;
+      color: #353a3e;
+      //border-bottom: 1px solid #cccccc;
+
+      &:nth-child(odd) {
+        background-color: #ffffff;
+      }
+
+      > a {
+        display: block;
+        color: #353a3e;
+        padding: 4px 0;
+        font-size: 14px;
+
+        span.ring-uuid {
+          pointer-events: none;
+          color: #cccccc;
+          display: block;
+          font-size: 11px;
+          opacity: 0.6;
+          transition: opacity .5s;
+          color: #353a3e;
+          &:before {
+            content: 'uuid: ';
+            color: #353a3e;
+            display: inline-block;
+            margin-right: 8px;
+          }
+        }
+
+        span.icon-chevron{
+          margin: 4px;
+        }
+      }
+
+      .container {
+        position: relative;
+        padding-bottom: 8px;
+
+        &.hidden {
+          display: none;
+        }
+
+
+
+        &:before {
+          content: ' APIs:';
+          position: absolute;
+          top: 8px;
+          font-size: 14px;
+        }
+
+        .date {
+          font-size: 12px;
+          opacity: 0.5;
+          margin: 0;
+          text-align: right;
+          padding-right:8px;
+        }
+
+        .api-wrapper {
+
+          span {
+            display: inline-block;
+            font-size: 14px;
+          }
+
+          .icon-healthy {
+            color: #19d512;
+          }
+
+          .icon-faulty {
+            color: #d50410;
+          }
+
+          .api-path{
+            min-width:120px;
+          }
+
+          .api-host{
+            text-align: right;
+          }
+
+          .api-type {
+            background-color: #0074da;
+            color: white;
+            padding: 0 4px;
+            min-width: 40px;
+            text-align: center;
+            font-size: 12px;
+          }
+
+        }
+
+      }
+    }
+  }
+
+  .items-wrapper {
+    height: 100%;
+    overflow-y: scroll;
+  }
+  #items {
+    color: #ffffff;
+    list-style-type: none;
+    padding-left: 0;
+
+    > li {
+
+      &:nth-child(odd) {
+        > a {
+          background-color: #5c656c;
+        }
+      }
+
+      > div {
+        background-color: #f4f4f4;
+        border-bottom: 2px solid #333;
+      }
+
+      > a {
+        padding: 4px 8px 8px 16px;
+        font-size: 18px;
+        display: block;
+        color: #f4f4f4;
+
+        &:hover {
+          background-color: #f68220;
+        }
+
+        &:focus {
+          outline: darkgoldenrod;
+          background-color: #f68220;
+        }
+
+        &.accordion-active {
+          span.ring-uuid {
+            opacity: 0.5;
+          }
+        }
+
+        span.icon {
+          font-size: 12px;
+        }
+
+        span.ring-uuid {
+          pointer-events: none;
+          color: #cccccc;
+          display: block;
+          font-size: 14px;
+          opacity: 0.3;
+          transition: opacity .5s;
+          color: #f4f4f4;
+          &:before {
+            content: 'uuid: ';
+            color: #f4f4f4;
+            display: inline-block;
+            margin-right: 8px;
+          }
+
+        }
+
+      }
+
+      .accordion-active, .collapsed {
+
+        .icon-chevron {
+          &:before {
+            content: "\e600";
+          }
+        }
+      }
+
+      .icon-chevron {
+        float: right;
+        margin-top: 8px;
+        &:before {
+          content: "\e601";
+        }
+      }
+
+    }
+
+  }
+}
+
+#map-region {
+  width: 70%;
+  height: 100%;
+  float: left;
+
+  .map-wrapper {
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+}
+
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
+}
+
+.leaflet-marker-icon .number {
+  position: relative;
+  top: -43px;
+  font-size: 14px;
+  width: 30px;
+  text-align: center;
+  left: 0px;
+  color: white;
+  pointer-events: none;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 4px;
+
+  .leaflet-popup-content {
+    margin: 16px;
+
+    p {
+      margin: 4px 0;
+
+      &.location {
+        margin: 8px 0;
+      }
+    }
+
+    .title {
+      display: inline-block;
+      width: 70px;
+    }
+    .dot {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      text-align: center;
+      border-radius: 11px;
+      color: #fff;
+      line-height: 22px;
+    }
+    .green-dot {
+      background-color: #19d512;
+
+    }
+
+    .red-dot {
+      background-color: #ff0000;
+
+    }
+  }
+}
+
+
+
+
