@@ -6,7 +6,8 @@ define(function (require) {
     var Router = Marionette.AppRouter.extend({
 
         appRoutes: {
-            'home' : 'index'
+            'home' : 'index',
+            'secondPage' : 'index'
         }
     });
 

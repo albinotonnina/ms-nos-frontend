@@ -10,7 +10,7 @@ define(function (require){
     return Marionette.LayoutView.extend({
 
         /** @private */
-        id: 'indexLayout',
+        id: 'indexLayoutMap',
 
         /** @private */
         className: 'indexLayout',
@@ -40,6 +40,13 @@ define(function (require){
             this.mapRegion.show(this.mapView);
             this.uiView = this.controller.getUiView(this.mapView.getMapObject());
             this.uiRegion.show(this.uiView);
+        },
+
+        onRender: function(){
+            $('html,body').css({
+                'overflow' : 'visible',
+                'height' : '100%'
+            });
         }
 
     });

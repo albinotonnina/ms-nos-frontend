@@ -51,7 +51,9 @@ define(function (require){
         /** @private */
         _initCollections: function (response){
             this.ringsCollection.addRings(response);
-            this._initIndexLayout();
+            setTimeout(_.bind(function(){
+                this._initIndexLayout();
+            },this),1000);
         },
 
         /** @private */

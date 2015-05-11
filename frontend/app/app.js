@@ -21,9 +21,13 @@ define(function (require) {
     });
 
     app.on('start', function (options) {
+        var hashToLoad = 'home';
+        if(window.location.hash){
+            hashToLoad = window.location.hash.substr(1);
+        }
 
         if (!Backbone.history.start({ pushState : options.pushState })) {
-            Backbone.history.navigate('home', { trigger : true });
+            Backbone.history.navigate(hashToLoad, { trigger : true });
         }
     });
 

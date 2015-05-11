@@ -19,10 +19,12 @@ define(function (require){
 
         /** @private */
         _initIndexLayout: function (){
-            var indexLayout = new IndexLayout({
-                controller: this
-            });
-            this.app.container.show(indexLayout);
+            if(!this.indexLayout || this.indexLayout.isDestroyed){
+                this.indexLayout = new IndexLayout({
+                    controller: this
+                });
+            }
+            this.app.container.show(this.indexLayout);
         }
     });
 

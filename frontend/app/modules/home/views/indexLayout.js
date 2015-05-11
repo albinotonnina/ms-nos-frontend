@@ -2,6 +2,7 @@ define(function (require){
     'use strict';
 
     var Marionette = require('marionette'),
+        Backbone = require('backbone'),
         InputView = require('./InputView');
     /**
      * @class indexLayout
@@ -33,16 +34,15 @@ define(function (require){
         initialize: function (options){
             this.controller = options.controller;
             this.inputView = new InputView();
+
+
         },
 
         /** @private */
         onShow: function (){
-
-this.inputRegion.show(this.inputView);
-
-
+            this.inputRegion.show(this.inputView);
             $('#fullpage').fullpage({
-                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+                anchors: ['home', 'secondPage', '3rdPage', '4thpage'],
                 sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
                 menu: '#menu',
                 css3: true,
@@ -50,10 +50,10 @@ this.inputRegion.show(this.inputView);
 
             });
 
-
-
-
-
+            $.fn.fullpage.silentMoveTo(Backbone.history.getFragment());
+        },
+        onBeforeDestroy: function (){
+            $.fn.fullpage.destroy('all');
         }
 
     });
