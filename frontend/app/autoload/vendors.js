@@ -6,6 +6,9 @@ define(function (require) {
         require('vendors/handlebars')(app);
         require('jquery.scrollto');
         require('fullpage');
+        require('three');
+
+
 
     };
 

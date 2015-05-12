@@ -5,6 +5,7 @@
         "$":false,
         "jasmine" : false,
         "describe" : false,
+        "THREE":false,
         "it" : false,
         "expect" : false,
         "beforeEach" : false,

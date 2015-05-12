@@ -23,7 +23,8 @@
     "jquery.scrollTo": "~2.1.0",
     "jquery-simple-accordion": "~1.0.3",
     "lessfonts-open-sans": "~1.0.2",
-    "fullpage.js": "~2.6.5"
+    "fullpage.js": "~2.6.5",
+    "three.js": "~0.70.0"
   },
   "devDependencies": {
     "mocha": "1.18.2",

@@ -16,7 +16,8 @@
         "accordion": "<%= path %>bower_components/accordion/accordion",
         "jquery.exists": "<%= path %>bower_components/jquery.exists/jquery.exists",
         "jquery.scrollto": "<%= path %>bower_components/jquery.scrollTo/jquery.scrollTo",
-        "fullpage": "<%= path %>bower_components/fullpage.js/jquery.fullPage.min"
+        "fullpage": "<%= path %>bower_components/fullpage.js/jquery.fullPage.min",
+        "three": "<%= path %>bower_components/three.js/three.min"
     },
     "shim": {
         "handlebars" : {
