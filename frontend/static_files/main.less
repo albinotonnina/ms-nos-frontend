@@ -4,7 +4,6 @@
 @import url('input-region.less');
 @import url('home-region.less');
 
-
 html,
 body,
 .container,
@@ -14,10 +13,21 @@ body,
   height: 100%;
 }
 
+a {
+  color: #00adef;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: #cacaca;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
 
-
-#background{
+#background {
   position: fixed;
   top: 0;
   width: 100%;
@@ -30,5 +40,20 @@ body,
   //background: linear-gradient(to bottom,  rgba(60,63,120,0.03) 0%,rgba(0,168,198,0.03) 100%); /* W3C */
   //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a3c3f78', endColorstr='#0a00a8c6',GradientType=0 ); /* IE6-9 */
 
+}
+
+.msnos-logo {
+  text-align: left;
+  height: 146px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 16px;
+  
+  img{
+    max-width: 100%;
+    height: 90%;
+  }
 
 }

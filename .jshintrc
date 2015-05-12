@@ -5,6 +5,7 @@
         "$":false,
         "jasmine" : false,
         "describe" : false,
+        "jQuery":false,
         "THREE":false,
         "it" : false,
         "expect" : false,

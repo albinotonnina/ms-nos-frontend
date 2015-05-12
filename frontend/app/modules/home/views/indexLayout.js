@@ -66,7 +66,7 @@ define(function (require){
             var self = this;
 
             var container;
-            var camera, scene, renderer, particles, geometry, material, i, h, color, sprite, size;
+            var camera, scene, renderer, particles, geometry, material, i, h,  sprite;
             var mouseX = 0, mouseY = 0;
 
             var windowHalfX = window.innerWidth / 2;
