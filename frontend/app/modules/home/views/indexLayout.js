@@ -37,7 +37,13 @@ define(function (require){
 
         /** @private */
         ui: {
-            map_canvas: '#map_canvas'
+            map_canvas: '#map_canvas',
+            msnoslogo: '.msnos-logo'
+        },
+
+        /** @private */
+        events:{
+          'click @ui.msnoslogo':'_clickLogo'
         },
 
         /** @private */
@@ -78,6 +84,11 @@ define(function (require){
 
         onBeforeDestroy: function (){
             $.fn.fullpage.destroy('all');
+        },
+
+        _clickLogo: function(ev){
+            ev.preventDefault();
+            $.fn.fullpage.silentMoveTo(1);
         }
 
     });

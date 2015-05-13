@@ -308,6 +308,12 @@
   padding: 0 25%;
   color: #3c3f78;
 }
+#about-region .fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent #00adef;
+}
+#about-region .fp-controlArrow.fp-prev {
+  border-color: transparent #00adef transparent transparent;
+}
 html,
 body,
 .container,
@@ -333,8 +339,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 200px;
   padding: 32px 32px;
+  z-index: 71;
 }
 .msnos-logo img {
   max-width: 100%;
