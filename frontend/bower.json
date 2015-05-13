@@ -25,7 +25,8 @@
     "lessfonts-open-sans": "~1.0.2",
     "fullpage.js": "~2.6.5",
     "three.js": "~0.70.0",
-    "modernizr": "~2.8.3"
+    "modernizr": "~2.8.3",
+    "highlightjs": "~8.5.0"
   },
   "devDependencies": {
     "mocha": "1.18.2",

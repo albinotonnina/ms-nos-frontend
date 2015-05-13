@@ -1,8 +1,7 @@
 define(function (require){
     'use strict';
 
-    var Marionette = require('marionette'),
-        _ = require('underscore');
+    var Marionette = require('marionette');
 
 
     return Marionette.ItemView.extend({

@@ -7,7 +7,6 @@ define(function (require){
         /** Autoload plugins */
         require('plugins/logger')(app);
 
-
         /*
          * jqFloat.js - jQuery plugin
          * A Floating Effect with jQuery!

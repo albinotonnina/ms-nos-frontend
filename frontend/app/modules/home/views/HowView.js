@@ -1,8 +1,7 @@
 define(function (require){
     'use strict';
 
-    var Marionette = require('marionette'),
-        _ = require('underscore');
+    var Marionette = require('marionette');
 
     return Marionette.ItemView.extend({
 
@@ -21,6 +20,9 @@ define(function (require){
 
         
         onShow: function (){
+            this.$el.find('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
         },
 
 

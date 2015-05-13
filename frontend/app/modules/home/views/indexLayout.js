@@ -2,6 +2,7 @@ define(function (require){
     'use strict';
 
     var Marionette = require('marionette'),
+        _ = require('underscore'),
         Backbone = require('backbone'),
         BackgroundView = require('./BackgroundView'),
         HomeView = require('./HomeView'),
@@ -38,12 +39,13 @@ define(function (require){
         /** @private */
         ui: {
             map_canvas: '#map_canvas',
-            msnoslogo: '.msnos-logo'
+            msnoslogo: '.msnos-logo',
+            submenu: '#submenu'
         },
 
         /** @private */
-        events:{
-          'click @ui.msnoslogo':'_clickLogo'
+        events: {
+            'click @ui.msnoslogo': '_clickLogo'
         },
 
         /** @private */
@@ -67,13 +69,7 @@ define(function (require){
             this.inputRegion.show(this.inputView);
             this.contactsRegion.show(this.contactsView);
 
-            $('#fullpage').fullpage({
-                anchors: ['home', 'about', 'how', 'visualization', 'contacts'],
-                menu: '#menu',
-                css3: true,
-                scrollingSpeed: 1000
-
-            });
+            this._initFullPage();
 
             var hashToLoad = Backbone.history.getFragment().split('/');
             $.fn.fullpage.silentMoveTo(hashToLoad[0], hashToLoad[1]);
@@ -86,9 +82,27 @@ define(function (require){
             $.fn.fullpage.destroy('all');
         },
 
-        _clickLogo: function(ev){
+        _clickLogo: function (ev){
             ev.preventDefault();
             $.fn.fullpage.silentMoveTo(1);
+        },
+
+        _initFullPage: function (){
+            $('#fullpage').fullpage({
+                anchors: ['home', 'about', 'how', 'visualization', 'contacts'],
+                menu: '#menu',
+                css3: true,
+                scrollingSpeed: 1000,
+                touchSensitivity: 15,
+                responsive: 768,
+                afterLoad: _.bind(function (anchorLink){
+                    this.ui.submenu.toggleClass('bigger', anchorLink === 'how');
+                },this),
+                onLeave: _.bind(function (){
+                    this.ui.submenu.removeClass('bigger');
+                },this)
+
+            });
         }
 
     });

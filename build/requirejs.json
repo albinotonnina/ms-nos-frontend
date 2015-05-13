@@ -17,7 +17,8 @@
         "jquery.exists": "<%= path %>bower_components/jquery.exists/jquery.exists",
         "jquery.scrollto": "<%= path %>bower_components/jquery.scrollTo/jquery.scrollTo",
         "fullpage": "<%= path %>bower_components/fullpage.js/jquery.fullPage.min",
-        "three": "<%= path %>bower_components/three.js/three.min"
+        "three": "<%= path %>bower_components/three.js/three.min",
+        "highlightjs": "<%= path %>bower_components/highlightjs/highlight.pack"
     },
     "shim": {
         "handlebars" : {

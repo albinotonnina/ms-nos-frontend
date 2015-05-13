@@ -34,7 +34,8 @@
         "jquery.exists": "../bower_components/jquery.exists/jquery.exists",
         "jquery.scrollto": "../bower_components/jquery.scrollTo/jquery.scrollTo",
         "fullpage": "../bower_components/fullpage.js/jquery.fullPage.min",
-        "three": "../bower_components/three.js/three.min"
+        "three": "../bower_components/three.js/three.min",
+        "highlightjs": "../bower_components/highlightjs/highlight.pack"
     },
     "shim": {
         "handlebars" : {

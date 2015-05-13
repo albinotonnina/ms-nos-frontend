@@ -7,6 +7,7 @@ define(function (require) {
         require('jquery.scrollto');
         require('fullpage');
         require('three');
+        require('highlightjs');
 
 
 
