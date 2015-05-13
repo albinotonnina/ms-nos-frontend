@@ -310,9 +310,11 @@
 }
 #about-region .fp-controlArrow.fp-next {
   border-color: transparent transparent transparent #00adef;
+  margin-right: 10%;
 }
 #about-region .fp-controlArrow.fp-prev {
   border-color: transparent #00adef transparent transparent;
+  margin-left: 10%;
 }
 html,
 body,
