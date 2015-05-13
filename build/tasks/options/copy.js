@@ -28,6 +28,13 @@ module.exports = {
                 dest: 'build/dist/static_files/styles/font/OpenSans/OpenSans-Semibold',
                 filter: 'isFile',
                 flatten: true
+            },
+            {
+                expand: true,
+                src: ['frontend/bower_components/lessfonts-open-sans/dist/fonts/OpenSans/OpenSans-Light/*'],
+                dest: 'build/dist/static_files/styles/font/OpenSans/OpenSans-Light',
+                filter: 'isFile',
+                flatten: true
             }
         ]
     },
@@ -44,6 +51,13 @@ module.exports = {
                 expand: true,
                 src: ['frontend/bower_components/lessfonts-open-sans/dist/fonts/OpenSans/OpenSans-Semibold/*'],
                 dest: 'frontend/static_files/styles/font/OpenSans/OpenSans-Semibold',
+                filter: 'isFile',
+                flatten: true
+            },
+            {
+                expand: true,
+                src: ['frontend/bower_components/lessfonts-open-sans/dist/fonts/OpenSans/OpenSans-Light/*'],
+                dest: 'frontend/static_files/styles/font/OpenSans/OpenSans-Light',
                 filter: 'isFile',
                 flatten: true
             }
