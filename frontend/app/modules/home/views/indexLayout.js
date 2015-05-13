@@ -2,7 +2,6 @@ define(function (require){
     'use strict';
 
     var Marionette = require('marionette'),
-        _ = require('underscore'),
         Backbone = require('backbone'),
         BackgroundView = require('./BackgroundView'),
         HomeView = require('./HomeView'),
