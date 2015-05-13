@@ -10,6 +10,13 @@ module.exports = {
             },
             {
                 expand: true,
+                src: ['frontend/static_files/images/slides/*'],
+                dest: 'build/dist/static_files/images/slides/',
+                filter: 'isFile',
+                flatten: true
+            },
+            {
+                expand: true,
                 src: ['frontend/static_files/styles/*'],
                 dest: 'build/dist/static_files/styles/',
                 filter: 'isFile',
