@@ -1,28 +1,36 @@
 @import url('msnos-icons.css');
-#menu {
+.menu {
   position: fixed;
-  top: 0;
+  top: 32px;
   right: 32px;
   height: 40px;
   z-index: 70;
   width: 100%;
   text-align: right;
+  margin: 0;
 }
-#menu li {
+.menu#submenu {
+  top: 80px;
+}
+.menu li {
   display: inline-block;
-  margin: 16px 0;
+  padding: 0 16px;
+  margin: 0;
 }
-#menu li a {
+.menu li a {
   color: #3c3f78;
-  padding: 9px 18px;
   display: block;
   font-weight: 300;
   font-size: 22px;
+  -webkit-transition: all .4s;
+  /* Safari */
+  transition: all .4s;
 }
-#menu li.active a {
+.menu li.active a {
   color: #00adef;
+  font-size: 36px;
 }
-#menu li:hover {
+.menu li:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 .section {
@@ -290,6 +298,15 @@
   top: 0;
   width: 100%;
   height: 100%;
+}
+#about-region h1 {
+  font-size: 64px;
+  color: #00adef;
+}
+#about-region p {
+  font-size: 36px;
+  padding: 0 25%;
+  color: #3c3f78;
 }
 html,
 body,

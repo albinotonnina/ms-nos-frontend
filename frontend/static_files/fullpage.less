@@ -1,28 +1,37 @@
 
-#menu {
+.menu {
   position: fixed;
-  top: 0;
+  top: 32px;
   right: 32px;
   height: 40px;
   z-index: 70;
   width: 100%;
   text-align: right;
+  margin:0;
+
+  &#submenu{
+    top: 80px;
+  }
+
 
   li {
     display: inline-block;
-    margin: 16px 0;
+    padding: 0 16px;
+    margin:0;
 
     a {
       color:#3c3f78;
-      padding: 9px 18px;
       display: block;
       font-weight: 300;
       font-size: 22px;
+      -webkit-transition: all .4s; /* Safari */
+      transition: all .4s;
     }
 
     &.active {
       a{
         color: #00adef;
+        font-size: 36px;
       }
     }
 
