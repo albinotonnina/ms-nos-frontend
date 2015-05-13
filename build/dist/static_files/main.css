@@ -268,6 +268,7 @@
   bottom: 10%;
   left: 0;
   width: 100%;
+  font-weight: 300;
 }
 #home-region .network-image-container {
   width: 100%;
@@ -299,6 +300,7 @@
 #about-region h1 {
   font-size: 64px;
   color: #00adef;
+  font-weight: 300;
 }
 #about-region p {
   font-size: 36px;
@@ -323,6 +325,7 @@
 #how-region h1 {
   color: #00adef;
   padding: 0 25%;
+  font-weight: 300;
 }
 #how-region p {
   color: #3c3f78;
