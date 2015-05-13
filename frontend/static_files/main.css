@@ -30,16 +30,6 @@
 .menu li:hover {
   background: rgba(255, 255, 255, 0.2);
 }
-.menu#submenu {
-  top: 80px;
-}
-.menu#submenu .github span.icon-github {
-  margin-left: 8px;
-  vertical-align: middle;
-}
-.menu#submenu.bigger .github {
-  font-size: 48px;
-}
 .section {
   text-align: center;
 }

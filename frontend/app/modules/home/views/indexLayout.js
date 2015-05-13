@@ -94,13 +94,7 @@ define(function (require){
                 css3: true,
                 scrollingSpeed: 1000,
                 touchSensitivity: 15,
-                responsive: 768,
-                afterLoad: _.bind(function (anchorLink){
-                    this.ui.submenu.toggleClass('bigger', anchorLink === 'how');
-                },this),
-                onLeave: _.bind(function (){
-                    this.ui.submenu.removeClass('bigger');
-                },this)
+                responsive: 768
 
             });
         }
