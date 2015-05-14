@@ -38,7 +38,7 @@ define(function (require){
                 if(_.pluck(obj, 'type').indexOf('PUBLIC') > -1){
                     parsedData.push({
                         api: api,
-                        url:this.baseUrl ? this.baseUrl+api.substring(1):api.substring(1)
+                        url:this.baseUrl ? this.baseUrl+api:api
                     });
                 }
             }, this));
