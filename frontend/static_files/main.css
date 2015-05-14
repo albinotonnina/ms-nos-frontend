@@ -283,6 +283,12 @@
   right: 32px;
   z-index: 73;
 }
+#workshare {
+  position: fixed;
+  bottom: 32px;
+  left: 32px;
+  z-index: 73;
+}
 .accordion-header {
   cursor: pointer;
 }
