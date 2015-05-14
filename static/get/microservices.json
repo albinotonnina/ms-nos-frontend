@@ -2,125 +2,6 @@
   {
     "agent": {
       "ring": {
-        "uuid": "01680100-0b00-0000-0000-000000000018",
-        "location": {
-          "precision": 0
-        }
-      },
-      "endpoints": [
-        {
-          "url": "http://192.168.1.11:3000/msnos",
-          "type": "HTTP",
-          "network": {
-            "address": [
-              -64,
-              -88,
-              1,
-              11
-            ],
-            "prefix": 24
-          },
-          "port": 3000
-        },
-        {
-          "type": "UDP",
-          "network": {
-            "address": [
-              -64,
-              -88,
-              1,
-              11
-            ],
-            "prefix": 24
-          },
-          "port": 0
-        }
-      ],
-      "iden": {
-        "type": "AGT",
-        "uuid": "f52f6daa-6a78-4dfe-be5b-717875a105fb"
-      },
-      "sequencer": {
-        "value": 0
-      },
-      "accessTime": {
-        "value": 1431253881837
-      }
-    },
-    "name": "Tremila",
-    "apis": [
-      {
-        "path": "/wassup",
-        "host": "192.168.1.11",
-        "port": 3000,
-        "sticky": false,
-        "type": "PUB",
-        "priority": 0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/hello",
-        "host": "192.168.1.11",
-        "port": 3000,
-        "sticky": false,
-        "type": "PUB",
-        "priority": 0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/msnos",
-        "host": "192.168.1.11",
-        "port": 3000,
-        "sticky": false,
-        "type": "MHT",
-        "priority": 0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/sticky",
-        "host": "192.168.1.11",
-        "port": 3000,
-        "sticky": true,
-        "type": "PUB",
-        "priority": 0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/health",
-        "host": "192.168.1.11",
-        "port": 3000,
-        "sticky": false,
-        "type": "HCK",
-        "priority": 0,
-        "tempFaults": {
-          "value": 0
-        }
-      }
-    ],
-    "faulty": {
-      "value": 1
-    },
-    "lastUpdated": {
-      "value": 1431254206839
-    },
-    "lastChecked": {
-      "value": 1431254386828
-    },
-    "location": {
-      "precision": 0
-    }
-  },
-  {
-    "agent": {
-      "ring": {
         "uuid": "00f9c400-6200-0000-0000-000000000020",
         "location": {
           "continent": {
@@ -165,7 +46,7 @@
           "port": 0
         },
         {
-          "url": "http://54.195.196.98:9991/msnos",
+          "url": "http://54.195.196.98:9992/msnos",
           "type": "HTTP",
           "network": {
             "address": [
@@ -176,88 +57,88 @@
             ],
             "prefix": 32
           },
-          "port": 9991
+          "port": 9992
         }
       ],
       "iden": {
         "type": "AGT",
-        "uuid": "70aa8aa3-11d1-4614-866e-a53b35b385e8"
-      },
-      "sequencer": {
-        "value": 0
+        "uuid": "39239f27-cd2a-4a4b-b680-3e42a0b8ea07"
       },
       "accessTime": {
-        "value": 1431254436832
+        "value": 1431611412323
       }
     },
-    "name": "Lon",
+    "name": "Dub-2",
     "apis": [
       {
         "path": "/health",
         "host": "54.195.196.98",
-        "port": 9991,
+        "port": 9992,
         "sticky": false,
         "type": "HCK",
         "priority": 0,
         "tempFaults": {
           "value": 0
         },
-        "faulty": 1
+        "faulty": false
+      },
+      {
+        "path": "/msnos",
+        "host": "54.195.196.98",
+        "port": 9992,
+        "sticky": false,
+        "type": "MHT",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
+      },
+      {
+        "path": "/hello",
+        "host": "54.195.196.98",
+        "port": 9992,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
+      },
+      {
+        "path": "/wassup",
+        "host": "54.195.196.98",
+        "port": 9992,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
       },
       {
         "path": "/sticky",
         "host": "54.195.196.98",
-        "port": 9991,
+        "port": 9992,
         "sticky": true,
         "type": "PUB",
         "priority": 0,
         "tempFaults": {
           "value": 0
         },
-        "faulty": 1
-      },
-      {
-        "path": "/wassup",
-        "host": "54.195.196.98",
-        "port": 9991,
-        "sticky": false,
-        "type": "PUB",
-        "priority": 0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/hello",
-        "host": "54.195.196.98",
-        "port": 9991,
-        "sticky": false,
-        "type": "PUB",
-        "priority": 0,
-        "tempFaults": {
-          "value": 0
-        }
-      },
-      {
-        "path": "/msnos",
-        "host": "54.195.196.98",
-        "port": 9991,
-        "sticky": false,
-        "type": "MHT",
-        "priority": 0,
-        "tempFaults": {
-          "value": 0
-        }
+        "faulty": false
       }
     ],
     "faulty": {
       "value": 0
     },
     "lastUpdated": {
-      "value": 1431254221831
+      "value": 1431611367312
     },
     "lastChecked": {
-      "value": 1431254436832
+      "value": 1431611377312
     },
     "location": {
       "continent": {
@@ -316,19 +197,6 @@
       },
       "endpoints": [
         {
-          "type": "UDP",
-          "network": {
-            "address": [
-              52,
-              74,
-              88,
-              91
-            ],
-            "prefix": 32
-          },
-          "port": 0
-        },
-        {
           "url": "http://52.74.88.91:9991/msnos",
           "type": "HTTP",
           "network": {
@@ -341,31 +209,42 @@
             "prefix": 32
           },
           "port": 9991
+        },
+        {
+          "type": "UDP",
+          "network": {
+            "address": [
+              52,
+              74,
+              88,
+              91
+            ],
+            "prefix": 32
+          },
+          "port": 0
         }
       ],
       "iden": {
         "type": "AGT",
         "uuid": "12f83bca-dce8-42ab-8da7-6146b6e40e5f"
       },
-      "sequencer": {
-        "value": 0
-      },
       "accessTime": {
-        "value": 1431254361826
+        "value": 1431611407313
       }
     },
     "name": "Pore",
     "apis": [
       {
-        "path": "/wassup",
+        "path": "/msnos",
         "host": "52.74.88.91",
         "port": 9991,
         "sticky": false,
-        "type": "PUB",
+        "type": "MHT",
         "priority": 0,
         "tempFaults": {
           "value": 0
-        }
+        },
+        "faulty": false
       },
       {
         "path": "/sticky",
@@ -376,29 +255,20 @@
         "priority": 0,
         "tempFaults": {
           "value": 0
-        }
+        },
+        "faulty": false
       },
       {
-        "path": "/msnos",
+        "path": "/wassup",
         "host": "52.74.88.91",
         "port": 9991,
         "sticky": false,
-        "type": "MHT",
+        "type": "PUB",
         "priority": 0,
         "tempFaults": {
           "value": 0
-        }
-      },
-      {
-        "path": "/health",
-        "host": "52.74.88.91",
-        "port": 9991,
-        "sticky": false,
-        "type": "HCK",
-        "priority": 0,
-        "tempFaults": {
-          "value": 0
-        }
+        },
+        "faulty": false
       },
       {
         "path": "/hello",
@@ -409,17 +279,30 @@
         "priority": 0,
         "tempFaults": {
           "value": 0
-        }
+        },
+        "faulty": false
+      },
+      {
+        "path": "/health",
+        "host": "52.74.88.91",
+        "port": 9991,
+        "sticky": false,
+        "type": "HCK",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
       }
     ],
     "faulty": {
       "value": 0
     },
     "lastUpdated": {
-      "value": 1431254196834
+      "value": 1431611337321
     },
     "lastChecked": {
-      "value": 1431254361826
+      "value": 1431611367939
     },
     "location": {
       "continent": {
@@ -441,6 +324,344 @@
       "gps": {
         "latitude": 1.2931,
         "longitude": 103.8558
+      }
+    }
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "00741400-3100-0000-0000-000000000020",
+        "location": {
+          "continent": {
+            "type": "CONTINENT",
+            "name": "Oceania",
+            "code": "OC"
+          },
+          "country": {
+            "type": "COUNTRY",
+            "name": "Australia",
+            "code": "AU"
+          },
+          "region": {
+            "type": "REGION",
+            "name": "New South Wales",
+            "code": "NSW"
+          },
+          "city": {
+            "type": "CITY",
+            "name": "Sydney",
+            "code": "2147714"
+          },
+          "precision": 15,
+          "gps": {
+            "latitude": -33.8666,
+            "longitude": 151.2082
+          }
+        }
+      },
+      "endpoints": [
+        {
+          "url": "http://52.64.20.49:9991/msnos",
+          "type": "HTTP",
+          "network": {
+            "address": [
+              52,
+              64,
+              20,
+              49
+            ],
+            "prefix": 32
+          },
+          "port": 9991
+        },
+        {
+          "type": "UDP",
+          "network": {
+            "address": [
+              52,
+              64,
+              20,
+              49
+            ],
+            "prefix": 32
+          },
+          "port": 0
+        }
+      ],
+      "iden": {
+        "type": "AGT",
+        "uuid": "7b64cbb6-d348-4edb-b575-434016a88679"
+      },
+      "accessTime": {
+        "value": 1431611368570
+      }
+    },
+    "name": "Syd",
+    "apis": [
+      {
+        "path": "/msnos",
+        "host": "52.64.20.49",
+        "port": 9991,
+        "sticky": false,
+        "type": "MHT",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
+      },
+      {
+        "path": "/sticky",
+        "host": "52.64.20.49",
+        "port": 9991,
+        "sticky": true,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
+      },
+      {
+        "path": "/wassup",
+        "host": "52.64.20.49",
+        "port": 9991,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
+      },
+      {
+        "path": "/hello",
+        "host": "52.64.20.49",
+        "port": 9991,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
+      },
+      {
+        "path": "/health",
+        "host": "52.64.20.49",
+        "port": 9991,
+        "sticky": false,
+        "type": "HCK",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
+      }
+    ],
+    "faulty": {
+      "value": 0
+    },
+    "lastUpdated": {
+      "value": 1431611337316
+    },
+    "lastChecked": {
+      "value": 1431611368570
+    },
+    "location": {
+      "continent": {
+        "type": "CONTINENT",
+        "name": "Oceania",
+        "code": "OC"
+      },
+      "country": {
+        "type": "COUNTRY",
+        "name": "Australia",
+        "code": "AU"
+      },
+      "region": {
+        "type": "REGION",
+        "name": "New South Wales",
+        "code": "NSW"
+      },
+      "city": {
+        "type": "CITY",
+        "name": "Sydney",
+        "code": "2147714"
+      },
+      "precision": 15,
+      "gps": {
+        "latitude": -33.8666,
+        "longitude": 151.2082
+      }
+    }
+  },
+  {
+    "agent": {
+      "ring": {
+        "uuid": "013fc100-1000-0000-0000-000000000020",
+        "location": {
+          "continent": {
+            "type": "CONTINENT",
+            "name": "North America",
+            "code": "NA"
+          },
+          "country": {
+            "type": "COUNTRY",
+            "name": "United States",
+            "code": "US"
+          },
+          "region": {
+            "type": "REGION",
+            "name": "Washington",
+            "code": "WA"
+          },
+          "city": {
+            "type": "CITY",
+            "name": "Redmond",
+            "code": "5808079"
+          },
+          "precision": 15,
+          "gps": {
+            "latitude": 47.674,
+            "longitude": -122.1215
+          }
+        }
+      },
+      "endpoints": [
+        {
+          "url": "http://104.215.193.16:9991/msnos",
+          "type": "HTTP",
+          "network": {
+            "address": [
+              104,
+              -41,
+              -63,
+              16
+            ],
+            "prefix": 32
+          },
+          "port": 9991
+        },
+        {
+          "type": "UDP",
+          "network": {
+            "address": [
+              104,
+              -41,
+              -63,
+              16
+            ],
+            "prefix": 32
+          },
+          "port": 0
+        }
+      ],
+      "iden": {
+        "type": "AGT",
+        "uuid": "998a61ee-55a3-4b8a-9670-63ab0d42d021"
+      },
+      "accessTime": {
+        "value": 1431611369093
+      }
+    },
+    "name": "Kong-2",
+    "apis": [
+      {
+        "path": "/msnos",
+        "host": "104.215.193.16",
+        "port": 9991,
+        "sticky": false,
+        "type": "MHT",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
+      },
+      {
+        "path": "/hello",
+        "host": "104.215.193.16",
+        "port": 9991,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
+      },
+      {
+        "path": "/wassup",
+        "host": "104.215.193.16",
+        "port": 9991,
+        "sticky": false,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
+      },
+      {
+        "path": "/sticky",
+        "host": "104.215.193.16",
+        "port": 9991,
+        "sticky": true,
+        "type": "PUB",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
+      },
+      {
+        "path": "/health",
+        "host": "104.215.193.16",
+        "port": 9991,
+        "sticky": false,
+        "type": "HCK",
+        "priority": 0,
+        "tempFaults": {
+          "value": 0
+        },
+        "faulty": false
+      }
+    ],
+    "faulty": {
+      "value": 0
+    },
+    "lastUpdated": {
+      "value": 1431611332319
+    },
+    "lastChecked": {
+      "value": 1431611369093
+    },
+    "location": {
+      "continent": {
+        "type": "CONTINENT",
+        "name": "North America",
+        "code": "NA"
+      },
+      "country": {
+        "type": "COUNTRY",
+        "name": "United States",
+        "code": "US"
+      },
+      "region": {
+        "type": "REGION",
+        "name": "Washington",
+        "code": "WA"
+      },
+      "city": {
+        "type": "CITY",
+        "name": "Redmond",
+        "code": "5808079"
+      },
+      "precision": 15,
+      "gps": {
+        "latitude": 47.674,
+        "longitude": -122.1215
       }
     }
   }

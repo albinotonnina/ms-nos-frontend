@@ -2,7 +2,6 @@ define(function (require){
     'use strict';
 
     var Marionette = require('marionette'),
-        _=require('underscore'),
         ProxyChildView = require('./RoutesChildView');
 
 
