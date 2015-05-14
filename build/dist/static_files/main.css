@@ -591,6 +591,43 @@
   border-color: transparent #00adef transparent transparent;
   margin-left: 10%;
 }
+#contacts-region .bio {
+  vertical-align: top;
+  display: inline-block;
+  width: 33%;
+  max-width: 400px;
+}
+#contacts-region .bio h3 {
+  color: #3c3f78;
+  text-align: left;
+}
+#contacts-region .bio p {
+  text-align: justify;
+  color: #3c3f78;
+  padding-right: 32px;
+}
+#contacts-region .bio p strong {
+  color: #3c3f78;
+}
+#contacts-region .bio.bruno .circular {
+  background: url('../images/bbossola.jpg') no-repeat;
+}
+#contacts-region .bio.maria .circular {
+  background: url('../images/maria.jpg') no-repeat;
+}
+#contacts-region .bio.rhys .circular {
+  background: url('../images/rhys.jpg') no-repeat;
+}
+#contacts-region .circular {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
 #how-region pre {
   text-align: left;
   padding: 0 25%;
