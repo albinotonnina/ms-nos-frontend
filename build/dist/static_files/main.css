@@ -1,4 +1,248 @@
 @import url('msnos-icons.css');
+/*!
+ * Load Awesome v0.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
+.la-ball-grid-pulse {
+  position: relative;
+}
+.la-ball-grid-pulse > div {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  color: #fff;
+  background: #fff;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0;
+}
+.la-ball-grid-pulse:after {
+  display: table;
+  clear: both;
+  line-height: 0;
+  content: "";
+}
+.la-ball-grid-pulse.la-dark > div {
+  color: #00adef;
+  background: #00adef;
+  border-color: #00adef;
+}
+.la-ball-grid-pulse {
+  width: 36px;
+}
+.la-ball-grid-pulse > div {
+  display: inline-block;
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin: 2px;
+  border-radius: 100%;
+  -webkit-animation-name: ball-grid-pulse;
+  -moz-animation-name: ball-grid-pulse;
+  -o-animation-name: ball-grid-pulse;
+  animation-name: ball-grid-pulse;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.la-ball-grid-pulse > div:nth-child(1) {
+  -webkit-animation-duration: .63s;
+  -moz-animation-duration: .63s;
+  -o-animation-duration: .63s;
+  animation-duration: .63s;
+  -webkit-animation-delay: .13s;
+  -moz-animation-delay: .13s;
+  -o-animation-delay: .13s;
+  animation-delay: .13s;
+}
+.la-ball-grid-pulse > div:nth-child(2) {
+  -webkit-animation-duration: 1.39s;
+  -moz-animation-duration: 1.39s;
+  -o-animation-duration: 1.39s;
+  animation-duration: 1.39s;
+  -webkit-animation-delay: -0.02s;
+  -moz-animation-delay: -0.02s;
+  -o-animation-delay: -0.02s;
+  animation-delay: -0.02s;
+}
+.la-ball-grid-pulse > div:nth-child(3) {
+  -webkit-animation-duration: .78s;
+  -moz-animation-duration: .78s;
+  -o-animation-duration: .78s;
+  animation-duration: .78s;
+  -webkit-animation-delay: -0.27s;
+  -moz-animation-delay: -0.27s;
+  -o-animation-delay: -0.27s;
+  animation-delay: -0.27s;
+}
+.la-ball-grid-pulse > div:nth-child(4) {
+  -webkit-animation-duration: .85s;
+  -moz-animation-duration: .85s;
+  -o-animation-duration: .85s;
+  animation-duration: .85s;
+  -webkit-animation-delay: -0.28s;
+  -moz-animation-delay: -0.28s;
+  -o-animation-delay: -0.28s;
+  animation-delay: -0.28s;
+}
+.la-ball-grid-pulse > div:nth-child(5) {
+  -webkit-animation-duration: 1.18s;
+  -moz-animation-duration: 1.18s;
+  -o-animation-duration: 1.18s;
+  animation-duration: 1.18s;
+  -webkit-animation-delay: -0.13s;
+  -moz-animation-delay: -0.13s;
+  -o-animation-delay: -0.13s;
+  animation-delay: -0.13s;
+}
+.la-ball-grid-pulse > div:nth-child(6) {
+  -webkit-animation-duration: 1.32s;
+  -moz-animation-duration: 1.32s;
+  -o-animation-duration: 1.32s;
+  animation-duration: 1.32s;
+  -webkit-animation-delay: -0.01s;
+  -moz-animation-delay: -0.01s;
+  -o-animation-delay: -0.01s;
+  animation-delay: -0.01s;
+}
+.la-ball-grid-pulse > div:nth-child(7) {
+  -webkit-animation-duration: .65s;
+  -moz-animation-duration: .65s;
+  -o-animation-duration: .65s;
+  animation-duration: .65s;
+  -webkit-animation-delay: -0.41s;
+  -moz-animation-delay: -0.41s;
+  -o-animation-delay: -0.41s;
+  animation-delay: -0.41s;
+}
+.la-ball-grid-pulse > div:nth-child(8) {
+  -webkit-animation-duration: 1.3s;
+  -moz-animation-duration: 1.3s;
+  -o-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-delay: .19s;
+  -moz-animation-delay: .19s;
+  -o-animation-delay: .19s;
+  animation-delay: .19s;
+}
+.la-ball-grid-pulse > div:nth-child(9) {
+  -webkit-animation-duration: 1.46s;
+  -moz-animation-duration: 1.46s;
+  -o-animation-duration: 1.46s;
+  animation-duration: 1.46s;
+  -webkit-animation-delay: -0.66s;
+  -moz-animation-delay: -0.66s;
+  -o-animation-delay: -0.66s;
+  animation-delay: -0.66s;
+}
+.la-ball-grid-pulse.la-sm {
+  width: 18px;
+}
+.la-ball-grid-pulse.la-sm > div {
+  width: 4px;
+  height: 4px;
+  margin: 1px;
+}
+.la-ball-grid-pulse.la-lg {
+  width: 54px;
+}
+.la-ball-grid-pulse.la-lg > div {
+  width: 12px;
+  height: 12px;
+  margin: 3px;
+}
+.la-ball-grid-pulse.la-2x {
+  width: 72px;
+}
+.la-ball-grid-pulse.la-2x > div {
+  width: 16px;
+  height: 16px;
+  margin: 4px;
+}
+/*
+ * Animation
+ */
+@-webkit-keyframes ball-grid-pulse {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    opacity: .35;
+    -webkit-transform: scale(0.45);
+    transform: scale(0.45);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes ball-grid-pulse {
+  0% {
+    opacity: 1;
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    opacity: .35;
+    -moz-transform: scale(0.45);
+    transform: scale(0.45);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-o-keyframes ball-grid-pulse {
+  0% {
+    opacity: 1;
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    opacity: .35;
+    -o-transform: scale(0.45);
+    transform: scale(0.45);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes ball-grid-pulse {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    opacity: .35;
+    -webkit-transform: scale(0.45);
+    -moz-transform: scale(0.45);
+    -o-transform: scale(0.45);
+    transform: scale(0.45);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
 .menu {
   position: fixed;
   top: 32px;
@@ -269,7 +513,23 @@
   color: #3c3f78;
   font-size: 24px;
   padding: 0 25%;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+}
+#input-region .spinner {
+  margin: 0 auto;
+  height: 72px;
+}
+#input-region .spinner.hidden div {
+  display: none;
+}
+#input-region .input-error {
+  color: red;
+  display: block;
+  margin-bottom: 16px;
+  height: 16px;
+}
+#input-region .input-error.hidden span {
+  display: none;
 }
 #home-region h1 {
   margin: 0 25%;

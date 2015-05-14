@@ -10,56 +10,47 @@ define(function (require){
         template: require('text!./../templates/InputView.hbs'),
 
         /** @private */
-        ui: {},
-
-        events: {},
-
-        /** @private */
-        initialize: function (){
-
+        ui: {
+            textInput: '#base-url-input',
+            inputError: '.input-error span',
+            spinner:'.spinner div'
         },
 
-        onShow: function (){
-            $('#trigger_map').on('click', _.bind(function (ev){
-                ev.preventDefault();
-                var inputVal = $('#base-url-input').val();
+        events: {
+            'keyup @ui.textInput': '_keyupOnInput'
+        },
 
-
+        /** @private */
+        _keyupOnInput: function (event){
+            if(event.keyCode == 13){
+                var inputVal = $(event.target).val();
                 this._checkUrl(inputVal, _.bind(function (result){
                     if(result){
                         this._goToMap(inputVal);
                     } else{
-                        alert('error');
+                        this._showInputError();
                     }
 
                 }, this));
 
 
-            }, this));
-        },
-
-
-        /** @private */
-        onRender: function (){
-
-
+            }
         },
 
         /** @private */
-        onDestroy: function (){
-
-
-        },
-
         _goToMap: function (url){
             window.app.commands.execute('navigate:map', {url: url});
         },
 
+        /** @private */
         _checkUrl: function urlExists(url, callback){
+            this.ui.spinner.fadeIn('fast');
+            this.ui.inputError.fadeOut('fast');
+
             $.ajax({
                 type: 'HEAD',
                 url: url + '/admin/microservices',
-                timeout:5000,
+                timeout: 5000,
                 success: function (){
                     callback(true);
                 },
@@ -67,6 +58,15 @@ define(function (require){
                     callback(false);
                 }
             });
+        },
+
+        /** @private */
+        _showInputError: function urlExists(){
+
+            this.ui.spinner.fadeOut('fast');
+            this.ui.inputError.fadeIn('fast');
+
+
         }
 
     });

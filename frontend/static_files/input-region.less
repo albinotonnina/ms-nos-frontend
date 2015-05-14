@@ -1,24 +1,47 @@
-#input-region{
-h1{
-  color: #00adef;
-  padding: 0 25%;
-  font-weight: 300;
-  font-size:48px;
-}
-  input{
+#input-region {
+  h1 {
+    color: #00adef;
+    padding: 0 25%;
+    font-weight: 300;
+    font-size: 48px;
+  }
+  input {
     width: 50%;
-    height:48px;
+    height: 48px;
     padding: 8px 16px;
     font-size: 24px;
     color: #3c3f78;
-    margin-bottom:32px;
+    margin-bottom: 32px;
   }
 
-  p{
+  p {
     color: #3c3f78;
     font-size: 24px;
     padding: 0 25%;
-    margin-bottom:32px;
+    margin-bottom: 16px;
+  }
+
+  .spinner {
+    margin: 0 auto;
+    height: 72px;
+    &.hidden {
+      div {
+        display: none;
+      }
+    }
+  }
+
+  .input-error {
+    color: red;
+    display: block;
+    margin-bottom: 16px;
+    height: 16px;
+
+    &.hidden {
+      span {
+        display: none;
+      }
+    }
   }
 
 }
