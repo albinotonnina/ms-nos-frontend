@@ -20,8 +20,9 @@ define(function (require){
 
         /** @private */
         regions: {
-            uiRegion: '#ui-region',
-            mapRegion: '#map-region'
+            ringsRegion: '#rings-region',
+            mapRegion: '#map-region',
+            proxyRegion: '#proxy-region'
         },
 
         /** @private */
@@ -38,8 +39,11 @@ define(function (require){
         onShow: function (){
             this.mapView = this.controller.getMapView();
             this.mapRegion.show(this.mapView);
-            this.uiView = this.controller.getUiView(this.mapView.getMapObject());
-            this.uiRegion.show(this.uiView);
+            this.ringsView = this.controller.getRingsView(this.mapView.getMapObject());
+            this.ringsRegion.show(this.ringsView);
+
+            this.proxyView = this.controller.getProxyView(this.mapView.getMapObject());
+            this.proxyRegion.show(this.proxyView);
         },
 
         onRender: function(){

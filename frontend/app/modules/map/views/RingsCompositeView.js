@@ -3,19 +3,19 @@ define(function (require){
 
     var Marionette = require('marionette'),
         _=require('underscore'),
-        UiChildView = require('./UiChildView');
+        RingsChildView = require('./RingsChildView');
 
 
     return Marionette.CompositeView.extend({
 
         /** @private */
-        template: require('text!./../templates/UiCompositeView.hbs'),
+        template: require('text!./../templates/RingsCompositeView.hbs'),
 
         /** @private */
         className: 'items-wrapper',
 
         /** @private */
-        childView: UiChildView,
+        childView: RingsChildView,
 
         /** @private */
         childViewContainer: '#items',
@@ -25,7 +25,6 @@ define(function (require){
             this.accordion = require('accordion');
             this.controller = options.controller;
             this.map = options.map;
-            this.listenTo(this,'childview:marker:click', _.bind(this._markerClick,this));
             this.listenTo(this,'childview:refresh', _.bind(this._initAccordion,this));
         },
 
@@ -36,15 +35,6 @@ define(function (require){
                 childView.addMarker(this.map);
             }
 
-        },
-
-        /** @private */
-        _markerClick: function(itemview){
-            itemview.marker.setIcon(itemview.markerActiveIcon);
-            if(this.lastMarker){
-                this.lastMarker.setIcon(itemview.markerIcon);
-            }
-            this.lastMarker = itemview.marker;
         },
 
         /** @private */

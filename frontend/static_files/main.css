@@ -289,41 +289,47 @@
 .accordion-content {
   display: none;
 }
-#ui-region {
+#ui-left {
   width: 30%;
   height: 100%;
   float: left;
   background-color: #353a3e;
+  overflow-y: scroll;
 }
-#ui-region header {
+#proxy-region header {
   color: #f4f4f4;
   padding: 16px 32px;
 }
-#ui-region header h1 {
+#proxy-region header h1 {
   color: #f68220;
 }
-#ui-region .agents-wrapper {
+.items-region h2 {
+  color: #00adef;
+  padding: 0 16px;
+  font-weight: 300;
+}
+.items-region .agents-wrapper {
   padding: 16px 0;
 }
-#ui-region #agents {
+.items-region #agents {
   list-style-type: none;
   padding-right: 16px;
   padding-left: 0;
 }
-#ui-region #agents > li {
+.items-region #agents > li {
   padding-left: 24px;
   color: #353a3e;
 }
-#ui-region #agents > li:nth-child(odd) {
+.items-region #agents > li:nth-child(odd) {
   background-color: #ffffff;
 }
-#ui-region #agents > li > a {
+.items-region #agents > li > a {
   display: block;
   color: #353a3e;
   padding: 4px 0;
   font-size: 14px;
 }
-#ui-region #agents > li > a span.ring-uuid {
+.items-region #agents > li > a span.ring-uuid {
   pointer-events: none;
   color: #cccccc;
   display: block;
@@ -332,52 +338,52 @@
   transition: opacity .5s;
   color: #353a3e;
 }
-#ui-region #agents > li > a span.ring-uuid:before {
+.items-region #agents > li > a span.ring-uuid:before {
   content: 'uuid: ';
   color: #353a3e;
   display: inline-block;
   margin-right: 8px;
 }
-#ui-region #agents > li > a span.icon-chevron {
+.items-region #agents > li > a span.icon-chevron {
   margin: 4px;
 }
-#ui-region #agents > li .container {
+.items-region #agents > li .container {
   position: relative;
   padding-bottom: 8px;
 }
-#ui-region #agents > li .container.hidden {
+.items-region #agents > li .container.hidden {
   display: none;
 }
-#ui-region #agents > li .container:before {
+.items-region #agents > li .container:before {
   content: ' APIs:';
   position: absolute;
   top: 8px;
   font-size: 14px;
 }
-#ui-region #agents > li .container .date {
+.items-region #agents > li .container .date {
   font-size: 12px;
   opacity: 0.5;
   margin: 0;
   text-align: right;
   padding-right: 8px;
 }
-#ui-region #agents > li .container .api-wrapper span {
+.items-region #agents > li .container .api-wrapper span {
   display: inline-block;
   font-size: 14px;
 }
-#ui-region #agents > li .container .api-wrapper .icon-healthy {
+.items-region #agents > li .container .api-wrapper .icon-healthy {
   color: #19d512;
 }
-#ui-region #agents > li .container .api-wrapper .icon-faulty {
+.items-region #agents > li .container .api-wrapper .icon-faulty {
   color: #d50410;
 }
-#ui-region #agents > li .container .api-wrapper .api-path {
+.items-region #agents > li .container .api-wrapper .api-path {
   min-width: 120px;
 }
-#ui-region #agents > li .container .api-wrapper .api-host {
+.items-region #agents > li .container .api-wrapper .api-host {
   text-align: right;
 }
-#ui-region #agents > li .container .api-wrapper .api-type {
+.items-region #agents > li .container .api-wrapper .api-type {
   background-color: #0074da;
   color: white;
   padding: 0 4px;
@@ -385,42 +391,38 @@
   text-align: center;
   font-size: 12px;
 }
-#ui-region .items-wrapper {
-  height: 100%;
-  overflow-y: scroll;
-}
-#ui-region #items {
+.items-region .items {
   color: #ffffff;
   list-style-type: none;
   padding-left: 0;
 }
-#ui-region #items > li:nth-child(odd) > a {
+.items-region .items > li:nth-child(odd) > a {
   background-color: #5c656c;
 }
-#ui-region #items > li > div {
+.items-region .items > li > div {
   background-color: #f4f4f4;
   border-bottom: 2px solid #333;
 }
-#ui-region #items > li > a {
+.items-region .items > li > a {
   padding: 4px 8px 8px 16px;
   font-size: 18px;
   display: block;
   color: #f4f4f4;
 }
-#ui-region #items > li > a:hover {
+.items-region .items > li > a:hover {
   background-color: #f68220;
 }
-#ui-region #items > li > a:focus {
+.items-region .items > li > a:focus {
   outline: darkgoldenrod;
   background-color: #f68220;
 }
-#ui-region #items > li > a.accordion-active span.ring-uuid {
+.items-region .items > li > a.accordion-active span.ring-uuid {
   opacity: 0.5;
 }
-#ui-region #items > li > a span.icon {
+.items-region .items > li > a span.icon {
   font-size: 12px;
 }
-#ui-region #items > li > a span.ring-uuid {
+.items-region .items > li > a span.ring-uuid {
   pointer-events: none;
   color: #cccccc;
   display: block;
@@ -429,21 +431,21 @@
   transition: opacity .5s;
   color: #f4f4f4;
 }
-#ui-region #items > li > a span.ring-uuid:before {
+.items-region .items > li > a span.ring-uuid:before {
   content: 'uuid: ';
   color: #f4f4f4;
   display: inline-block;
   margin-right: 8px;
 }
-#ui-region #items > li .accordion-active .icon-chevron:before,
-#ui-region #items > li .collapsed .icon-chevron:before {
+.items-region .items > li .accordion-active .icon-chevron:before,
+.items-region .items > li .collapsed .icon-chevron:before {
   content: "\e600";
 }
-#ui-region #items > li .icon-chevron {
+.items-region .items > li .icon-chevron {
   float: right;
   margin-top: 8px;
 }
-#ui-region #items > li .icon-chevron:before {
+.items-region .items > li .icon-chevron:before {
   content: "\e601";
 }
 #map-region {

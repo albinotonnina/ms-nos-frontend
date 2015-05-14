@@ -7,12 +7,15 @@
   display: none;
 }
 
-#ui-region {
+#ui-left {
   width: 30%;
   height: 100%;
   float: left;
   background-color: #353a3e;
+  overflow-y: scroll;
+}
 
+#proxy-region{
   header {
     color: #f4f4f4;
     padding: 16px 32px;
@@ -20,6 +23,17 @@
     h1 {
       color: #f68220;
     }
+  }
+}
+
+
+
+.items-region{
+
+  h2{
+    color: #00adef;
+    padding:0 16px;
+    font-weight: 300;
   }
 
   .agents-wrapper {
@@ -129,11 +143,8 @@
     }
   }
 
-  .items-wrapper {
-    height: 100%;
-    overflow-y: scroll;
-  }
-  #items {
+
+  .items {
     color: #ffffff;
     list-style-type: none;
     padding-left: 0;

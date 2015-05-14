@@ -1,0 +1,196 @@
+{
+  "/hello": [
+    {
+      "service": "Pore",
+      "url": "http://52.74.88.91:9991/hello",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Asia, Singapore, Singapore"
+    },
+    {
+      "service": "Syd",
+      "url": "http://52.64.20.49:9991/hello",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Oceania, Australia, New South Wales, Sydney"
+    },
+    {
+      "service": "Kong-2",
+      "url": "http://104.215.193.16:9991/hello",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "North America, United States, Washington, Redmond"
+    },
+    {
+      "service": "Dub-2",
+      "url": "http://54.195.196.98:9992/hello",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Europe, Ireland, Dublin City, Dublin"
+    }
+  ],
+  "/msnos": [
+    {
+      "service": "Pore",
+      "url": "http://52.74.88.91:9991/msnos",
+      "type": "MSNOS_HTTP",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Asia, Singapore, Singapore"
+    },
+    {
+      "service": "Syd",
+      "url": "http://52.64.20.49:9991/msnos",
+      "type": "MSNOS_HTTP",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Oceania, Australia, New South Wales, Sydney"
+    },
+    {
+      "service": "Kong-2",
+      "url": "http://104.215.193.16:9991/msnos",
+      "type": "MSNOS_HTTP",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "North America, United States, Washington, Redmond"
+    },
+    {
+      "service": "Dub-2",
+      "url": "http://54.195.196.98:9992/msnos",
+      "type": "MSNOS_HTTP",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Europe, Ireland, Dublin City, Dublin"
+    }
+  ],
+  "api/v1.0/hello": [],
+  "/microservices": [],
+  "/wassup": [
+    {
+      "service": "Pore",
+      "url": "http://52.74.88.91:9991/wassup",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Asia, Singapore, Singapore"
+    },
+    {
+      "service": "Syd",
+      "url": "http://52.64.20.49:9991/wassup",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Oceania, Australia, New South Wales, Sydney"
+    },
+    {
+      "service": "Kong-2",
+      "url": "http://104.215.193.16:9991/wassup",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "North America, United States, Washington, Redmond"
+    },
+    {
+      "service": "Dub-2",
+      "url": "http://54.195.196.98:9992/wassup",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Europe, Ireland, Dublin City, Dublin"
+    }
+  ],
+  "/sticky": [
+    {
+      "service": "Pore",
+      "url": "http://52.74.88.91:9991/sticky",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": true,
+      "priority": 0,
+      "location": "Asia, Singapore, Singapore"
+    },
+    {
+      "service": "Syd",
+      "url": "http://52.64.20.49:9991/sticky",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": true,
+      "priority": 0,
+      "location": "Oceania, Australia, New South Wales, Sydney"
+    },
+    {
+      "service": "Kong-2",
+      "url": "http://104.215.193.16:9991/sticky",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": true,
+      "priority": 0,
+      "location": "North America, United States, Washington, Redmond"
+    },
+    {
+      "service": "Dub-2",
+      "url": "http://54.195.196.98:9992/sticky",
+      "type": "PUBLIC",
+      "faulty": "no",
+      "sticky": true,
+      "priority": 0,
+      "location": "Europe, Ireland, Dublin City, Dublin"
+    }
+  ],
+  "/health": [
+    {
+      "service": "Pore",
+      "url": "http://52.74.88.91:9991/health",
+      "type": "HEALTHCHECK",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Asia, Singapore, Singapore"
+    },
+    {
+      "service": "Syd",
+      "url": "http://52.64.20.49:9991/health",
+      "type": "HEALTHCHECK",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Oceania, Australia, New South Wales, Sydney"
+    },
+    {
+      "service": "Kong-2",
+      "url": "http://104.215.193.16:9991/health",
+      "type": "HEALTHCHECK",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "North America, United States, Washington, Redmond"
+    },
+    {
+      "service": "Dub-2",
+      "url": "http://54.195.196.98:9992/health",
+      "type": "HEALTHCHECK",
+      "faulty": "no",
+      "sticky": false,
+      "priority": 0,
+      "location": "Europe, Ireland, Dublin City, Dublin"
+    }
+  ],
+  "/favicon.ico": [],
+  "/": []
+}

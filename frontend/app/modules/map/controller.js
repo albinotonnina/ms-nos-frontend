@@ -3,11 +3,13 @@ define(function (require){
 
     var Marionette = require('marionette'),
         _ = require('underscore'),
-        UiView = require('./views/UiCompositeView'),
+        RingsView = require('./views/RingsCompositeView'),
+        ProxyView = require('./views/RoutesCompositeView'),
         MapView = require('./views/MapView'),
         IndexLayout = require('./views/IndexLayout'),
         RingsCollection = require('./collections/RingsCollection'),
-        MicroservicesCollection = require('./collections/MicroservicesCollection');
+        MicroservicesCollection = require('./collections/MicroservicesCollection'),
+        RoutesCollection = require('./collections/RoutesCollection');
 
     return Marionette.Object.extend({
 
@@ -16,44 +18,49 @@ define(function (require){
             this.app = options.app;
             this.logger = options.logger;
             this.microservicesCollection = new MicroservicesCollection();
+            this.routesCollection = new RoutesCollection();
             this.ringsCollection = new RingsCollection();
-
-
         },
 
         /** @private */
         index: function (options){
-            this.baseUrl = decodeURIComponent((new RegExp('[?|&]url=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,''])[1].replace(/\+/g, '%20'))||null;
+            this.baseUrl = decodeURIComponent((new RegExp('[?|&]url=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ''])[1].replace(/\+/g, '%20')) || null;
 
             if(options && options.url){
                 this.baseUrl = options.url;
             }
 
-            this._fetchData(this.baseUrl).done(_.bind(this._initCollections, this));
+            this._fetchRings(this.baseUrl).done(_.bind(this._initCollections, this));
+            this._fetchRoutes(this.baseUrl);
 
-            setInterval(_.bind(this._refreshCollections,this),10000);
+            setInterval(_.bind(this._refreshCollections, this), 10000);
         },
 
         /** @private */
-        _fetchData: function(baseUrl){
+        _fetchRings: function (baseUrl){
             return this.microservicesCollection.fetchData(baseUrl);
         },
 
         /** @private */
-        _refreshCollections: function(){
-            this._fetchData(this.baseUrl).done(_.bind(this._generateRingsModels,this));
+        _fetchRoutes: function (baseUrl){
+            return this.routesCollection.fetchData(baseUrl);
         },
 
-        _generateRingsModels: function(response){
+        /** @private */
+        _refreshCollections: function (){
+            this._fetchRings(this.baseUrl).done(_.bind(this._generateRingsModels, this));
+        },
+
+        _generateRingsModels: function (response){
             this.ringsCollection.addRings(response);
         },
 
         /** @private */
         _initCollections: function (response){
-            this.ringsCollection.addRings(response);
-            setTimeout(_.bind(function(){
+            this._generateRingsModels(response);
+            setTimeout(_.bind(function (){
                 this._initIndexLayout();
-            },this),1000);
+            }, this), 1000);
         },
 
         /** @private */
@@ -64,13 +71,18 @@ define(function (require){
             this.app.container.show(indexLayout);
         },
 
-        getUiView: function (map){
-            this.uiView = new UiView({controller:this, collection: this.ringsCollection, map: map});
-            return this.uiView;
+        getRingsView: function (map){
+            this.ringsView = new RingsView({controller: this, collection: this.ringsCollection, map: map});
+            return this.ringsView;
+        },
+
+        getProxyView: function (map){
+            this.proxyView = new ProxyView({controller: this, collection: this.routesCollection, map: map});
+            return this.proxyView;
         },
 
         getMapView: function (){
-            this.mapView = new MapView({controller:this});
+            this.mapView = new MapView({controller: this});
             return this.mapView;
         }
     });

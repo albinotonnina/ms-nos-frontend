@@ -9,7 +9,7 @@ define(function (require){
     return Marionette.ItemView.extend({
 
         /** @private */
-        template: require('text!./../templates/UiChildView.hbs'),
+        template: require('text!./../templates/RingsChildView.hbs'),
 
         /** @private */
         tagName: 'li',
@@ -94,7 +94,6 @@ define(function (require){
                 apiKOLength: _.compact(_.pluck(_.flatten(this.model.get('agents').pluck('apis')), 'faulty')).length,
                 apiOKLength: _.without(_.pluck(_.flatten(this.model.get('agents').pluck('apis')), 'faulty'), true).length
             };
-
 
             return this.uiMarker.getPopupContent(popupData);
         },
