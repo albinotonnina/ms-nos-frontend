@@ -17,6 +17,13 @@ module.exports = {
             },
             {
                 expand: true,
+                src: ['frontend/static_files/images/logos/*'],
+                dest: 'build/dist/static_files/images/logos/',
+                filter: 'isFile',
+                flatten: true
+            },
+            {
+                expand: true,
                 src: ['frontend/static_files/styles/*'],
                 dest: 'build/dist/static_files/styles/',
                 filter: 'isFile',
