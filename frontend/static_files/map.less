@@ -59,22 +59,6 @@
         padding: 4px 0;
         font-size: 14px;
 
-        span.ring-uuid {
-          pointer-events: none;
-          color: #cccccc;
-          display: block;
-          font-size: 11px;
-          opacity: 0.6;
-          transition: opacity .5s;
-          color: #353a3e;
-          &:before {
-            content: 'uuid: ';
-            color: #353a3e;
-            display: inline-block;
-            margin-right: 8px;
-          }
-        }
-
         span.icon-chevron{
           margin: 4px;
         }
@@ -176,32 +160,9 @@
           outline: darkgoldenrod;
           background-color: #f68220;
         }
-
-        &.accordion-active {
-          span.ring-uuid {
-            opacity: 0.5;
-          }
-        }
-
+        
         span.icon {
           font-size: 12px;
-        }
-
-        span.ring-uuid {
-          pointer-events: none;
-          color: #cccccc;
-          display: block;
-          font-size: 14px;
-          opacity: 0.3;
-          transition: opacity .5s;
-          color: #f4f4f4;
-          &:before {
-            content: 'uuid: ';
-            color: #f4f4f4;
-            display: inline-block;
-            margin-right: 8px;
-          }
-
         }
 
       }
