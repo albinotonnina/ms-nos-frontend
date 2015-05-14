@@ -13,15 +13,45 @@
   }
 
   .fp-controlArrow {
+    font-family: msnos-icons;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 96px;
+    height: 96px;
+    line-height: 1;
+    color:#00adef;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
 
     &.fp-next {
-      border-color: transparent transparent transparent #00adef;
+      border-color: transparent;
       margin-right: 10%;
+
+
+
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+
+      &:before{
+        content: "\e601";
+
+      }
     }
 
     &.fp-prev {
-      border-color: transparent #00adef transparent transparent;
+      border-color: transparent;
       margin-left: 10%;
+
+      -moz-osx-font-smoothing: grayscale;
+      &:before{
+        content: "\e601";
+      }
     }
   }
 
