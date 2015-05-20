@@ -3,8 +3,8 @@
 A backbone applicaton for the project Ms-nos, a simple network operating system for Microservices
 <https://github.com/workshare/ms-nos>
 
-### on Heroku
-<https://ms-nos.herokuapp.com>
+### Web
+<http://www.msnos.io>
 
 
 ##Development instructions
