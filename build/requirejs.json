@@ -11,6 +11,7 @@
         "when" : "<%= path %>bower_components/when",
         "Lumberman" : "<%= path %>bower_components/lumberman/src",
         "googlemaps": "<%= path %>bower_components/googlemaps-amd/src/googlemaps",
+        "modernizr": "<%= path %>bower_components/modernizr/modernizr",
         "leaflet": "<%= path %>bower_components/leaflet/dist/leaflet",
         "moment": "<%= path %>bower_components/momentjs/moment",
         "accordion": "<%= path %>bower_components/accordion/accordion",

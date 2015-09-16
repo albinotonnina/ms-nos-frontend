@@ -3,6 +3,7 @@ define(function (require){
 
     var Marionette = require('marionette'),
         Backbone = require('backbone'),
+        Modernizr  = require('modernizr'),
         BackgroundView = require('./BackgroundView'),
         HomeView = require('./HomeView'),
         AboutView = require('./AboutView'),
@@ -61,13 +62,20 @@ define(function (require){
 
         /** @private */
         onShow: function (){
-            this.backgroundRegion.show(this.backgroundView);
+
 
             this.homeRegion.show(this.homeView);
             this.aboutRegion.show(this.aboutView);
             this.howRegion.show(this.howView);
             this.inputRegion.show(this.inputView);
             this.contactsRegion.show(this.contactsView);
+
+            var query = window.Modernizr.mq('(min-width: 600px)');
+            if (query) {
+                this.backgroundRegion.show(this.backgroundView);
+            }
+
+
             this._initFullPage();
 
             var hashToLoad = Backbone.history.getFragment().split('/');
