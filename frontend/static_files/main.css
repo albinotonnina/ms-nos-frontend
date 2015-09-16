@@ -580,6 +580,11 @@
   padding-bottom: 16px;
   margin-bottom: 128px;
 }
+@media only screen and (max-width: 529px) {
+  #home-region h1 {
+    margin: 0 5%;
+  }
+}
 #home-region .discover {
   font-size: 48px;
   position: absolute;
@@ -661,6 +666,7 @@
 @media only screen and (max-width: 529px) {
   #about-region p {
     font-size: 16px;
+    padding: 0 5%;
   }
 }
 #about-region .fp-controlArrow {
