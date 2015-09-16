@@ -26,6 +26,7 @@
 
     @media @mobile{
       font-size: 14px;
+      margin-bottom:0;
     }
   }
 
@@ -44,6 +45,11 @@
   .spinner {
     margin: 0 auto;
     height: 72px;
+    
+    @media @mobile{
+      height: 36px;
+    }
+    
     &.hidden {
       div {
         display: none;
@@ -56,6 +62,10 @@
     display: block;
     margin-bottom: 16px;
     height: 16px;
+
+    @media @mobile{
+      margin-bottom:8px;
+    }
 
     &.hidden {
       span {

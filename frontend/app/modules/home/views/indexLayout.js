@@ -103,7 +103,9 @@ define(function (require){
                     menu: '#menu',
                     css3: true,
                     scrollingSpeed: 1000,
-                     autoScrolling: false
+                     autoScrolling: false,
+                     fitToSection:false,
+                     scrollOverflow:true
 
                 };
             }else{

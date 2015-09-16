@@ -532,6 +532,7 @@
 @media only screen and (max-width: 529px) {
   #input-region input {
     font-size: 14px;
+    margin-bottom: 0;
   }
 }
 #input-region p {
@@ -550,6 +551,11 @@
   margin: 0 auto;
   height: 72px;
 }
+@media only screen and (max-width: 529px) {
+  #input-region .spinner {
+    height: 36px;
+  }
+}
 #input-region .spinner.hidden div {
   display: none;
 }
@@ -558,6 +564,11 @@
   display: block;
   margin-bottom: 16px;
   height: 16px;
+}
+@media only screen and (max-width: 529px) {
+  #input-region .input-error {
+    margin-bottom: 8px;
+  }
 }
 #input-region .input-error.hidden span {
   display: none;
@@ -723,6 +734,11 @@
   color: #3c3f78;
   text-align: left;
 }
+@media only screen and (max-width: 529px) {
+  #contacts-region .bio h3 {
+    margin: 8px 0 0 0;
+  }
+}
 #contacts-region .bio p {
   text-align: justify;
   color: #3c3f78;
@@ -734,7 +750,8 @@
 @media only screen and (max-width: 529px) {
   #contacts-region .bio p {
     padding-right: 0;
-    padding: 4px;
+    padding: 0 4px;
+    margin: 0;
   }
 }
 #contacts-region .bio.bruno .circular {
@@ -789,6 +806,7 @@
 }
 @media only screen and (max-width: 529px) {
   #how-region pre {
+    margin: 0;
     padding: 0;
   }
 }
@@ -806,6 +824,12 @@
   color: #00adef;
   padding: 0 25%;
   font-weight: 300;
+}
+@media only screen and (max-width: 529px) {
+  #how-region h1 {
+    margin: 0;
+    padding: 0;
+  }
 }
 #how-region p {
   color: #3c3f78;
