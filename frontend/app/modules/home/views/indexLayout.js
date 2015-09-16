@@ -95,13 +95,30 @@ define(function (require){
         },
 
         _initFullPage: function (){
-            $('#fullpage').fullpage({
-                anchors: ['home', 'about', 'how', 'visualization', 'contacts'],
-                menu: '#menu',
-                css3: true,
-                scrollingSpeed: 1000
 
-            });
+            var fullpageOptions, query = window.Modernizr.mq('(min-width: 600px)');
+            if (query) {
+                 fullpageOptions = {
+                    anchors: ['home', 'about', 'how', 'visualization', 'contacts'],
+                    menu: '#menu',
+                    css3: true,
+                    scrollingSpeed: 1000,
+                     autoScrolling: false
+
+                };
+            }else{
+                 fullpageOptions = {
+                    anchors: ['home', 'about', 'how', 'visualization', 'contacts'],
+                    menu: '#menu',
+                    css3: true,
+                    scrollingSpeed: 1000
+
+                };
+            }
+
+            $('#fullpage').fullpage(fullpageOptions);
+
+
         }
 
     });
