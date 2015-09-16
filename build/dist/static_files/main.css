@@ -595,7 +595,7 @@
 }
 @media only screen and (max-width: 529px) {
   #home-region .discover {
-    bottom: 30%;
+    bottom: 20%;
     font-size: 24px;
   }
 }
