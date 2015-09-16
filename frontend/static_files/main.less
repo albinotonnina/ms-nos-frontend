@@ -1,3 +1,14 @@
+//http://blog.scur.pl/2012/06/variable-media-queries-less-css/
+@highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+~"only screen and (min-device-pixel-ratio: 1.5)";
+@mobile:      ~"only screen and (max-width: 529px)";
+@tablet:      ~"only screen and (min-width: 530px) and (max-width: 949px)";
+@desktop:     ~"only screen and (min-width: 950px) and (max-width: 1128px)";
+@desktop-xl:  ~"only screen and (min-width: 1129px)";
+
+
 @import url('msnos-icons.css');
 @import url('spinner');
 @import url('fullpage.less');
@@ -8,6 +19,9 @@
 @import url('about-region.less');
 @import url('contacts-region.less');
 @import url('how-region.less');
+
+
+
 
 html,
 body,
@@ -46,4 +60,16 @@ body {
     height: 100%;
   }
 
+  @media @mobile {
+    height: 60px;
+    padding: 8px;
+  }
+
+}
+
+
+h1{
+  @media @mobile{
+    font-size:1em;
+  }
 }

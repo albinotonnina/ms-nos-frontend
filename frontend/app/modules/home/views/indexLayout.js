@@ -62,12 +62,12 @@ define(function (require){
         /** @private */
         onShow: function (){
             this.backgroundRegion.show(this.backgroundView);
+
             this.homeRegion.show(this.homeView);
             this.aboutRegion.show(this.aboutView);
             this.howRegion.show(this.howView);
             this.inputRegion.show(this.inputView);
             this.contactsRegion.show(this.contactsView);
-
             this._initFullPage();
 
             var hashToLoad = Backbone.history.getFragment().split('/');
@@ -91,9 +91,7 @@ define(function (require){
                 anchors: ['home', 'about', 'how', 'visualization', 'contacts'],
                 menu: '#menu',
                 css3: true,
-                scrollingSpeed: 1000,
-                touchSensitivity: 15,
-                responsive: 768
+                scrollingSpeed: 1000
 
             });
         }

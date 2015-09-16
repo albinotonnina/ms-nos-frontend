@@ -3,8 +3,18 @@
   pre{
     text-align: left;
     padding: 0 25%;
+
+    @media @mobile{
+      padding:0;
+    }
     code{
       padding: 32px;
+
+      @media @mobile{
+        padding: 16px;
+        font-size: 10px;
+        word-wrap: break-word;
+      }
     }
   }
 
@@ -12,6 +22,8 @@
     color: #00adef;
     padding: 0 25%;
     font-weight: 300;
+
+
   }
 
   p{

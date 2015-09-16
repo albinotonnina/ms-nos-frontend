@@ -253,6 +253,11 @@
   text-align: right;
   margin: 0;
 }
+@media only screen and (max-width: 529px) {
+  .menu {
+    display: none;
+  }
+}
 .menu li {
   display: inline-block;
   padding: 0 16px;
@@ -283,11 +288,34 @@
   right: 32px;
   z-index: 73;
 }
+@media only screen and (max-width: 529px) {
+  #logos {
+    bottom: 8px;
+    right: 8px;
+  }
+  #logos img {
+    max-height: 32px;
+  }
+}
 #workshare {
   position: fixed;
   bottom: 32px;
   left: 32px;
   z-index: 73;
+}
+@media only screen and (max-width: 529px) {
+  #workshare {
+    bottom: 0;
+    left: 0;
+  }
+  #workshare img {
+    max-height: 42px;
+  }
+}
+@media only screen and (max-width: 529px) {
+  .github img {
+    max-height: 68px;
+  }
 }
 .accordion-header {
   cursor: pointer;
@@ -476,11 +504,22 @@
 .leaflet-popup-content-wrapper .leaflet-popup-content .red-dot {
   background-color: #ff0000;
 }
+@media only screen and (max-width: 529px) {
+  #input-region img {
+    max-height: 48px;
+  }
+}
 #input-region h1 {
   color: #00adef;
   padding: 0 25%;
   font-weight: 300;
   font-size: 48px;
+}
+@media only screen and (max-width: 529px) {
+  #input-region h1 {
+    font-size: 24px;
+    padding: 0 12%;
+  }
 }
 #input-region input {
   width: 50%;
@@ -490,11 +529,22 @@
   color: #3c3f78;
   margin-bottom: 32px;
 }
+@media only screen and (max-width: 529px) {
+  #input-region input {
+    font-size: 14px;
+  }
+}
 #input-region p {
   color: #3c3f78;
   font-size: 24px;
   padding: 0 25%;
   margin-bottom: 16px;
+}
+@media only screen and (max-width: 529px) {
+  #input-region p {
+    font-size: 14px;
+    padding: 0 4%;
+  }
 }
 #input-region .spinner {
   margin: 0 auto;
@@ -527,14 +577,32 @@
   width: 100%;
   font-weight: 300;
 }
+@media only screen and (max-width: 529px) {
+  #home-region .discover {
+    bottom: 30%;
+    font-size: 24px;
+  }
+}
 #home-region .network-image-container {
   width: 100%;
   height: 384px;
+}
+@media only screen and (max-width: 529px) {
+  #home-region .network-image-container {
+    height: 84px;
+    width: 30%;
+    margin: 0 auto;
+  }
 }
 #home-region .network-image-container > div {
   margin: 0 auto;
   width: 400px;
   height: 100%;
+}
+@media only screen and (max-width: 529px) {
+  #home-region .network-image-container > div {
+    width: 100px;
+  }
 }
 #home-region .network-image-container > div > div {
   margin: 0;
@@ -548,6 +616,11 @@
 #home-region .network-image-container > div > div img.network-shadow {
   bottom: 0;
 }
+@media only screen and (max-width: 529px) {
+  #home-region .network-image-container > div > div img {
+    max-width: 100px;
+  }
+}
 #background-region canvas {
   position: fixed;
   top: 0;
@@ -559,10 +632,20 @@
   color: #00adef;
   font-weight: 300;
 }
+@media only screen and (max-width: 529px) {
+  #about-region h1 {
+    font-size: 24px;
+  }
+}
 #about-region p {
   font-size: 36px;
   padding: 0 25%;
   color: #3c3f78;
+}
+@media only screen and (max-width: 529px) {
+  #about-region p {
+    font-size: 16px;
+  }
 }
 #about-region .fp-controlArrow {
   font-family: msnos-icons;
@@ -577,6 +660,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media only screen and (max-width: 529px) {
+  #about-region .fp-controlArrow {
+    font-size: 46px;
+    height: 46px;
+  }
+}
 #about-region .fp-controlArrow.fp-next {
   border-color: transparent;
   margin-right: 10%;
@@ -586,6 +675,13 @@
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+@media only screen and (max-width: 529px) {
+  #about-region .fp-controlArrow.fp-next {
+    margin-right: 0;
+    right: 0;
+    border-width: 0;
+  }
+}
 #about-region .fp-controlArrow.fp-next:before {
   content: "\e601";
 }
@@ -593,6 +689,13 @@
   border-color: transparent;
   margin-left: 10%;
   -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 529px) {
+  #about-region .fp-controlArrow.fp-prev {
+    margin-left: 0;
+    left: 0;
+    border-width: 0;
+  }
 }
 #about-region .fp-controlArrow.fp-prev:before {
   content: "\e601";
@@ -602,6 +705,14 @@
   display: inline-block;
   width: 33%;
   max-width: 400px;
+  position: relative;
+}
+@media only screen and (max-width: 529px) {
+  #contacts-region .bio {
+    font-size: 10px;
+    width: 100%;
+    display: block;
+  }
 }
 #contacts-region .bio h3 {
   color: #3c3f78;
@@ -615,14 +726,35 @@
 #contacts-region .bio p strong {
   color: #3c3f78;
 }
+@media only screen and (max-width: 529px) {
+  #contacts-region .bio p {
+    padding-right: 0;
+    padding: 4px;
+  }
+}
 #contacts-region .bio.bruno .circular {
   background: url('../images/bbossola.jpg') no-repeat;
+}
+@media only screen and (max-width: 529px) {
+  #contacts-region .bio.bruno .circular {
+    background-size: 54px;
+  }
 }
 #contacts-region .bio.maria .circular {
   background: url('../images/maria.jpg') no-repeat;
 }
+@media only screen and (max-width: 529px) {
+  #contacts-region .bio.maria .circular {
+    background-size: 54px;
+  }
+}
 #contacts-region .bio.rhys .circular {
   background: url('../images/rhys.jpg') no-repeat;
+}
+@media only screen and (max-width: 529px) {
+  #contacts-region .bio.rhys .circular {
+    background-size: 54px;
+  }
 }
 #contacts-region .circular {
   width: 150px;
@@ -634,12 +766,36 @@
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
+@media only screen and (max-width: 529px) {
+  #contacts-region .circular {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-background-size: 54px;
+    background-size: 54px;
+    display: none;
+  }
+}
 #how-region pre {
   text-align: left;
   padding: 0 25%;
 }
+@media only screen and (max-width: 529px) {
+  #how-region pre {
+    padding: 0;
+  }
+}
 #how-region pre code {
   padding: 32px;
+}
+@media only screen and (max-width: 529px) {
+  #how-region pre code {
+    padding: 16px;
+    font-size: 10px;
+    word-wrap: break-word;
+  }
 }
 #how-region h1 {
   color: #00adef;
@@ -683,4 +839,15 @@ body {
 .msnos-logo img {
   max-width: 100%;
   height: 100%;
+}
+@media only screen and (max-width: 529px) {
+  .msnos-logo {
+    height: 60px;
+    padding: 8px;
+  }
+}
+@media only screen and (max-width: 529px) {
+  h1 {
+    font-size: 1em;
+  }
 }

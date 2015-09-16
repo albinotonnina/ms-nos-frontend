@@ -5,6 +5,13 @@
     display: inline-block;
     width: 33%;
     max-width: 400px;
+    position: relative;
+
+    @media @mobile{
+      font-size: 10px;
+      width:100%;
+      display: block;
+    }
 
     h3{
      color: #3c3f78;
@@ -20,23 +27,37 @@
         color: #3c3f78;
       }
 
+      @media @mobile{
+        padding-right: 0;
+        padding: 4px;
+      }
+
     }
 
     &.bruno {
       .circular {
         background: url('../images/bbossola.jpg') no-repeat;
+        @media @mobile{
+          background-size: 54px
+        }
       }
     }
 
     &.maria {
       .circular {
         background: url('../images/maria.jpg') no-repeat;
+        @media @mobile{
+          background-size: 54px
+        }
       }
     }
 
     &.rhys {
       .circular {
         background: url('../images/rhys.jpg') no-repeat;
+        @media @mobile{
+          background-size: 54px
+        }
       }
     }
   }
@@ -47,6 +68,18 @@
     border-radius: 75px;
     -webkit-border-radius: 75px;
     -moz-border-radius: 75px;
+
+    @media @mobile{
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -webkit-background-size: 54px;
+      background-size: 54px;
+      display:none;
+    }
+
 
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);

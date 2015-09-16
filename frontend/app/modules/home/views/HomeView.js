@@ -1,4 +1,4 @@
-define(function (require){
+define(function (require) {
     'use strict';
 
     var Marionette = require('marionette'),
@@ -12,53 +12,34 @@ define(function (require){
 
         /** @private */
         ui: {
-            msnosnetwork:'.msnos-network'
+            msnosnetwork: '.msnos-network'
         },
 
         events: {},
 
-        /** @private */
-        initialize: function (){
+        onShow: function () {
+            setTimeout(_.bind(function () {
+                $(this.ui.msnosnetwork).jqFloat({
+                    width: 10,
+                    height: 10,
+                    speed: 1000
+                });
+            }, this), 300);
 
-        },
-
-        onShow: function (){
-
-
- setTimeout(_.bind(function(){
-
-
-     $(this.ui.msnosnetwork).jqFloat({
-         width: 10,
-         height: 10,
-         speed: 1000
-     });
-
-
- },this),300);
-
-
-            setTimeout(_.bind(function(){
-
-
+            setTimeout(_.bind(function () {
                 $(this.ui.msnosnetwork).jqFloat('stop');
-                console.log('stop');
-
-            },this),5500);
-
-
-
+            }, this), 5500);
         },
 
 
         /** @private */
-        onRender: function (){
+        onRender: function () {
 
 
         },
 
         /** @private */
-        onDestroy: function (){
+        onDestroy: function () {
 
 
         }

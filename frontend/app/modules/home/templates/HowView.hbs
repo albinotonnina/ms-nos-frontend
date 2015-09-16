@@ -1,18 +1,18 @@
 <h1>How do I publish a new microservice?</h1>
 <!--<p>The microservice will "join" a cloud and then publish his own APIs to the cloud: every other microservice will automatically discover them.</p>-->
 <pre><code class="java">// create a cloud and join it
-    cloud = new Microcloud(new Cloud(params.uuid(), params.signature()));
-    self = new Microservice(params.name());
-    self.join(cloud);
+cloud = new Microcloud(new Cloud(params.uuid(), params.signature()));
+self = new Microservice(params.name());
+self.join(cloud);
 
-    // publish to the cloud myendpoints
-    RestApi[] { apis = new RestApi[] {
-    new RestApi("/hello", port),
-    new RestApi("/wassup", port),
-    new RestApi("/health", port).asHealthCheck(),
-    new RestApi("/msnos", port, Type.MSNOS_HTTP),
-    };
-    self.publish(apis);
+// publish to the cloud myendpoints
+RestApi[] { apis = new RestApi[] {
+new RestApi("/hello", port),
+new RestApi("/wassup", port),
+new RestApi("/health", port).asHealthCheck(),
+new RestApi("/msnos", port, Type.MSNOS_HTTP),
+};
+self.publish(apis);
 </code></pre>
 
 <h1>How do a microservice find the best API to use?</h1>
